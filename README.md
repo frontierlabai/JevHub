@@ -23,7 +23,7 @@
 
 > **这是哪个 Jev？** 本站关注 [TypeSafe AI](https://typesafe.ai/) 的 **Jev / System One** 决策模型：面向软件提供结构化决策。JevHub 是独立社区目录，与 TypeSafe AI 无官方隶属关系。[了解 Jev →](https://docs.typesafe.ai/introduction)
 
-> 更新于 **2026-09-22T03:01:49Z** · **261** 个相关仓库 · **85,310** 个累计 Star
+> 更新于 **2026-09-22T03:17:34Z** · **261** 个相关仓库 · **85,616** 个累计 Star
 
 仓库 Star 包含其全部功能获得的关注，不等于 Jev 功能的热度；以下为检索范围内的结果。
 
@@ -76,12 +76,12 @@
 
 ### Hacker News
 
-已更新 · 最近成功抓取: 2026-09-22T03:01:51Z
+已更新 · 最近成功抓取: 2026-09-22T03:17:35Z
 
 | 讨论 | Points | 评论 |
 | :-- | --: | --: |
 | [Introducing System One Models and Jev](https://news.ycombinator.com/item?id=49717558) | 1,945 | 511 |
-| [Kev: Tiny Jev-like family of decision models built on top of Qwen3.5](https://news.ycombinator.com/item?id=49783999) | 410 | 187 |
+| [Kev: Tiny Jev-like family of decision models built on top of Qwen3.5](https://news.ycombinator.com/item?id=49783999) | 412 | 188 |
 | [Reverse-engineered Jev-like model](https://news.ycombinator.com/item?id=49731282) | 167 | 24 |
 | [Open-sourced jev architecture last year with model,paper and dataset](https://news.ycombinator.com/item?id=49736660) | 96 | 15 |
 | [Jev Ultrafast: A browser agent with a dynamic, indexed action space](https://news.ycombinator.com/item?id=49735979) | 91 | 14 |
@@ -99,7 +99,7 @@
 
 ### Hugging Face
 
-已更新 · 最近成功抓取: 2026-09-22T03:01:57Z
+已更新 · 最近成功抓取: 2026-09-22T03:17:38Z
 
 社区上传 / 独立实现；不代表 TypeSafe 官方模型权重。
 
@@ -107,7 +107,7 @@
 | :-- | --: | --: |
 | [com-kotobalabs/open-jev-deberta-v3-large](https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large) | 51 | 920 |
 | [Meanblock/JEV-CPU](https://huggingface.co/Meanblock/JEV-CPU) | 27 | 0 |
-| [ZefanCai/Open-Jev-9B](https://huggingface.co/ZefanCai/Open-Jev-9B) | 22 | 0 |
+| [ZefanCai/Open-Jev-9B](https://huggingface.co/ZefanCai/Open-Jev-9B) | 23 | 0 |
 | [argos1111/modernbert-ja-310m-jev](https://huggingface.co/argos1111/modernbert-ja-310m-jev) | 11 | 312 |
 | [ZefanCai/Open-Jev-2B](https://huggingface.co/ZefanCai/Open-Jev-2B) | 8 | 0 |
 | [mobarmg/jev-schema-scorer-deberta-v3-large](https://huggingface.co/mobarmg/jev-schema-scorer-deberta-v3-large) | 7 | 306 |
@@ -116,13 +116,13 @@
 
 ### 新闻 / 文章
 
-已更新 · 最近成功抓取: 2026-09-22T03:02:44Z
+已更新 · 最近成功抓取: 2026-09-22T03:17:39Z
 
 - [TypeSafe AI's Jev offers an alternative to LLMs that's 193x faster and 445x cheaper - Tom's Hardware](https://news.google.com/rss/articles/CBMiywJBVV95cUxPWUUwb1VlR0o3UGV3cEVYcWYyLUxuV2d2VDc3d0xpUy0zeUEtMWFoaUgya0c2QmR0clE0b3BUTTR5cTFVVEd0QzFTdE5Ocjh3NTZ6X0w4NUQ4VnNXMTVSQUxyb3B3bjEwVHZ3WU1ienVwSnJuTTNSWFBpVTNKUEpLZ0RIai1fVzlST25HUjU5UGRsaFJrb2tJc1ctT1U5bklTRE1MajllZVBaOGQtZTdUcFRzZkNhVFVhMDBTblI5RUN6ZkdDTGJBWjBjS0NsOW9SN3gwZXhTbS1wRlJOQUlRQkRUV045SHZRaDlnUnlsU2NBYWo1X3dGdHgtdjVfdlpCVFBfQldXei1CTmdXQUlvQWpHWGlBQjlLaVoyaDZyUi03TW82SFRYNzlNVVMtZkZacVByeVM3cnhIWHlWcUt5TTM4VzI5RW9TQTdF?oc=5)
 - [TypeSafe AI的Jev全面开放 注册用户获5美元额度 - 观点网](https://news.google.com/rss/articles/CBMiTkFVX3lxTE9MY29zeVFkMEdmWWVxWU95MzYyMWRGeUxPSENXWDE3R3Q2dDRGQmNOc0M3VThLVkpYTFJBWXdEdy1KcHh4VzBENEdoY1BDQQ?oc=5)
-- [Companies are putting Jev in charge of AI agent decisions — and prompt injection can influence the verdict - VentureBeat](https://news.google.com/rss/articles/CBMi0wFBVV95cUxOc1hBN0prXzg3NTNHbUhNR3p2Wm1yMVJLcW1uckpOUVVfUGpxSWNPVHdhNW1rUWl0U2VEWWJ5R3BrSGFiY09zUHMwOTg1bDM2ZTVqei1ndHRHMzJsMDJiZ2NRc2tNQURsWTRUNkNSb1JPU2NURUM3UEdFSmpHNV95S1hoREhMbndqcWdMVmk0TUExRm4zd1M0UUdOa3lIT0EwSko4bGtYc0hKVkxrelhFZ3lhWklhRkRtVHc5QkJtOFNNeEpKdnJOcFJ6a3ltVTJXbFVN?oc=5)
+- [Companies are putting Jev in charge of AI agent decisions — and prompt injection can influence the verdict - venturebeat.com](https://news.google.com/rss/articles/CBMi0wFBVV95cUxOc1hBN0prXzg3NTNHbUhNR3p2Wm1yMVJLcW1uckpOUVVfUGpxSWNPVHdhNW1rUWl0U2VEWWJ5R3BrSGFiY09zUHMwOTg1bDM2ZTVqei1ndHRHMzJsMDJiZ2NRc2tNQURsWTRUNkNSb1JPU2NURUM3UEdFSmpHNV95S1hoREhMbndqcWdMVmk0TUExRm4zd1M0UUdOa3lIT0EwSko4bGtYc0hKVkxrelhFZ3lhWklhRkRtVHc5QkJtOFNNeEpKdnJOcFJ6a3ltVTJXbFVN?oc=5)
 - [前 OpenAI 研究员发布Jev 模型，旨在帮助软件做出快速、结构化的决策- OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA](https://news.google.com/rss/articles/CBMifkFVX3lxTE9neEhiRUxoaWRjNURkVlZfbFBPU3ZmN05oaWtWWDdET0dDUm1Id0szam9udi1DLVF5N1dKTmJhVXlqY0JDWUtGanhfSWhUdjJ0M0hVNHBoTDdHU2F6b1ZMb3puX1J5YXp4cV92Q3M5eTFlS0tjMVl5VTViOGVZUQ?oc=5)
-- [TypeSafe launched Jev because sequential LLMs are "totally useless for computers" - thenewstack.io](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1zYlhYOUtCRTZBTUJ2d1gtNUVtdy1oZmVYb3owYWNBQklaMjV6RXVrd3JOcF9XWXBpQ242d2hJZjlreE4wTU1HLXZGUXgxWFRqZUI3R3NPR3g5MUk?oc=5)
+- [TypeSafe launched Jev because sequential LLMs are "totally useless for computers" - The New Stack](https://news.google.com/rss/articles/CBMiW0FVX3lxTE1zYlhYOUtCRTZBTUJ2d1gtNUVtdy1oZmVYb3owYWNBQklaMjV6RXVrd3JOcF9XWXBpQ242d2hJZjlreE4wTU1HLXZGUXgxWFRqZUI3R3NPR3g5MUk?oc=5)
 - [Jev模型发布：专注判断放弃文字生成，快速获开发者采用 - 虎嗅网](https://news.google.com/rss/articles/CBMiVEFVX3lxTE5lUTFTSlpiYWJ0alA3YnVweUh6TVNqaEhlb1ZEVUVUWVdmdEJYM3JYelB5TnpaVFJDWXM0OWxobU1YOE1iZTgtdzhYRE0tNFotUGtkTw?oc=5)
 - [TypeSafe AI Releases Jev: A System One Model That Returns Typed, Calibrated Decisions Instead of Text - MarkTechPost](https://news.google.com/rss/articles/CBMic0FVX3lxTE50UkR5alh0Y0wyODFWbFRHZVZ0dTBpb0dlZnhBRTJ5TzN0aWoyWnZ1Ynl3ZWFQVHo4aUNrRG4xdFVHVXBkb1JmdFk2R0lwbWdPdzlaMy01NDB5VUVGVjV5cm5YV1A5bUZpRTFJR2lRME94R03SAXhBVV95cUxPVFpfbHhidFNRQ1JlYllPbldPd080alJ2aFZJM3BOVVNrSUlvX0hqaG1iVHBRcEJaajN0XzlZN2NkQVBXekRyeVhNcVlfQUpOb1dWTGxIc2M2VjZKTm9DOHhNYTg2amZ5Szl5S1IxdmNyUnNxWTlfdm0?oc=5)
 - [刚刚，爆火模型Jev全面开放，所有用户送1.2亿token - 36kr.com](https://news.google.com/rss/articles/CBMiTkFVX3lxTE1wN1ZROVpYaVVKV3gtZDZyVXJCdEdzV1Ita21CZGpmNDZVMGE1QUUwZ0pVeGxjMUpsWDhmNmROcy03Smx2OFZRS3FlaE9UUQ?oc=5)
@@ -154,9 +154,9 @@
 
 GitHub 每条 query 按 Star 降序取配置页数；这是有界检索，不是全站普查。fork、归档、明确无关项被排除，相关性采用元数据 / README 规则和核验种子。
 
-- jev in:name,description fork:false archived:false stars:&gt;=2 — 200 / 1057（达到页数上限）
-- topic:jev fork:false archived:false — 200 / 1094（达到页数上限）
-- jev typesafe in:readme fork:false archived:false stars:&gt;=5 — 200 / 833（达到页数上限）
+- jev in:name,description fork:false archived:false stars:&gt;=2 — 200 / 1062（达到页数上限）
+- topic:jev fork:false archived:false — 200 / 1095（达到页数上限）
+- jev typesafe in:readme fork:false archived:false stars:&gt;=5 — 200 / 835（达到页数上限）
 - org:typesafe-ai fork:false archived:false — 7 / 7
 
 完整结果与时间戳：[JSON 数据](data/latest.json) · [历史快照](data/history) · [方法说明](docs/methodology.md)
