@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc">
+  <title id="title">JevHub — The Jev ecosystem, in view.</title>
+  <desc id="desc">An independent community radar for Jev: daily discovery, GitHub stars, and community signals.</desc>
+  <defs>
+    <linearGradient id="surface" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b1421"/>
+      <stop offset="1" stop-color="#111127"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#6ee7b7"/>
+      <stop offset="0.48" stop-color="#67e8f9"/>
+      <stop offset="1" stop-color="#c4b5fd"/>
+    </linearGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#4f46e5" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#4f46e5" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 H 0 V 40" fill="none" stroke="#9aaaca" stroke-opacity="0.075"/>
+    </pattern>
+    <clipPath id="frame"><rect width="1200" height="360" rx="24"/></clipPath>
+  </defs>
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="360" fill="url(#surface)"/>
+    <rect width="1200" height="360" fill="url(#grid)"/>
+    <ellipse cx="955" cy="180" rx="360" ry="310" fill="url(#halo)"/>
+    <path d="M0 1 H1200" stroke="url(#accent)" stroke-width="3"/>
+
+    <g font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif">
+      <circle cx="61" cy="56" r="4" fill="#6ee7b7"/>
+      <text x="76" y="61" fill="#a4b2c8" font-size="13" font-weight="600" letter-spacing="2.5">INDEPENDENT COMMUNITY RADAR</text>
+      <text x="56" y="161" fill="#f5f7ff" font-size="86" font-weight="700" letter-spacing="-5">Jev<tspan fill="url(#accent)">Hub</tspan></text>
+      <text x="60" y="205" fill="#dae2f2" font-size="22" letter-spacing="0.5">The Jev ecosystem, in view.</text>
+      <text x="60" y="238" fill="#95a6c0" font-size="16">Discover projects. Follow momentum. Build what comes next.</text>
+
+      <g transform="translate(60 279)">
+        <rect width="152" height="31" rx="15.5" fill="#6ee7b7" fill-opacity="0.08" stroke="#6ee7b7" stroke-opacity="0.3"/>
+        <text x="76" y="20" text-anchor="middle" fill="#93ebc8" font-size="11" font-weight="600" letter-spacing="1">DAILY DISCOVERY</text>
+        <rect x="164" width="143" height="31" rx="15.5" fill="#67e8f9" fill-opacity="0.07" stroke="#67e8f9" stroke-opacity="0.25"/>
+        <text x="235.5" y="20" text-anchor="middle" fill="#a4ebf5" font-size="11" font-weight="600" letter-spacing="1">GITHUB STARS</text>
+        <rect x="319" width="174" height="31" rx="15.5" fill="#c4b5fd" fill-opacity="0.07" stroke="#c4b5fd" stroke-opacity="0.25"/>
+        <text x="406" y="20" text-anchor="middle" fill="#d0c4fa" font-size="11" font-weight="600" letter-spacing="1">COMMUNITY SIGNALS</text>
+      </g>
+    </g>
+
+    <g transform="translate(945 171)">
+      <circle r="124" fill="none" stroke="#c4b5fd" stroke-opacity="0.11"/>
+      <circle r="88" fill="none" stroke="#67e8f9" stroke-opacity="0.17" stroke-dasharray="3 8"/>
+      <circle r="50" fill="#15263c" stroke="url(#accent)" stroke-opacity="0.55"/>
+      <g fill="none" stroke="url(#accent)" stroke-width="1.5" stroke-opacity="0.5">
+        <path d="M-36-35 L-88-88 M37-34 L91-85 M48 10 L121 28 M19 47 L45 116 M-44 24 L-112 55"/>
+        <path d="M-88-88 L91-85 L121 28 L45 116 L-112 55 Z" stroke-opacity="0.17"/>
+      </g>
+      <g fill="#0e1b2b" stroke-width="1.5">
+        <circle cx="-88" cy="-88" r="12" stroke="#6ee7b7"/>
+        <circle cx="91" cy="-85" r="9" stroke="#c4b5fd"/>
+        <circle cx="121" cy="28" r="14" stroke="#c4b5fd"/>
+        <circle cx="45" cy="116" r="9" stroke="#67e8f9"/>
+        <circle cx="-112" cy="55" r="10" stroke="#6ee7b7"/>
+      </g>
+      <g fill="#b5f7e0">
+        <circle cx="-88" cy="-88" r="3"/>
+        <circle cx="-112" cy="55" r="3"/>
+        <circle cx="121" cy="28" r="4" fill="#d4c8fc"/>
+      </g>
+      <path d="M-12-19 H13 V6 C13 23-13 26-18 9" fill="none" stroke="url(#accent)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+      <circle cx="-139" cy="-24" r="2" fill="#67e8f9" opacity="0.5"/>
+      <circle cx="71" cy="-126" r="2" fill="#c4b5fd" opacity="0.5"/>
+      <circle cx="-40" cy="132" r="2" fill="#6ee7b7" opacity="0.5"/>
+    </g>
+    <text x="945" y="330" text-anchor="middle" fill="#798cae" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif" font-size="10" letter-spacing="3">DISCOVER / TRACK / SHARE</text>
+  </g>
+</svg>
