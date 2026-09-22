@@ -25,11 +25,8 @@ GitHub 搜索总数可能大于采集数；README 的“检索范围与数据状
 
 - GitHub Star 来自采集时的 stargazers_count；完整计数保存在 latest.json。
 - 快照按 UTC 日期存为 data/history/YYYY-MM-DD.json。同一天再次成功更新会替换该日快照，保留最后一次采集。
-- Δ1d 比较前一个 UTC 日的快照；Δ7d 比较前七个 UTC 日。它们不是精确滚动窗口。
-- 基线使用 GitHub 数字仓库 ID 匹配，仓库重命名后仍可比较。
-- 首次收录、首日运行、缺少对应日期时显示 —；不把已有 Star 当成新增，不跨越缺失日期伪造日增。
-- Star 可以被撤销，因此变化可以为负数；增长榜只列正增长项目。
-- 最新时间和基线时间一并显示。数据有采集耗时，不是同一瞬间的全局快照。
+- Star 只用于项目发现与排序，不用于计算增长榜，也不代表项目质量或官方认可。
+- 最新时间记录在 `latest.json`；数据有采集耗时，不是同一瞬间的全局快照。
 
 ## 站外信号与降级
 
@@ -69,6 +66,6 @@ This is bounded public discovery, not a web census or a performance ranking. Git
 
 The initial Top 30 review on 2026-09-22 excluded `anything_about_game` for unrelated README content and Reticle for a planned, unshipped Jev integration. `agent-beacon`, `phi`, and `Crane` were withheld because their current main-branch READMEs did not substantiate their Jev topics. This is a metadata and README evidence boundary, not a claim that their code contains no integration; listings can be reconsidered when direct usage documentation is available.
 
-Daily and weekly growth compare the last successful snapshots on the exact UTC calendar dates 1 and 7 days earlier, by repository ID. Missing baselines show an em dash; same-day reruns never become daily growth. Negative differences are retained.
+Repository stars are used as a discovery and sorting signal only; JevHub does not publish a star-growth leaderboard.
 
 HN points, Reddit scores, and HF likes / trailing 30-day downloads stay separate. Google News results are discovery links without a reach metric. Optional-source failures retain timestamped caches; GitHub collection failures stop publication. The saved JSON records queries, coverage, evidence and source status. Offline rendering is deterministic and never changes collection timestamps.

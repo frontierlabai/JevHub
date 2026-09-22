@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="README.md">简体中文</a> · <strong>English</strong><br>
-  <a href="#github-ranking">GitHub ranking</a> · <a href="#daily-growth">Star growth</a> · <a href="#community-radar">Community radar</a> · <a href="#curated-resources">Curated resources</a> · <a href="#getting-started">Get started</a>
+  <a href="#github-ranking">Featured projects</a> · <a href="#community-radar">Community radar</a> · <a href="#curated-resources">Curated resources</a> · <a href="#getting-started">Get started</a>
 </p>
 
 > **Which Jev?** This directory covers **Jev / System One**, the model from [TypeSafe AI](https://typesafe.ai/) that provides structured decisions for software. JevHub is an independent community directory and is not affiliated with TypeSafe AI. [Meet Jev →](https://docs.typesafe.ai/introduction)
@@ -33,8 +33,8 @@
 | :--- | :--- |
 | Understand Jev and System One | [Official introduction](https://docs.typesafe.ai/introduction) · [TypeSafe AI](https://typesafe.ai/) |
 | Integrate Jev and explore its API | [Official documentation](https://docs.typesafe.ai/) |
-| Find SDKs, examples, and community projects | [GitHub ranking](#github-ranking) · [Curated resources](#curated-resources) |
-| Follow emerging projects and discussions | [Star growth](#daily-growth) · [Community radar](#community-radar) |
+| Find SDKs, examples, and community projects | [Featured projects](#github-ranking) · [Curated resources](#curated-resources) |
+| Follow emerging projects and discussions | [Featured projects](#github-ranking) · [Community radar](#community-radar) |
 | Recommend a useful resource | [Submit a resource](https://github.com/frontierlabai/JevHub/issues/new?template=resource.yml) · [Contributing guide](CONTRIBUTING.md) |
 
 <a id="share"></a>
@@ -54,7 +54,7 @@ Share this link: **https://github.com/frontierlabai/JevHub**
 Once the workflow is on the repository's default branch and GitHub Actions is enabled, updates are scheduled for **01:17 UTC / 09:17 Beijing time** every day. You can also trigger an update from the [Actions page](https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml). Scheduled runs may be delayed; use the collection timestamp shown in the dashboard.
 
 1. Discover public content using the search configuration in [`config/sources.json`](config/sources.json), plus seed repositories and curated links.
-2. Fetch GitHub metadata and show the top 30 repositories by total stars, plus the top 10 by star growth when comparable history is available.
+2. Fetch GitHub metadata and show the top 30 repositories by total stars, keeping the project context front and center.
 3. Collect public results from Hacker News, Reddit, and Hugging Face, then render the Chinese and English READMEs.
 4. Save [`data/latest.json`](data/latest.json) and `data/history/YYYY-MM-DD.json` for inspection and future comparisons.
 
@@ -99,7 +99,6 @@ Edit the templates and run `python3 scripts/update.py --render-only`. Direct edi
 ## 🔎 Sources and interpretation
 
 - **Attention is not quality.** Stars, discussion scores, and interactions help surface content. They do not establish model performance, code safety, or official endorsement. Metrics from different platforms are not ranked together.
-- **Growth means a snapshot difference.** It compares the current collection with a comparable historical snapshot, rather than measuring live traffic. First appearances and missing baselines show `—`; existing stars are not counted as new daily stars.
 - **Public sources have limited coverage.** Search terms, indexing, access permissions, and rate limits affect discovery. This directory cannot cover the entire web or establish that an item has gone viral. Check source status for failures or partial results.
 - **Discovery needs correction.** Unrelated names, false matches, missing projects, and stale links can occur. Exclusions, curated resources, and issue reports help improve the results.
 - **Keep the original context.** Counts and descriptions reflect information at collection time. Visit the original source for full content, licensing, pricing, and terms of use.

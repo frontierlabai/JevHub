@@ -31,13 +31,13 @@
       <text x="76" y="61" fill="#a4b2c8" font-size="13" font-weight="600" letter-spacing="2.5">INDEPENDENT COMMUNITY RADAR</text>
       <text x="56" y="161" fill="#f5f7ff" font-size="86" font-weight="700" letter-spacing="-5">Jev<tspan fill="url(#accent)">Hub</tspan></text>
       <text x="60" y="205" fill="#dae2f2" font-size="22" letter-spacing="0.5">The Jev ecosystem, in view.</text>
-      <text x="60" y="238" fill="#95a6c0" font-size="16">Discover projects. Follow momentum. Build what comes next.</text>
+      <text x="60" y="238" fill="#95a6c0" font-size="16">Discover projects. Understand the landscape. Build what comes next.</text>
 
       <g transform="translate(60 279)">
         <rect width="152" height="31" rx="15.5" fill="#6ee7b7" fill-opacity="0.08" stroke="#6ee7b7" stroke-opacity="0.3"/>
         <text x="76" y="20" text-anchor="middle" fill="#93ebc8" font-size="11" font-weight="600" letter-spacing="1">DAILY DISCOVERY</text>
         <rect x="164" width="143" height="31" rx="15.5" fill="#67e8f9" fill-opacity="0.07" stroke="#67e8f9" stroke-opacity="0.25"/>
-        <text x="235.5" y="20" text-anchor="middle" fill="#a4ebf5" font-size="11" font-weight="600" letter-spacing="1">GITHUB STARS</text>
+        <text x="235.5" y="20" text-anchor="middle" fill="#a4ebf5" font-size="11" font-weight="600" letter-spacing="1">PROJECT SIGNALS</text>
         <rect x="319" width="174" height="31" rx="15.5" fill="#c4b5fd" fill-opacity="0.07" stroke="#c4b5fd" stroke-opacity="0.25"/>
         <text x="406" y="20" text-anchor="middle" fill="#d0c4fa" font-size="11" font-weight="600" letter-spacing="1">COMMUNITY SIGNALS</text>
       </g>

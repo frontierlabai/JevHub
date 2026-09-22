@@ -18,7 +18,7 @@
 
 <p align="center">
   <strong>简体中文</strong> · <a href="README.en.md">English</a><br>
-  <a href="#github-ranking">GitHub 热榜</a> · <a href="#daily-growth">增长榜</a> · <a href="#community-radar">社区雷达</a> · <a href="#curated-resources">精选资源</a> · <a href="#getting-started">快速入门</a>
+  <a href="#github-ranking">项目精选</a> · <a href="#community-radar">社区雷达</a> · <a href="#curated-resources">精选资源</a> · <a href="#getting-started">快速入门</a>
 </p>
 
 > **这是哪个 Jev？** 本站关注 [TypeSafe AI](https://typesafe.ai/) 的 **Jev / System One** 决策模型：面向软件提供结构化决策。JevHub 是独立社区目录，与 TypeSafe AI 无官方隶属关系。[了解 Jev →](https://docs.typesafe.ai/introduction)
@@ -33,8 +33,8 @@
 | :--- | :--- |
 | 认识 Jev 和 System One | [官方介绍](https://docs.typesafe.ai/introduction) · [TypeSafe AI](https://typesafe.ai/) |
 | 接入应用、理解 API | [官方文档](https://docs.typesafe.ai/) |
-| 找 SDK、示例与社区项目 | [GitHub 热榜](#github-ranking) · [精选资源](#curated-resources) |
-| 追踪新项目和讨论 | [增长榜](#daily-growth) · [社区雷达](#community-radar) |
+| 找 SDK、示例与社区项目 | [项目精选](#github-ranking) · [精选资源](#curated-resources) |
+| 追踪新项目和讨论 | [项目精选](#github-ranking) · [社区雷达](#community-radar) |
 | 推荐你发现的好资源 | [提交资源](https://github.com/frontierlabai/JevHub/issues/new?template=resource.yml) · [贡献指南](CONTRIBUTING.md) |
 
 <a id="share"></a>
@@ -54,7 +54,7 @@
 将工作流推送到仓库默认分支并启用 GitHub Actions 后，系统按计划每天 **UTC 01:17 / 北京时间 09:17** 更新，也可在 [Actions 页面](https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml) 手动运行。GitHub 定时任务可能延迟，实际采集时间以榜单记录为准。
 
 1. 根据 [`config/sources.json`](config/sources.json) 的检索配置发现公开内容，补充种子仓库与人工精选链接。
-2. 获取 GitHub 仓库信息，按 Star 总数展示前 30 个项目；有可比较历史记录时，展示增长前 10 个项目。
+2. 获取 GitHub 仓库信息，按 Star 总数展示前 30 个项目，突出项目本身与维护者简介。
 3. 汇总 Hacker News、Reddit、Hugging Face 等公开来源，把结果写入中英文 README。
 4. 保存 [`data/latest.json`](data/latest.json) 和 `data/history/YYYY-MM-DD.json`，供核验与后续比较。
 
@@ -99,7 +99,6 @@ python3 scripts/update.py --render-only --check
 ## 🔎 来源与阅读方式
 
 - **关注度不等于质量。** Stars、讨论分数和互动量用于发现内容，不代表模型效果、代码安全或官方认可；不同平台的指标不直接混排。
-- **增长是快照差值。** 以本次采集与可比较历史快照计算，非实时流量。首次出现或没有历史基线时显示 `—`，不把现有 Stars 算作当天新增。
 - **公开来源，有限覆盖。** 搜索词、平台索引、接口权限与请求限额都会影响收录；不能保证检索到全网内容，也不能证明收录项目已经“爆火”。来源故障与部分结果请结合榜单状态阅读。
 - **自动发现需要校正。** 同名项目、误报、漏报与失效链接可能存在。可通过排除名单、精选资源和 Issue 修正。
 - **保留原始上下文。** 数字与描述反映采集时的信息；完整内容、授权、价格及使用条件以原站为准。

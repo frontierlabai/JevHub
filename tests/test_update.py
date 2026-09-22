@@ -122,58 +122,6 @@ class RelevanceTests(unittest.TestCase):
                 self.assertFalse(update.relevant(text))
 
 
-class HistoryTests(unittest.TestCase):
-    def setUp(self):
-        self.temp = tempfile.TemporaryDirectory()
-        self.addCleanup(self.temp.cleanup)
-        self.history = Path(self.temp.name)
-        self.now = datetime(2026, 9, 22, 0, 3, tzinfo=timezone.utc)
-
-    def save(self, day, data=None):
-        value = {"date": day, "repositories": []} if data is None else data
-        (self.history / f"{day}.json").write_text(json.dumps(value), encoding="utf-8")
-        return value
-
-    def test_uses_exact_yesterday_and_seven_day_dates(self):
-        yesterday = self.save("2026-09-21")
-        week = self.save("2026-09-15")
-        self.save("2026-09-22")
-        self.assertEqual(update.baseline(self.history, self.now, 1), yesterday)
-        self.assertEqual(update.baseline(self.history, self.now, 7), week)
-
-    def test_missing_dates_do_not_use_today_or_nearest_older_snapshot(self):
-        self.save("2026-09-22")
-        self.save("2026-09-20")
-        self.save("2026-09-14")
-        self.assertIsNone(update.baseline(self.history, self.now, 1))
-        self.assertIsNone(update.baseline(self.history, self.now, 7))
-
-    def test_rejects_a_snapshot_with_a_mismatched_embedded_date(self):
-        self.save("2026-09-21", {"date": "2026-09-22", "repositories": []})
-        self.assertIsNone(update.baseline(self.history, self.now, 1))
-
-    def test_growth_matches_immutable_id_across_rename_and_keeps_losses(self):
-        rows = [
-            {"id": 1, "name": "new-owner/renamed", "stars": 95},
-            {"id": 2, "name": "new/project", "stars": 500},
-        ]
-        daily = {"repositories": [{"id": "1", "name": "old/name", "stars": 100}]}
-        weekly = {"repositories": [{"id": 1, "name": "old/name", "stars": 80}]}
-        update.add_growth(rows, daily, weekly)
-        self.assertEqual((rows[0]["delta_1d"], rows[0]["delta_7d"]), (-5, 15))
-        self.assertIsNone(rows[1]["delta_1d"])
-        self.assertIsNone(rows[1]["delta_7d"])
-
-    def test_absent_baseline_is_unknown_and_zero_growth_remains_zero(self):
-        rows = [{"id": 1, "stars": 0}]
-        update.add_growth(rows, {"repositories": [{"id": 1, "stars": 0}]}, None)
-        self.assertEqual(rows[0]["delta_1d"], 0)
-        self.assertIsNone(rows[0]["delta_7d"])
-        self.assertEqual(update.growth(0), "+0")
-        self.assertEqual(update.growth(-12), "-12")
-        self.assertEqual(update.growth(None), "—")
-
-
 class MarkdownSafetyTests(unittest.TestCase):
     def test_cells_cannot_break_tables_or_inject_html(self):
         value = update.cell("first|second\n<script>alert(1)</script> [x](url) `code` *bold*")
@@ -434,12 +382,12 @@ class RefreshAndCliTests(unittest.TestCase):
                 "url": "https://github.com/" + name, "language": "Python",
                 "category": "research", "description": "Jev 模型复现",
                 "description_en": "Jev model replica", "evidence": "reviewed seed",
-                "pushed_at": None, "delta_1d": None, "delta_7d": None}
+                "pushed_at": None}
 
     def snapshot(self):
         data = {"schema_version": 1, "generated_at": "2026-09-22T01:17:00Z",
                 "repositories": [self.row()], "curated_resources": [],
-                "limits": {"repositories": 30}, "baselines": {"1d": None, "7d": None},
+                "limits": {"repositories": 30},
                 "sources": {"github": {"state": "ok", "queries": []}}}
         for name in self.OPTIONAL:
             data[name] = []

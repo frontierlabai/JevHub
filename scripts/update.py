@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import argparse
 import base64
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timezone
 import html
 import json
 import os
@@ -242,25 +242,6 @@ def load_json(path, default=None):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
 
 
-def baseline(history, now, days):
-    """Exact UTC calendar day only: never label a stale or same-day baseline as 1d."""
-    day = (now.date() - timedelta(days=days)).isoformat()
-    data = load_json(history / f"{day}.json")
-    return data if data and data.get("date") == day else None
-
-
-def add_growth(rows, daily, weekly):
-    for label, previous in (("1d", daily), ("7d", weekly)):
-        by_id = {str(x["id"]): x for x in (previous or {}).get("repositories", [])}
-        for row in rows:
-            old = by_id.get(str(row["id"]))
-            row["delta_" + label] = row["stars"] - old["stars"] if old else None
-
-
-def growth(value):
-    return "—" if value is None else f"{value:+,}"
-
-
 LABELS = {
     "official": ("官方项目", "Official"), "research": ("独立复现 / 研究", "Independent research"),
     "resources": ("资源合集", "Resources"), "tools": ("开发工具", "Tools"),
@@ -276,33 +257,20 @@ def dashboard(data, english=False):
         f"> {tr('更新于', 'Updated')} **{data['generated_at']}** · **{len(repos)}** {tr('个相关仓库', 'related repositories')} · **{total:,}** {tr('个累计 Star', 'total repository stars')}",
         "", tr("仓库 Star 包含其全部功能获得的关注，不等于 Jev 功能的热度；以下为检索范围内的结果。",
                "Repository stars cover all features, not just Jev. Rankings cover the configured search scope."),
-        "", '<a id="github-ranking"></a>', "", tr("## 🔥 GitHub 热门榜", "## 🔥 GitHub leaderboard"), "",
-        tr("按当前 Star 总数降序排列；同分按仓库名排序。描述来自项目维护者，部分精选项目附中文说明。",
-           "Sorted by total stars, with repository name as the tie-breaker. Descriptions are supplied by maintainers or curated locally."), "",
-        tr("| 项目 | 类别 | ⭐ Stars | Δ1d | 一句话介绍 |",
-           "| Project | Category | ⭐ Stars | Δ1d | About |"),
-        "| :-- | :-- | --: | --: | :-- |"]
+        "", '<a id="github-ranking"></a>', "", tr("## 🔥 项目精选", "## 🔥 Featured projects"), "",
+        tr("按当前 Star 总数降序排列；同分按仓库名排序。先看项目，再看热度与一句话介绍。",
+           "Sorted by total stars, with repository name as the tie-breaker. Start with the projects, then scan their signals and context."), "",
+        tr("| 项目 | 类别 | ⭐ Stars | 一句话介绍 |",
+           "| Project | Category | ⭐ Stars | About |"),
+        "| :-- | :-- | --: | :-- |"]
     for rank, repo in enumerate(repos[:data["limits"]["repositories"]], 1):
         badge = {1: "🥇", 2: "🥈", 3: "🥉"}.get(rank, str(rank))
         label = LABELS.get(repo["category"], (repo["category"], repo["category"]))[english]
         desc = repo["description_en"] if english else repo["description"]
-        lines.append(f"| {badge} {link(repo['name'], repo['url'])} | {label} | **{repo['stars']:,}** | {growth(repo.get('delta_1d'))} | {cell(desc, 90)} |")
+        lines.append(f"| {badge} {link(repo['name'], repo['url'])} | {label} | **{repo['stars']:,}** | {cell(desc, 100)} |")
     lines += [
-        "", '<a id="daily-growth"></a>', "", tr("## 🚀 Star 增长榜", "## 🚀 Star growth"), "",
-        tr("Δ1d / Δ7d 是与前 1 / 7 个 UTC 日的最后一次成功快照相比的 Star 净变化，不是精确滚动 24 / 168 小时。缺少基线或首次发现时显示 —；负数代表净减少。",
-           "Δ1d / Δ7d compare against the last successful snapshot on the UTC date 1 / 7 days earlier, not an exact rolling 24 / 168 hours. Missing baselines and newly discovered repositories show —; negative values mean a net decrease."), ""]
-    for key, value in data.get("baselines", {}).items():
-        if value:
-            lines.append(f"- Δ{key} {tr('基线', 'baseline')}: {value}")
-    rising = sorted([r for r in repos if (r.get("delta_1d") or 0) > 0],
-                    key=lambda r: (-r["delta_1d"], -r["stars"], r["name"].lower()))[:10]
-    if rising:
-        lines += ["", tr("| 项目 | Δ1d | Δ7d | ⭐ Stars |", "| Project | Δ1d | Δ7d | ⭐ Stars |"), "| :-- | --: | --: | --: |"]
-        lines += [f"| {link(r['name'], r['url'])} | **{growth(r['delta_1d'])}** | {growth(r.get('delta_7d'))} | {r['stars']:,} |" for r in rising]
-    else:
-        lines += ["", tr("🌱 正在积累增长记录；有前日基线且出现净增长后自动生成榜单。",
-                         "🌱 Building history. This leaderboard appears when a previous-day baseline and positive growth are available.")]
-    lines += [
+        "", tr("> 💡 排名按项目当前 Star 总数更新；Star 只作为发现信号，不代表项目质量或官方认可。",
+               "> 💡 Rankings use current repository stars as a discovery signal, not as a proxy for quality or official endorsement."),
         "", '<a id="community-radar"></a>', "", tr("## 🌐 站外发现与讨论", "## 🌐 Beyond GitHub"), "",
         tr("各平台独立展示：HN points、Reddit score、Hugging Face likes / 近 30 天 downloads 不混算成 Star。新闻是检索发现，未验证传播量。",
            "Platform signals stay separate: HN points, Reddit scores, and Hugging Face likes / trailing 30-day downloads are not GitHub stars. News is discovery, with no verified reach metric.")]
@@ -405,10 +373,6 @@ def refresh(config, previous, client):
             data["sources"][name] = {"state": "stale" if data[name] else "unavailable",
                 "fetched_at": prior_status.get("fetched_at"), "attempted_at": stamp(), "count": len(data[name]),
                 "error": f"{type(error).__name__}: {error}"}
-    now = datetime.fromisoformat(data["generated_at"].replace("Z", "+00:00"))
-    daily, weekly = (baseline(ROOT / "data/history", now, days) for days in (1, 7))
-    add_growth(repos, daily, weekly)
-    data["baselines"] = {"1d": (daily or {}).get("generated_at"), "7d": (weekly or {}).get("generated_at")}
     return data
 
 

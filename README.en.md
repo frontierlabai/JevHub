@@ -18,7 +18,7 @@
 
 <p align="center">
   <a href="README.md">简体中文</a> · <strong>English</strong><br>
-  <a href="#github-ranking">GitHub ranking</a> · <a href="#daily-growth">Star growth</a> · <a href="#community-radar">Community radar</a> · <a href="#curated-resources">Curated resources</a> · <a href="#getting-started">Get started</a>
+  <a href="#github-ranking">Featured projects</a> · <a href="#community-radar">Community radar</a> · <a href="#curated-resources">Curated resources</a> · <a href="#getting-started">Get started</a>
 </p>
 
 > **Which Jev?** This directory covers **Jev / System One**, the model from [TypeSafe AI](https://typesafe.ai/) that provides structured decisions for software. JevHub is an independent community directory and is not affiliated with TypeSafe AI. [Meet Jev →](https://docs.typesafe.ai/introduction)
@@ -29,51 +29,44 @@ Repository stars cover all features, not just Jev. Rankings cover the configured
 
 <a id="github-ranking"></a>
 
-## 🔥 GitHub leaderboard
+## 🔥 Featured projects
 
-Sorted by total stars, with repository name as the tie-breaker. Descriptions are supplied by maintainers or curated locally.
+Sorted by total stars, with repository name as the tie-breaker. Start with the projects, then scan their signals and context.
 
-| Project | Category | ⭐ Stars | Δ1d | About |
-| :-- | :-- | --: | --: | :-- |
-| 🥇 [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) | Apps / integrations | **16,103** | — | Browser agent using Jev to choose page actions alongside a text-generation model. |
-| 🥈 [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | Apps / integrations | **11,952** | — | Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integrati… |
-| 🥉 [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) | Independent research | **11,065** | — | Independent open decision model with training and evaluation materials; not TypeSafe Jev. |
-| 4 [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) | Tools | **6,014** | — | Claude Code compaction plugin using Jev to select tool records worth retaining. |
-| 5 [TheoLeeCJ/SemIf](https://github.com/TheoLeeCJ/SemIf) | Independent research | **3,319** | — | Semantic decisions from open models, formerly OpenJev; independent of TypeSafe. |
-| 6 [jaredpalmer/kev](https://github.com/jaredpalmer/kev) | Independent research | **2,564** | — | Independent Jev-like decision models built on Qwen3.5; not the official Jev model. |
-| 7 [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | Apps / integrations | **1,871** | — | One AI trade decision every Monad block. Jev on Kuru MON-USDC. |
-| 8 [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | Independent research | **1,836** | — | Independent small-scale reproduction with parallel decisions and a training pipeline. |
-| 9 [typesafe-ai/skills](https://github.com/typesafe-ai/skills) | Official | **1,578** | — | Official agent skills for building System One decision workflows. |
-| 10 [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | Apps / integrations | **1,424** | — | Mobile chat assistant using Jev for intent and risk judgments; Chinese documentation. |
-| 11 [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | Independent research | **1,169** | — | Independent Jev-like model training experiment for probabilities over dynamic choices; no… |
-| 12 [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | Resources | **1,012** | — | Community directory of Jev projects, integrations and discussions. |
-| 13 [Anil-matcha/awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe) | Resources | **766** | — | Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev — a Syste… |
-| 14 [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) | Apps / integrations | **758** | — | macOS automation combining screen OCR with Jev action selection. |
-| 15 [kitfunso/hippo-memory](https://github.com/kitfunso/hippo-memory) | Tools | **752** | — | Biologically-inspired memory for AI agents. Decay, retrieval strengthening, consolidation… |
-| 16 [samuelfaj/distill](https://github.com/samuelfaj/distill) | Tools | **683** | — | Coding agent harness and terminal interface with Jev task routing. |
-| 17 [milind-soni/tiptour-macos](https://github.com/milind-soni/tiptour-macos) | Apps / integrations | **640** | — | macOS desktop assistant using Jev to choose clicks from locally detected control labels a… |
-| 18 [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) | Resources | **628** | — | A curated list of tools built for Jev — TypeSafe AI's System One model for typed decision… |
-| 19 [Sac-Y/Jev-cu](https://github.com/Sac-Y/Jev-cu) | Tools | **547** | — | Codex Computer Use skill: Jev selects actions from UI text, with local execution rules. |
-| 20 [devagrawal09/jev-review](https://github.com/devagrawal09/jev-review) | Tools | **496** | — | Staged code review with Jev and a local results dashboard. |
-| 21 [rmalde/minecraft-agent](https://github.com/rmalde/minecraft-agent) | Apps / integrations | **480** | — | Astra planner and JEV controller for Minecraft, with native recording, tested routes, and… |
-| 22 [thruwire/foreman](https://github.com/thruwire/foreman) | Apps / integrations | **468** | — | Software factory foreman based on TypeSafe's Jev model |
-| 23 [featherless-ai/simple-jev](https://github.com/featherless-ai/simple-jev) | Independent research | **456** | — | Independent implementation exposing open models as classifiers and Jev-style endpoints. |
-| 24 [AbdelStark/awesome-typesafe-jev](https://github.com/AbdelStark/awesome-typesafe-jev) | Resources | **431** | — | Awesome Jev: a source-backed field guide to TypeSafe's System One model, with SDKs, live … |
-| 25 [notque/vexjoy-agent](https://github.com/notque/vexjoy-agent) | Tools | **423** | — | VexJoy AI Agent with Jev Intelligent Routing - /do routes plain-English requests to the r… |
-| 26 [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | Tools | **399** | — | Jev-powered model routing, memory, compaction, skill selection, computer and browser use … |
-| 27 [superagents-lab/jev-search](https://github.com/superagents-lab/jev-search) | Apps / integrations | **382** | — | Web search with Jev handling query understanding, source selection and ranking. |
-| 28 [wuyoscar/jev-skill](https://github.com/wuyoscar/jev-skill) | Resources | **373** | — | An awesome collection of Jev use cases, workflows, and agent skills. |
-| 29 [wfzyx/von](https://github.com/wfzyx/von) | Independent research | **368** | — | Independent open decision model with a TypeSafe-compatible API; not official Jev. |
-| 30 [dabit3/jev-experiments](https://github.com/dabit3/jev-experiments) | Apps / integrations | **358** | — | No description; open the repository for details |
+| Project | Category | ⭐ Stars | About |
+| :-- | :-- | --: | :-- |
+| 🥇 [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) | Apps / integrations | **16,103** | Browser agent using Jev to choose page actions alongside a text-generation model. |
+| 🥈 [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | Apps / integrations | **11,952** | Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Resear… |
+| 🥉 [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) | Independent research | **11,065** | Independent open decision model with training and evaluation materials; not TypeSafe Jev. |
+| 4 [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) | Tools | **6,014** | Claude Code compaction plugin using Jev to select tool records worth retaining. |
+| 5 [TheoLeeCJ/SemIf](https://github.com/TheoLeeCJ/SemIf) | Independent research | **3,319** | Semantic decisions from open models, formerly OpenJev; independent of TypeSafe. |
+| 6 [jaredpalmer/kev](https://github.com/jaredpalmer/kev) | Independent research | **2,564** | Independent Jev-like decision models built on Qwen3.5; not the official Jev model. |
+| 7 [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | Apps / integrations | **1,871** | One AI trade decision every Monad block. Jev on Kuru MON-USDC. |
+| 8 [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | Independent research | **1,836** | Independent small-scale reproduction with parallel decisions and a training pipeline. |
+| 9 [typesafe-ai/skills](https://github.com/typesafe-ai/skills) | Official | **1,578** | Official agent skills for building System One decision workflows. |
+| 10 [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | Apps / integrations | **1,424** | Mobile chat assistant using Jev for intent and risk judgments; Chinese documentation. |
+| 11 [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | Independent research | **1,169** | Independent Jev-like model training experiment for probabilities over dynamic choices; not official… |
+| 12 [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | Resources | **1,012** | Community directory of Jev projects, integrations and discussions. |
+| 13 [Anil-matcha/awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe) | Resources | **766** | Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev — a System One mode… |
+| 14 [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) | Apps / integrations | **758** | macOS automation combining screen OCR with Jev action selection. |
+| 15 [kitfunso/hippo-memory](https://github.com/kitfunso/hippo-memory) | Tools | **752** | Biologically-inspired memory for AI agents. Decay, retrieval strengthening, consolidation. Zero run… |
+| 16 [samuelfaj/distill](https://github.com/samuelfaj/distill) | Tools | **683** | Coding agent harness and terminal interface with Jev task routing. |
+| 17 [milind-soni/tiptour-macos](https://github.com/milind-soni/tiptour-macos) | Apps / integrations | **640** | macOS desktop assistant using Jev to choose clicks from locally detected control labels and positio… |
+| 18 [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) | Resources | **628** | A curated list of tools built for Jev — TypeSafe AI's System One model for typed decisions. |
+| 19 [Sac-Y/Jev-cu](https://github.com/Sac-Y/Jev-cu) | Tools | **547** | Codex Computer Use skill: Jev selects actions from UI text, with local execution rules. |
+| 20 [devagrawal09/jev-review](https://github.com/devagrawal09/jev-review) | Tools | **496** | Staged code review with Jev and a local results dashboard. |
+| 21 [rmalde/minecraft-agent](https://github.com/rmalde/minecraft-agent) | Apps / integrations | **480** | Astra planner and JEV controller for Minecraft, with native recording, tested routes, and run verif… |
+| 22 [thruwire/foreman](https://github.com/thruwire/foreman) | Apps / integrations | **468** | Software factory foreman based on TypeSafe's Jev model |
+| 23 [featherless-ai/simple-jev](https://github.com/featherless-ai/simple-jev) | Independent research | **456** | Independent implementation exposing open models as classifiers and Jev-style endpoints. |
+| 24 [AbdelStark/awesome-typesafe-jev](https://github.com/AbdelStark/awesome-typesafe-jev) | Resources | **431** | Awesome Jev: a source-backed field guide to TypeSafe's System One model, with SDKs, live demos, age… |
+| 25 [notque/vexjoy-agent](https://github.com/notque/vexjoy-agent) | Tools | **423** | VexJoy AI Agent with Jev Intelligent Routing - /do routes plain-English requests to the right speci… |
+| 26 [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | Tools | **399** | Jev-powered model routing, memory, compaction, skill selection, computer and browser use for Hermes… |
+| 27 [superagents-lab/jev-search](https://github.com/superagents-lab/jev-search) | Apps / integrations | **382** | Web search with Jev handling query understanding, source selection and ranking. |
+| 28 [wuyoscar/jev-skill](https://github.com/wuyoscar/jev-skill) | Resources | **373** | An awesome collection of Jev use cases, workflows, and agent skills. |
+| 29 [wfzyx/von](https://github.com/wfzyx/von) | Independent research | **368** | Independent open decision model with a TypeSafe-compatible API; not official Jev. |
+| 30 [dabit3/jev-experiments](https://github.com/dabit3/jev-experiments) | Apps / integrations | **358** | No description; open the repository for details |
 
-<a id="daily-growth"></a>
-
-## 🚀 Star growth
-
-Δ1d / Δ7d compare against the last successful snapshot on the UTC date 1 / 7 days earlier, not an exact rolling 24 / 168 hours. Missing baselines and newly discovered repositories show —; negative values mean a net decrease.
-
-
-🌱 Building history. This leaderboard appears when a previous-day baseline and positive growth are available.
+> 💡 Rankings use current repository stars as a discovery signal, not as a proxy for quality or official endorsement.
 
 <a id="community-radar"></a>
 
@@ -178,8 +171,8 @@ Full results and timestamps: [JSON data](data/latest.json) · [History](data/his
 | :--- | :--- |
 | Understand Jev and System One | [Official introduction](https://docs.typesafe.ai/introduction) · [TypeSafe AI](https://typesafe.ai/) |
 | Integrate Jev and explore its API | [Official documentation](https://docs.typesafe.ai/) |
-| Find SDKs, examples, and community projects | [GitHub ranking](#github-ranking) · [Curated resources](#curated-resources) |
-| Follow emerging projects and discussions | [Star growth](#daily-growth) · [Community radar](#community-radar) |
+| Find SDKs, examples, and community projects | [Featured projects](#github-ranking) · [Curated resources](#curated-resources) |
+| Follow emerging projects and discussions | [Featured projects](#github-ranking) · [Community radar](#community-radar) |
 | Recommend a useful resource | [Submit a resource](https://github.com/frontierlabai/JevHub/issues/new?template=resource.yml) · [Contributing guide](CONTRIBUTING.md) |
 
 <a id="share"></a>
@@ -199,7 +192,7 @@ Share this link: **https://github.com/frontierlabai/JevHub**
 Once the workflow is on the repository's default branch and GitHub Actions is enabled, updates are scheduled for **01:17 UTC / 09:17 Beijing time** every day. You can also trigger an update from the [Actions page](https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml). Scheduled runs may be delayed; use the collection timestamp shown in the dashboard.
 
 1. Discover public content using the search configuration in [`config/sources.json`](config/sources.json), plus seed repositories and curated links.
-2. Fetch GitHub metadata and show the top 30 repositories by total stars, plus the top 10 by star growth when comparable history is available.
+2. Fetch GitHub metadata and show the top 30 repositories by total stars, keeping the project context front and center.
 3. Collect public results from Hacker News, Reddit, and Hugging Face, then render the Chinese and English READMEs.
 4. Save [`data/latest.json`](data/latest.json) and `data/history/YYYY-MM-DD.json` for inspection and future comparisons.
 
@@ -244,7 +237,6 @@ Edit the templates and run `python3 scripts/update.py --render-only`. Direct edi
 ## 🔎 Sources and interpretation
 
 - **Attention is not quality.** Stars, discussion scores, and interactions help surface content. They do not establish model performance, code safety, or official endorsement. Metrics from different platforms are not ranked together.
-- **Growth means a snapshot difference.** It compares the current collection with a comparable historical snapshot, rather than measuring live traffic. First appearances and missing baselines show `—`; existing stars are not counted as new daily stars.
 - **Public sources have limited coverage.** Search terms, indexing, access permissions, and rate limits affect discovery. This directory cannot cover the entire web or establish that an item has gone viral. Check source status for failures or partial results.
 - **Discovery needs correction.** Unrelated names, false matches, missing projects, and stale links can occur. Exclusions, curated resources, and issue reports help improve the results.
 - **Keep the original context.** Counts and descriptions reflect information at collection time. Visit the original source for full content, licensing, pricing, and terms of use.
