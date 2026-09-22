@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/jaychempan/JevHub/actions/workflows/refresh.yml"><img src="https://github.com/jaychempan/JevHub/actions/workflows/refresh.yml/badge.svg" alt="每日更新工作流状态"></a>
-  <a href="https://github.com/jaychempan/JevHub/stargazers"><img src="https://img.shields.io/github/stars/jaychempan/JevHub?style=flat&amp;color=6ee7b7" alt="Star JevHub"></a>
+  <a href="https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml"><img src="https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml/badge.svg" alt="每日更新工作流状态"></a>
+  <a href="https://github.com/frontierlabai/JevHub/stargazers"><img src="https://img.shields.io/github/stars/frontierlabai/JevHub?style=flat&amp;color=6ee7b7" alt="Star JevHub"></a>
   <a href="#automation"><img src="https://img.shields.io/badge/refresh-daily%20%C2%B7%2009%3A17%20CST-67e8f9?style=flat" alt="计划每日北京时间 09:17 更新"></a>
   <a href="https://docs.typesafe.ai/"><img src="https://img.shields.io/badge/explore-Jev%20%2F%20System%20One-c4b5fd?style=flat" alt="Jev 官方文档"></a>
 </p>
@@ -35,7 +35,7 @@
 | 接入应用、理解 API | [官方文档](https://docs.typesafe.ai/) |
 | 找 SDK、示例与社区项目 | [GitHub 热榜](#github-ranking) · [精选资源](#curated-resources) |
 | 追踪新项目和讨论 | [增长榜](#daily-growth) · [社区雷达](#community-radar) |
-| 推荐你发现的好资源 | [提交资源](https://github.com/jaychempan/JevHub/issues/new?template=resource.yml) · [贡献指南](CONTRIBUTING.md) |
+| 推荐你发现的好资源 | [提交资源](https://github.com/frontierlabai/JevHub/issues/new?template=resource.yml) · [贡献指南](CONTRIBUTING.md) |
 
 <a id="share"></a>
 
@@ -43,15 +43,15 @@
 
 觉得有用，可以 **Star 收藏**，把项目链接发给正在研究 Jev 的朋友。欢迎在文章、视频和社群里引用本目录，并保留原始资源的来源链接。
 
-[分享到 X](https://twitter.com/intent/tweet?text=JevHub%20%E2%80%94%20a%20daily%20radar%20for%20the%20Jev%20ecosystem.%20Projects%2C%20GitHub%20stars%2C%20and%20community%20discussions.&url=https%3A%2F%2Fgithub.com%2Fjaychempan%2FJevHub) · [分享到 LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2Fjaychempan%2FJevHub) · [推荐一个资源](https://github.com/jaychempan/JevHub/issues/new?template=resource.yml)
+[分享到 X](https://twitter.com/intent/tweet?text=JevHub%20%E2%80%94%20a%20daily%20radar%20for%20the%20Jev%20ecosystem.%20Projects%2C%20GitHub%20stars%2C%20and%20community%20discussions.&url=https%3A%2F%2Fgithub.com%2Ffrontierlabai%2FJevHub) · [分享到 LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2Ffrontierlabai%2FJevHub) · [推荐一个资源](https://github.com/frontierlabai/JevHub/issues/new?template=resource.yml)
 
-分享地址：**https://github.com/jaychempan/JevHub**
+分享地址：**https://github.com/frontierlabai/JevHub**
 
 <a id="automation"></a>
 
 ## ⚙️ 自动更新如何工作
 
-将工作流推送到仓库默认分支并启用 GitHub Actions 后，系统按计划每天 **UTC 01:17 / 北京时间 09:17** 更新，也可在 [Actions 页面](https://github.com/jaychempan/JevHub/actions/workflows/refresh.yml) 手动运行。GitHub 定时任务可能延迟，实际采集时间以榜单记录为准。
+将工作流推送到仓库默认分支并启用 GitHub Actions 后，系统按计划每天 **UTC 01:17 / 北京时间 09:17** 更新，也可在 [Actions 页面](https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml) 手动运行。GitHub 定时任务可能延迟，实际采集时间以榜单记录为准。
 
 1. 根据 [`config/sources.json`](config/sources.json) 的检索配置发现公开内容，补充种子仓库与人工精选链接。
 2. 获取 GitHub 仓库信息，按 Star 总数展示前 30 个项目；有可比较历史记录时，展示增长前 10 个项目。
@@ -61,7 +61,7 @@
 本地更新只需 **Python 3.11+**，无需安装第三方依赖：
 
 ```bash
-git clone https://github.com/jaychempan/JevHub.git
+git clone https://github.com/frontierlabai/JevHub.git
 cd JevHub
 python3 scripts/update.py
 python3 -m unittest discover -s tests -v
@@ -110,7 +110,7 @@ python3 scripts/update.py --render-only --check
 
 欢迎提交项目、教程、文章、视频、模型页面或有价值的讨论。请附上可公开访问的原始链接，以及它与 Jev / TypeSafe AI 的具体关系。支持中文与英文内容。
 
-**[提交资源 →](https://github.com/jaychempan/JevHub/issues/new?template=resource.yml)** · **[阅读贡献指南 →](CONTRIBUTING.md)**
+**[提交资源 →](https://github.com/frontierlabai/JevHub/issues/new?template=resource.yml)** · **[阅读贡献指南 →](CONTRIBUTING.md)**
 
 <p align="center">
   <sub>Built for curious builders. Powered by public sources and community contributions.</sub>

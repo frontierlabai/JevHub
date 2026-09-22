@@ -63,7 +63,7 @@ class Client:
         self.last_search = 0.0
 
     def get(self, url, *, raw=False):
-        headers = {"User-Agent": "JevHub/1.0 (+https://github.com/jaychempan/JevHub)"}
+        headers = {"User-Agent": "JevHub/1.0 (+https://github.com/frontierlabai/JevHub)"}
         if urlparse(url).hostname == "api.github.com":
             headers.update({"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
             if self.token:

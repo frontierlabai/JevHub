@@ -4,7 +4,7 @@
 
 ## 推荐一个资源
 
-最简单的方式是填写 [资源推荐表](https://github.com/jaychempan/JevHub/issues/new?template=resource.yml)，提供原始链接、简短介绍，以及它与 Jev / System One 的具体关系。欢迎 SDK、工具、示例、教程、文章、视频和社区讨论。请注明你是否为作者或维护者。
+最简单的方式是填写 [资源推荐表](https://github.com/frontierlabai/JevHub/issues/new?template=resource.yml)，提供原始链接、简短介绍，以及它与 Jev / System One 的具体关系。欢迎 SDK、工具、示例、教程、文章、视频和社区讨论。请注明你是否为作者或维护者。
 
 收录范围是 TypeSafe AI 的 Jev 决策模型。同名个人账号、其他领域的 JEV 缩写及无关项目不在收录范围内。付费资源请说明访问条件；不要提交访问凭证或复制受限内容。
 
@@ -54,11 +54,11 @@ PR 中简要说明修改内容、来源链接和验证方式。自动生成的�
 
 ## 报告问题
 
-发现误收录、漏收录、失效链接、翻译问题或异常排序，请在 [Issues](https://github.com/jaychempan/JevHub/issues) 中说明页面位置和预期结果。接口故障请附不含敏感信息的错误信息与运行时间。
+发现误收录、漏收录、失效链接、翻译问题或异常排序，请在 [Issues](https://github.com/frontierlabai/JevHub/issues) 中说明页面位置和预期结果。接口故障请附不含敏感信息的错误信息与运行时间。
 
 ## English contribution guide
 
-Use the [resource form](https://github.com/jaychempan/JevHub/issues/new?template=resource.yml) to suggest a public resource, or open a PR editing [`config/sources.json`](config/sources.json). Explain its connection to TypeSafe AI's Jev / System One model and disclose whether you maintain it. There is no minimum star count.
+Use the [resource form](https://github.com/frontierlabai/JevHub/issues/new?template=resource.yml) to suggest a public resource, or open a PR editing [`config/sources.json`](config/sources.json). Explain its connection to TypeSafe AI's Jev / System One model and disclose whether you maintain it. There is no minimum star count.
 
 Curated entries use `title`, `title_en`, `url`, `category`, `description`, `description_en`, and `language`. Follow existing category and language values. Use original source links and factual descriptions. Add GitHub repositories as `owner/repository` strings to `seed_repositories`; use `exclude_repositories` for unrelated matches and explain the exclusion.
 

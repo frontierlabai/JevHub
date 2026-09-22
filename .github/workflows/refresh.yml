@@ -1,0 +1,60 @@
+name: Daily refresh
+
+on:
+  schedule:
+    - cron: "17 1 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - .github/workflows/refresh.yml
+      - scripts/**
+      - tests/**
+      - config/**
+      - templates/**
+
+permissions:
+  contents: write
+
+concurrency:
+  group: jevhub-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Check out the latest main branch
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.11"
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Refresh data and READMEs
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+        run: python scripts/update.py
+
+      - name: Verify generated READMEs
+        run: python scripts/update.py --render-only --check
+
+      - name: Commit generated updates
+        run: |
+          git add -- README.md README.en.md data/latest.json data/history/
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh JevHub data"
+          git push origin HEAD:main

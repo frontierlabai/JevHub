@@ -10,8 +10,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/jaychempan/JevHub/actions/workflows/refresh.yml"><img src="https://github.com/jaychempan/JevHub/actions/workflows/refresh.yml/badge.svg" alt="Daily refresh workflow status"></a>
-  <a href="https://github.com/jaychempan/JevHub/stargazers"><img src="https://img.shields.io/github/stars/jaychempan/JevHub?style=flat&amp;color=6ee7b7" alt="Star JevHub"></a>
+  <a href="https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml"><img src="https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml/badge.svg" alt="Daily refresh workflow status"></a>
+  <a href="https://github.com/frontierlabai/JevHub/stargazers"><img src="https://img.shields.io/github/stars/frontierlabai/JevHub?style=flat&amp;color=6ee7b7" alt="Star JevHub"></a>
   <a href="#automation"><img src="https://img.shields.io/badge/refresh-daily%20%C2%B7%2001%3A17%20UTC-67e8f9?style=flat" alt="Scheduled daily at 01:17 UTC"></a>
   <a href="https://docs.typesafe.ai/"><img src="https://img.shields.io/badge/explore-Jev%20%2F%20System%20One-c4b5fd?style=flat" alt="Official Jev documentation"></a>
 </p>
@@ -180,7 +180,7 @@ Full results and timestamps: [JSON data](data/latest.json) · [History](data/his
 | Integrate Jev and explore its API | [Official documentation](https://docs.typesafe.ai/) |
 | Find SDKs, examples, and community projects | [GitHub ranking](#github-ranking) · [Curated resources](#curated-resources) |
 | Follow emerging projects and discussions | [Star growth](#daily-growth) · [Community radar](#community-radar) |
-| Recommend a useful resource | [Submit a resource](https://github.com/jaychempan/JevHub/issues/new?template=resource.yml) · [Contributing guide](CONTRIBUTING.md) |
+| Recommend a useful resource | [Submit a resource](https://github.com/frontierlabai/JevHub/issues/new?template=resource.yml) · [Contributing guide](CONTRIBUTING.md) |
 
 <a id="share"></a>
 
@@ -188,15 +188,15 @@ Full results and timestamps: [JSON data](data/latest.json) · [History](data/his
 
 **Star the repository** to keep it handy, or share it with someone exploring Jev. Link to this directory in your articles, videos, and communities, and keep the original resource links when citing their work.
 
-[Share on X](https://twitter.com/intent/tweet?text=JevHub%20%E2%80%94%20a%20daily%20radar%20for%20the%20Jev%20ecosystem.%20Projects%2C%20GitHub%20stars%2C%20and%20community%20discussions.&url=https%3A%2F%2Fgithub.com%2Fjaychempan%2FJevHub) · [Share on LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2Fjaychempan%2FJevHub) · [Recommend a resource](https://github.com/jaychempan/JevHub/issues/new?template=resource.yml)
+[Share on X](https://twitter.com/intent/tweet?text=JevHub%20%E2%80%94%20a%20daily%20radar%20for%20the%20Jev%20ecosystem.%20Projects%2C%20GitHub%20stars%2C%20and%20community%20discussions.&url=https%3A%2F%2Fgithub.com%2Ffrontierlabai%2FJevHub) · [Share on LinkedIn](https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fgithub.com%2Ffrontierlabai%2FJevHub) · [Recommend a resource](https://github.com/frontierlabai/JevHub/issues/new?template=resource.yml)
 
-Share this link: **https://github.com/jaychempan/JevHub**
+Share this link: **https://github.com/frontierlabai/JevHub**
 
 <a id="automation"></a>
 
 ## ⚙️ How daily updates work
 
-Once the workflow is on the repository's default branch and GitHub Actions is enabled, updates are scheduled for **01:17 UTC / 09:17 Beijing time** every day. You can also trigger an update from the [Actions page](https://github.com/jaychempan/JevHub/actions/workflows/refresh.yml). Scheduled runs may be delayed; use the collection timestamp shown in the dashboard.
+Once the workflow is on the repository's default branch and GitHub Actions is enabled, updates are scheduled for **01:17 UTC / 09:17 Beijing time** every day. You can also trigger an update from the [Actions page](https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml). Scheduled runs may be delayed; use the collection timestamp shown in the dashboard.
 
 1. Discover public content using the search configuration in [`config/sources.json`](config/sources.json), plus seed repositories and curated links.
 2. Fetch GitHub metadata and show the top 30 repositories by total stars, plus the top 10 by star growth when comparable history is available.
@@ -206,7 +206,7 @@ Once the workflow is on the repository's default branch and GitHub Actions is en
 Run locally with **Python 3.11+**. No third-party dependencies are required:
 
 ```bash
-git clone https://github.com/jaychempan/JevHub.git
+git clone https://github.com/frontierlabai/JevHub.git
 cd JevHub
 python3 scripts/update.py
 python3 -m unittest discover -s tests -v
@@ -255,7 +255,7 @@ Edit the templates and run `python3 scripts/update.py --render-only`. Direct edi
 
 Recommend a project, tutorial, article, video, model page, or useful discussion. Include a public original link and explain its connection to Jev / TypeSafe AI. Chinese and English resources are welcome.
 
-**[Submit a resource →](https://github.com/jaychempan/JevHub/issues/new?template=resource.yml)** · **[Read the contributing guide →](CONTRIBUTING.md)**
+**[Submit a resource →](https://github.com/frontierlabai/JevHub/issues/new?template=resource.yml)** · **[Read the contributing guide →](CONTRIBUTING.md)**
 
 <p align="center">
   <sub>Built for curious builders. Powered by public sources and community contributions.</sub>
