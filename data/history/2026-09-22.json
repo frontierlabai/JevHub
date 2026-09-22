@@ -1,36 +1,36 @@
 {
   "date": "2026-09-22",
-  "generated_at": "2026-09-22T03:17:34Z",
+  "generated_at": "2026-09-22T03:22:55Z",
   "repositories": [
     {
       "id": 1373655162,
       "name": "browser-use/jev-ultrafast",
-      "stars": 16148
+      "stars": 16160
     },
     {
       "id": 1124295269,
       "name": "OpenByteInc/QuantDinger",
-      "stars": 11955
+      "stars": 11956
     },
     {
       "id": 1375382253,
       "name": "NandhaKishorM/laya",
-      "stars": 11153
+      "stars": 11192
     },
     {
       "id": 1374005005,
       "name": "tamaratran/fast-jev-compaction",
-      "stars": 6020
+      "stars": 6022
     },
     {
       "id": 1372482979,
       "name": "TheoLeeCJ/SemIf",
-      "stars": 3327
+      "stars": 3329
     },
     {
       "id": 1375069862,
       "name": "jaredpalmer/kev",
-      "stars": 2577
+      "stars": 2579
     },
     {
       "id": 1373659194,
@@ -40,17 +40,17 @@
     {
       "id": 1374702542,
       "name": "TianyuCodings/NanoJev",
-      "stars": 1839
+      "stars": 1840
     },
     {
       "id": 1345508845,
       "name": "typesafe-ai/skills",
-      "stars": 1584
+      "stars": 1585
     },
     {
       "id": 1379574728,
       "name": "jev-chat/jev-chat-jarvis",
-      "stars": 1480
+      "stars": 1491
     },
     {
       "id": 1372867305,
@@ -100,7 +100,7 @@
     {
       "id": 1373665161,
       "name": "devagrawal09/jev-review",
-      "stars": 498
+      "stars": 499
     },
     {
       "id": 1377938409,
@@ -115,7 +115,7 @@
     {
       "id": 1375675343,
       "name": "featherless-ai/simple-jev",
-      "stars": 457
+      "stars": 458
     },
     {
       "id": 1374058281,
@@ -130,7 +130,7 @@
     {
       "id": 1376380583,
       "name": "kerpopule/hermes-jev-skills",
-      "stars": 399
+      "stars": 400
     },
     {
       "id": 1374858514,
@@ -140,12 +140,12 @@
     {
       "id": 1377820977,
       "name": "wuyoscar/jev-skill",
-      "stars": 374
+      "stars": 375
     },
     {
       "id": 1375397100,
       "name": "wfzyx/von",
-      "stars": 370
+      "stars": 371
     },
     {
       "id": 1375172727,
@@ -155,17 +155,17 @@
     {
       "id": 1376004275,
       "name": "kyotofin/tax-doc-classifier",
-      "stars": 342
+      "stars": 345
     },
     {
       "id": 1372537050,
       "name": "fhshaik/typesafe-mario",
-      "stars": 336
+      "stars": 337
     },
     {
       "id": 1375482713,
       "name": "logicrw/awesome-jev-projects",
-      "stars": 330
+      "stars": 331
     },
     {
       "id": 1374280231,
@@ -215,7 +215,7 @@
     {
       "id": 1377115777,
       "name": "Heman10x-NGU/openJev-verdict-2.0",
-      "stars": 243
+      "stars": 244
     },
     {
       "id": 1373837418,
@@ -408,14 +408,19 @@
       "stars": 107
     },
     {
+      "id": 1378738225,
+      "name": "Zefan-Cai/Open-Jev",
+      "stars": 104
+    },
+    {
       "id": 1373968205,
       "name": "vinilana/jev-eval-agent",
       "stars": 103
     },
     {
-      "id": 1378738225,
-      "name": "Zefan-Cai/Open-Jev",
-      "stars": 103
+      "id": 1376757283,
+      "name": "heyjunpenn/awesome-jev",
+      "stars": 101
     },
     {
       "id": 1379401527,
@@ -426,11 +431,6 @@
       "id": 672323348,
       "name": "timrogers/formanator",
       "stars": 98
-    },
-    {
-      "id": 1376757283,
-      "name": "heyjunpenn/awesome-jev",
-      "stars": 97
     },
     {
       "id": 1376081650,
@@ -448,14 +448,14 @@
       "stars": 95
     },
     {
-      "id": 1379783258,
-      "name": "Futureppo/typesafe_register",
+      "id": 1374627765,
+      "name": "agent-labs-dev/fastbrowse",
       "stars": 94
     },
     {
-      "id": 1374627765,
-      "name": "agent-labs-dev/fastbrowse",
-      "stars": 93
+      "id": 1379783258,
+      "name": "Futureppo/typesafe_register",
+      "stars": 94
     },
     {
       "id": 1374026169,
@@ -558,8 +558,8 @@
       "stars": 67
     },
     {
-      "id": 1378054924,
-      "name": "SiliconLabAI/OpenJev",
+      "id": 1379917275,
+      "name": "CTNicholas/jev-workflow-builder",
       "stars": 66
     },
     {
@@ -670,7 +670,7 @@
     {
       "id": 1374993835,
       "name": "r-ms/mini-jev",
-      "stars": 40
+      "stars": 41
     },
     {
       "id": 1377249589,
@@ -825,11 +825,6 @@
     {
       "id": 1377506078,
       "name": "sabeel111/OpenSourceJev",
-      "stars": 23
-    },
-    {
-      "id": 1378116070,
-      "name": "safzanpirani/pi-jev-skill-picker",
       "stars": 23
     },
     {
@@ -1158,6 +1153,11 @@
       "stars": 8
     },
     {
+      "id": 1377893932,
+      "name": "PerryLink/jevcore",
+      "stars": 8
+    },
+    {
       "id": 1378234603,
       "name": "Qew7/jev-feels",
       "stars": 8
@@ -1208,11 +1208,6 @@
       "stars": 7
     },
     {
-      "id": 1377893932,
-      "name": "PerryLink/jevcore",
-      "stars": 7
-    },
-    {
       "id": 1375395939,
       "name": "24601/Augustus",
       "stars": 6
@@ -1260,6 +1255,11 @@
     {
       "id": 1379229326,
       "name": "afshinm/laya-mps",
+      "stars": 5
+    },
+    {
+      "id": 1375320131,
+      "name": "buchmark/claude-jev",
       "stars": 5
     },
     {

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-09-22T03:17:34Z",
+  "generated_at": "2026-09-22T03:22:55Z",
   "repositories": [
     {
       "id": 1373655162,
@@ -8,14 +8,12 @@
       "url": "https://github.com/browser-use/jev-ultrafast",
       "description": "浏览器 Agent：由 Jev 选择页面操作，结合文本生成模型完成任务。",
       "description_en": "Browser agent using Jev to choose page actions alongside a text-generation model.",
-      "stars": 16148,
+      "stars": 16160,
       "forks": 1011,
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-18T16:28:35Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1124295269,
@@ -23,14 +21,12 @@
       "url": "https://github.com/OpenByteInc/QuantDinger",
       "description": "Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Research, build Python strategies, backtest, and paper/live trade across crypto, stocks, and forex. Launch your own multi-tenant trading SaaS with built-in user management, billing, payments, and settlement.",
       "description_en": "Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Research, build Python strategies, backtest, and paper/live trade across crypto, stocks, and forex. Launch your own multi-tenant trading SaaS with built-in user management, billing, payments, and settlement.",
-      "stars": 11955,
+      "stars": 11956,
       "forks": 2454,
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T08:01:44Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375382253,
@@ -38,14 +34,12 @@
       "url": "https://github.com/NandhaKishorM/laya",
       "description": "独立开放决策模型，提供训练与评测材料；非 TypeSafe 官方模型。",
       "description_en": "Independent open decision model with training and evaluation materials; not TypeSafe Jev.",
-      "stars": 11153,
-      "forks": 907,
+      "stars": 11192,
+      "forks": 910,
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-21T18:18:43Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1374005005,
@@ -53,14 +47,12 @@
       "url": "https://github.com/tamaratran/fast-jev-compaction",
       "description": "Claude Code 上下文压缩插件：Jev 判断哪些工具记录仍需保留。",
       "description_en": "Claude Code compaction plugin using Jev to select tool records worth retaining.",
-      "stars": 6020,
+      "stars": 6022,
       "forks": 333,
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-18T04:45:31Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1372482979,
@@ -68,14 +60,12 @@
       "url": "https://github.com/TheoLeeCJ/SemIf",
       "description": "用开放模型实现语义判断，原名 OpenJev；项目明确声明与 TypeSafe 无关联。",
       "description_en": "Semantic decisions from open models, formerly OpenJev; independent of TypeSafe.",
-      "stars": 3327,
+      "stars": 3329,
       "forks": 218,
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-21T20:07:30Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1375069862,
@@ -83,14 +73,12 @@
       "url": "https://github.com/jaredpalmer/kev",
       "description": "基于 Qwen3.5 的独立 Jev-like 决策模型，可自行训练；非官方模型。",
       "description_en": "Independent Jev-like decision models built on Qwen3.5; not the official Jev model.",
-      "stars": 2577,
+      "stars": 2579,
       "forks": 131,
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-22T00:44:00Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1373659194,
@@ -103,9 +91,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-17T02:48:22Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374702542,
@@ -113,14 +99,12 @@
       "url": "https://github.com/TianyuCodings/NanoJev",
       "description": "独立小型复现：并行决策、动态候选与训练流程；非官方模型。",
       "description_en": "Independent small-scale reproduction with parallel decisions and a training pipeline.",
-      "stars": 1839,
+      "stars": 1840,
       "forks": 202,
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-21T09:58:28Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1345508845,
@@ -128,14 +112,12 @@
       "url": "https://github.com/typesafe-ai/skills",
       "description": "官方 Agent skills：设计和构建 System One 决策工作流。",
       "description_en": "Official agent skills for building System One decision workflows.",
-      "stars": 1584,
+      "stars": 1585,
       "forks": 80,
       "language": "—",
       "category": "official",
       "pushed_at": "2026-09-12T05:42:06Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1379574728,
@@ -143,14 +125,12 @@
       "url": "https://github.com/jev-chat/jev-chat-jarvis",
       "description": "中文手机聊天助手：Jev 判断意图和风险，辅助选择回复。",
       "description_en": "Mobile chat assistant using Jev for intent and risk judgments; Chinese documentation.",
-      "stars": 1480,
-      "forks": 521,
+      "stars": 1491,
+      "forks": 524,
       "language": "Kotlin",
       "category": "applications",
       "pushed_at": "2026-09-22T03:10:14Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1372867305,
@@ -163,9 +143,7 @@
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-16T18:12:53Z",
-      "evidence": "repository README",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository README"
     },
     {
       "id": 1374561793,
@@ -178,9 +156,7 @@
       "language": "Python",
       "category": "resources",
       "pushed_at": "2026-09-21T23:35:16Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 642065600,
@@ -193,9 +169,7 @@
       "language": "Python",
       "category": "resources",
       "pushed_at": "2026-09-20T19:43:18Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373440611,
@@ -204,13 +178,11 @@
       "description": "macOS 桌面自动化：OCR 识别屏幕，Jev 选择下一步操作。",
       "description_en": "macOS automation combining screen OCR with Jev action selection.",
       "stars": 760,
-      "forks": 59,
+      "forks": 60,
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T17:05:28Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1182306628,
@@ -223,9 +195,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-21T14:29:11Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1174519898,
@@ -237,10 +207,8 @@
       "forks": 44,
       "language": "Rust",
       "category": "tools",
-      "pushed_at": "2026-09-22T02:53:26Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "pushed_at": "2026-09-22T03:17:23Z",
+      "evidence": "reviewed seed"
     },
     {
       "id": 1204984760,
@@ -253,9 +221,7 @@
       "language": "Swift",
       "category": "applications",
       "pushed_at": "2026-09-19T14:56:03Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1377399471,
@@ -268,9 +234,7 @@
       "language": "—",
       "category": "resources",
       "pushed_at": "2026-09-19T17:02:33Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376169754,
@@ -283,9 +247,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-22T03:08:17Z",
-      "evidence": "repository README",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository README"
     },
     {
       "id": 1373665161,
@@ -293,14 +255,12 @@
       "url": "https://github.com/devagrawal09/jev-review",
       "description": "基于 Jev 的分阶段代码审查与本地结果面板。",
       "description_en": "Staged code review with Jev and a local results dashboard.",
-      "stars": 498,
+      "stars": 499,
       "forks": 32,
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-17T00:29:25Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1377938409,
@@ -313,9 +273,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-20T05:05:16Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374349137,
@@ -328,9 +286,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-20T13:48:23Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375675343,
@@ -338,14 +294,12 @@
       "url": "https://github.com/featherless-ai/simple-jev",
       "description": "将开放模型转换为分类器与 Jev 风格接口；独立实现。",
       "description_en": "Independent implementation exposing open models as classifiers and Jev-style endpoints.",
-      "stars": 457,
+      "stars": 458,
       "forks": 50,
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-21T06:25:47Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1374058281,
@@ -358,9 +312,7 @@
       "language": "HTML",
       "category": "resources",
       "pushed_at": "2026-09-21T22:19:05Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1184844109,
@@ -372,10 +324,8 @@
       "forks": 45,
       "language": "Python",
       "category": "tools",
-      "pushed_at": "2026-09-22T03:00:01Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "pushed_at": "2026-09-22T03:17:59Z",
+      "evidence": "repository metadata"
     },
     {
       "id": 1376380583,
@@ -383,14 +333,12 @@
       "url": "https://github.com/kerpopule/hermes-jev-skills",
       "description": "Jev-powered model routing, memory, compaction, skill selection, computer and browser use for Hermes agents (also Claude Code and Codex)",
       "description_en": "Jev-powered model routing, memory, compaction, skill selection, computer and browser use for Hermes agents (also Claude Code and Codex)",
-      "stars": 399,
+      "stars": 400,
       "forks": 36,
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-21T17:01:50Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374858514,
@@ -403,9 +351,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-20T18:37:23Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1377820977,
@@ -413,14 +359,12 @@
       "url": "https://github.com/wuyoscar/jev-skill",
       "description": "An awesome collection of Jev use cases, workflows, and agent skills.",
       "description_en": "An awesome collection of Jev use cases, workflows, and agent skills.",
-      "stars": 374,
+      "stars": 375,
       "forks": 19,
       "language": "Python",
       "category": "resources",
       "pushed_at": "2026-09-21T23:10:39Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375397100,
@@ -428,14 +372,12 @@
       "url": "https://github.com/wfzyx/von",
       "description": "独立开放决策模型，提供 TypeSafe API 兼容接口；非官方模型。",
       "description_en": "Independent open decision model with a TypeSafe-compatible API; not official Jev.",
-      "stars": 370,
+      "stars": 371,
       "forks": 29,
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-21T22:07:22Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1375172727,
@@ -448,9 +390,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T03:40:06Z",
-      "evidence": "repository README",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository README"
     },
     {
       "id": 1376004275,
@@ -458,14 +398,12 @@
       "url": "https://github.com/kyotofin/tax-doc-classifier",
       "description": "Tax document page classifier built on Jev decisions. 100% strict accuracy across 261 IRS forms, ~$0.001 per page.",
       "description_en": "Tax document page classifier built on Jev decisions. 100% strict accuracy across 261 IRS forms, ~$0.001 per page.",
-      "stars": 342,
+      "stars": 345,
       "forks": 38,
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-20T10:34:47Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1372537050,
@@ -473,14 +411,12 @@
       "url": "https://github.com/fhshaik/typesafe-mario",
       "description": "A TypeSafe/Jev agent that plays Super Mario Bros. from structured emulator state.",
       "description_en": "A TypeSafe/Jev agent that plays Super Mario Bros. from structured emulator state.",
-      "stars": 336,
+      "stars": 337,
       "forks": 33,
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-16T04:59:33Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375482713,
@@ -488,14 +424,12 @@
       "url": "https://github.com/logicrw/awesome-jev-projects",
       "description": "Awesome Jev: source-backed open-source ecosystem radar, plain-language project discovery, and automatic GitHub sync",
       "description_en": "Awesome Jev: source-backed open-source ecosystem radar, plain-language project discovery, and automatic GitHub sync",
-      "stars": 330,
+      "stars": 331,
       "forks": 27,
       "language": "JavaScript",
       "category": "resources",
       "pushed_at": "2026-09-21T22:39:59Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374280231,
@@ -508,9 +442,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-17T12:55:20Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1375500090,
@@ -523,9 +455,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-19T02:15:01Z",
-      "evidence": "repository README",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository README"
     },
     {
       "id": 1375694187,
@@ -538,9 +468,7 @@
       "language": "—",
       "category": "resources",
       "pushed_at": "2026-09-22T01:37:39Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373617155,
@@ -553,9 +481,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-19T10:28:26Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1375639479,
@@ -568,9 +494,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T16:49:05Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375026016,
@@ -583,9 +507,7 @@
       "language": "Shell",
       "category": "applications",
       "pushed_at": "2026-09-18T19:23:51Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376627816,
@@ -598,9 +520,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-20T20:50:08Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374869789,
@@ -613,9 +533,7 @@
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-21T05:01:46Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1374404623,
@@ -628,9 +546,7 @@
       "language": "—",
       "category": "resources",
       "pushed_at": "2026-09-22T00:21:08Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377115777,
@@ -638,14 +554,12 @@
       "url": "https://github.com/Heman10x-NGU/openJev-verdict-2.0",
       "description": "Calibrated 151M Non-Autoregressive Decision Engine beating TypeSafe Jev & Laya on LocalLLaMA/typed-decisions (77.10% acc, 0.0636 Brier, 0.0144 ECE)",
       "description_en": "Calibrated 151M Non-Autoregressive Decision Engine beating TypeSafe Jev & Laya on LocalLLaMA/typed-decisions (77.10% acc, 0.0636 Brier, 0.0144 ECE)",
-      "stars": 243,
+      "stars": 244,
       "forks": 37,
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-20T14:54:40Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373837418,
@@ -658,9 +572,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-21T23:47:28Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1328238153,
@@ -669,13 +581,11 @@
       "description": "官方适配器：用常规 LLM API 运行 System One 接口，便于对照评测。",
       "description_en": "Official adapter running the System One interface over LLM APIs for comparisons.",
       "stars": 241,
-      "forks": 35,
+      "forks": 36,
       "language": "Python",
       "category": "official",
       "pushed_at": "2026-09-18T10:47:48Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1374967555,
@@ -688,9 +598,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-22T00:56:40Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378880709,
@@ -703,9 +611,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T23:31:43Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373977947,
@@ -718,9 +624,7 @@
       "language": "Go",
       "category": "tools",
       "pushed_at": "2026-09-21T18:04:24Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1349410105,
@@ -733,9 +637,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-21T18:49:58Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374800096,
@@ -748,9 +650,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-19T21:46:20Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374829176,
@@ -763,9 +663,7 @@
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-21T11:43:54Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1357635350,
@@ -778,9 +676,7 @@
       "language": "TypeScript",
       "category": "official",
       "pushed_at": "2026-09-15T18:16:49Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1375142045,
@@ -793,9 +689,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-21T08:57:55Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376631227,
@@ -808,9 +702,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-20T00:59:58Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377427328,
@@ -823,9 +715,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T22:40:31Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373978991,
@@ -838,9 +728,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-17T17:15:20Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377318357,
@@ -853,9 +741,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T13:16:59Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375286981,
@@ -868,9 +754,7 @@
       "language": "JavaScript",
       "category": "resources",
       "pushed_at": "2026-09-20T19:27:00Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1357590729,
@@ -883,9 +767,7 @@
       "language": "Python",
       "category": "official",
       "pushed_at": "2026-09-21T15:57:12Z",
-      "evidence": "reviewed seed",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "reviewed seed"
     },
     {
       "id": 1373914715,
@@ -898,9 +780,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-21T23:24:19Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1138809556,
@@ -913,9 +793,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T20:12:22Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1372535054,
@@ -928,9 +806,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-21T23:39:16Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377868587,
@@ -943,9 +819,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T13:08:41Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375039364,
@@ -958,9 +832,7 @@
       "language": "JavaScript",
       "category": "resources",
       "pushed_at": "2026-09-21T09:01:08Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374676481,
@@ -973,9 +845,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-17T21:22:33Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377680623,
@@ -988,9 +858,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-19T22:51:11Z",
-      "evidence": "repository README",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository README"
     },
     {
       "id": 1375641268,
@@ -1003,9 +871,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-21T14:48:00Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 993805781,
@@ -1018,9 +884,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-21T20:40:07Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375299700,
@@ -1033,9 +897,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-22T01:18:21Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1372587647,
@@ -1048,9 +910,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-19T19:45:38Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375083492,
@@ -1063,9 +923,7 @@
       "language": "—",
       "category": "tools",
       "pushed_at": "2026-09-17T21:09:01Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376201850,
@@ -1078,9 +936,7 @@
       "language": "JavaScript",
       "category": "resources",
       "pushed_at": "2026-09-21T19:38:19Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377047791,
@@ -1093,9 +949,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T16:42:51Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374652607,
@@ -1108,9 +962,7 @@
       "language": "JavaScript",
       "category": "resources",
       "pushed_at": "2026-09-21T10:46:41Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376671563,
@@ -1123,9 +975,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-21T13:51:54Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373629346,
@@ -1138,9 +988,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T16:51:46Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376284519,
@@ -1153,9 +1001,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T11:29:49Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374632146,
@@ -1168,9 +1014,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-19T21:41:24Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374059973,
@@ -1183,9 +1027,7 @@
       "language": "Rust",
       "category": "tools",
       "pushed_at": "2026-09-22T03:01:13Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375155214,
@@ -1198,9 +1040,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T07:02:55Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1257744257,
@@ -1213,9 +1053,20 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T11:42:03Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
+    },
+    {
+      "id": 1378738225,
+      "name": "Zefan-Cai/Open-Jev",
+      "url": "https://github.com/Zefan-Cai/Open-Jev",
+      "description": "暂无简介；可打开仓库查看",
+      "description_en": "No description; open the repository for details",
+      "stars": 104,
+      "forks": 9,
+      "language": "Python",
+      "category": "applications",
+      "pushed_at": "2026-09-21T07:40:27Z",
+      "evidence": "repository README"
     },
     {
       "id": 1373968205,
@@ -1228,24 +1079,20 @@
       "language": "HTML",
       "category": "applications",
       "pushed_at": "2026-09-17T11:07:31Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
-      "id": 1378738225,
-      "name": "Zefan-Cai/Open-Jev",
-      "url": "https://github.com/Zefan-Cai/Open-Jev",
-      "description": "暂无简介；可打开仓库查看",
-      "description_en": "No description; open the repository for details",
-      "stars": 103,
-      "forks": 9,
-      "language": "Python",
-      "category": "applications",
-      "pushed_at": "2026-09-21T07:40:27Z",
-      "evidence": "repository README",
-      "delta_1d": null,
-      "delta_7d": null
+      "id": 1376757283,
+      "name": "heyjunpenn/awesome-jev",
+      "url": "https://github.com/heyjunpenn/awesome-jev",
+      "description": "A verified, community-maintained catalog of 530 open-source projects built with Jev.",
+      "description_en": "A verified, community-maintained catalog of 530 open-source projects built with Jev.",
+      "stars": 101,
+      "forks": 3,
+      "language": "Astro",
+      "category": "resources",
+      "pushed_at": "2026-09-21T16:15:16Z",
+      "evidence": "repository README"
     },
     {
       "id": 1379401527,
@@ -1258,9 +1105,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T10:39:01Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 672323348,
@@ -1273,24 +1118,7 @@
       "language": "Rust",
       "category": "tools",
       "pushed_at": "2026-09-21T22:04:57Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
-    },
-    {
-      "id": 1376757283,
-      "name": "heyjunpenn/awesome-jev",
-      "url": "https://github.com/heyjunpenn/awesome-jev",
-      "description": "A verified, community-maintained catalog of 530 open-source projects built with Jev.",
-      "description_en": "A verified, community-maintained catalog of 530 open-source projects built with Jev.",
-      "stars": 97,
-      "forks": 3,
-      "language": "Astro",
-      "category": "resources",
-      "pushed_at": "2026-09-21T16:15:16Z",
-      "evidence": "repository README",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376081650,
@@ -1303,9 +1131,7 @@
       "language": "—",
       "category": "resources",
       "pushed_at": "2026-09-21T03:09:13Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375573671,
@@ -1318,9 +1144,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-18T08:11:11Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374733369,
@@ -1333,9 +1157,20 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T14:19:47Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
+    },
+    {
+      "id": 1374627765,
+      "name": "agent-labs-dev/fastbrowse",
+      "url": "https://github.com/agent-labs-dev/fastbrowse",
+      "description": "A fast browser agent: Jev picks each action from what is on the page, an LLM reads and plans, and every claim in an answer cites a quote from the page.",
+      "description_en": "A fast browser agent: Jev picks each action from what is on the page, an LLM reads and plans, and every claim in an answer cites a quote from the page.",
+      "stars": 94,
+      "forks": 10,
+      "language": "Python",
+      "category": "applications",
+      "pushed_at": "2026-09-22T02:20:26Z",
+      "evidence": "repository metadata"
     },
     {
       "id": 1379783258,
@@ -1348,24 +1183,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T20:26:15Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
-    },
-    {
-      "id": 1374627765,
-      "name": "agent-labs-dev/fastbrowse",
-      "url": "https://github.com/agent-labs-dev/fastbrowse",
-      "description": "A fast browser agent: Jev picks each action from what is on the page, an LLM reads and plans, and every claim in an answer cites a quote from the page.",
-      "description_en": "A fast browser agent: Jev picks each action from what is on the page, an LLM reads and plans, and every claim in an answer cites a quote from the page.",
-      "stars": 93,
-      "forks": 10,
-      "language": "Python",
-      "category": "applications",
-      "pushed_at": "2026-09-22T02:20:26Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374026169,
@@ -1378,9 +1196,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-19T00:02:16Z",
-      "evidence": "repository README",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository README"
     },
     {
       "id": 1373650485,
@@ -1393,9 +1209,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-18T17:55:50Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376670432,
@@ -1408,9 +1222,7 @@
       "language": "—",
       "category": "applications",
       "pushed_at": "2026-09-19T03:18:52Z",
-      "evidence": "repository README",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository README"
     },
     {
       "id": 1377227263,
@@ -1423,9 +1235,7 @@
       "language": "Swift",
       "category": "applications",
       "pushed_at": "2026-09-21T23:08:58Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376436152,
@@ -1438,9 +1248,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-18T21:16:11Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374340897,
@@ -1453,9 +1261,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-17T12:36:32Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374591713,
@@ -1468,9 +1274,7 @@
       "language": "C",
       "category": "applications",
       "pushed_at": "2026-09-20T10:52:42Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1372296290,
@@ -1483,9 +1287,7 @@
       "language": "Jupyter Notebook",
       "category": "applications",
       "pushed_at": "2026-09-18T09:26:18Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377468874,
@@ -1498,9 +1300,7 @@
       "language": "—",
       "category": "resources",
       "pushed_at": "2026-09-21T16:47:50Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377674687,
@@ -1513,9 +1313,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-20T16:18:14Z",
-      "evidence": "repository README",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository README"
     },
     {
       "id": 1377916761,
@@ -1528,9 +1326,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-20T04:59:32Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377426282,
@@ -1543,9 +1339,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-20T00:13:31Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377049125,
@@ -1558,9 +1352,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-20T15:00:39Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1379367209,
@@ -1573,9 +1365,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-21T08:34:40Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376243548,
@@ -1588,9 +1378,7 @@
       "language": "Python",
       "category": "resources",
       "pushed_at": "2026-09-22T02:59:38Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375761817,
@@ -1603,9 +1391,7 @@
       "language": "—",
       "category": "applications",
       "pushed_at": "2026-09-19T17:57:32Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374815225,
@@ -1618,9 +1404,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-17T17:35:25Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374853179,
@@ -1633,9 +1417,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-20T14:54:34Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376978038,
@@ -1648,9 +1430,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T15:11:34Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373227372,
@@ -1663,24 +1443,20 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-18T15:57:45Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
-      "id": 1378054924,
-      "name": "SiliconLabAI/OpenJev",
-      "url": "https://github.com/SiliconLabAI/OpenJev",
-      "description": "OpenSource Jev",
-      "description_en": "OpenSource Jev",
+      "id": 1379917275,
+      "name": "CTNicholas/jev-workflow-builder",
+      "url": "https://github.com/CTNicholas/jev-workflow-builder",
+      "description": "暂无简介；可打开仓库查看",
+      "description_en": "No description; open the repository for details",
       "stars": 66,
-      "forks": 16,
+      "forks": 11,
       "language": "TypeScript",
       "category": "applications",
-      "pushed_at": "2026-09-22T02:50:40Z",
-      "evidence": "repository README",
-      "delta_1d": null,
-      "delta_7d": null
+      "pushed_at": "2026-09-21T16:03:42Z",
+      "evidence": "repository README"
     },
     {
       "id": 1376848968,
@@ -1693,9 +1469,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T22:59:56Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376451543,
@@ -1707,10 +1481,8 @@
       "forks": 9,
       "language": "Python",
       "category": "applications",
-      "pushed_at": "2026-09-22T03:15:14Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "pushed_at": "2026-09-22T03:17:33Z",
+      "evidence": "repository metadata"
     },
     {
       "id": 1374235614,
@@ -1723,9 +1495,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-21T08:47:25Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376720831,
@@ -1738,9 +1508,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-19T08:24:23Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375473949,
@@ -1753,9 +1521,7 @@
       "language": "HTML",
       "category": "research",
       "pushed_at": "2026-09-22T01:15:31Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377417831,
@@ -1768,9 +1534,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-19T17:07:08Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378835894,
@@ -1783,9 +1547,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T01:35:51Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374259561,
@@ -1798,9 +1560,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T22:17:24Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375098261,
@@ -1813,9 +1573,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T13:38:40Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377507017,
@@ -1828,9 +1586,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T07:46:34Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373162520,
@@ -1843,9 +1599,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-16T17:00:30Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376067407,
@@ -1858,9 +1612,7 @@
       "language": "Ruby",
       "category": "tools",
       "pushed_at": "2026-09-18T17:55:07Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378726612,
@@ -1873,9 +1625,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-22T02:12:15Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375410950,
@@ -1888,9 +1638,7 @@
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-21T18:31:56Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376005621,
@@ -1903,9 +1651,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-20T16:24:38Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376303804,
@@ -1918,9 +1664,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-21T17:05:55Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375192093,
@@ -1933,9 +1677,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-18T20:05:53Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377737136,
@@ -1948,9 +1690,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-20T17:01:42Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375483446,
@@ -1963,9 +1703,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-18T16:07:06Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374300570,
@@ -1978,9 +1716,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T19:41:27Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376338414,
@@ -1993,9 +1729,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-19T02:05:05Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374993835,
@@ -2003,14 +1737,12 @@
       "url": "https://github.com/r-ms/mini-jev",
       "description": "mini-Jev: what a Jev-style typed-decision interface looks like on a frozen Qwen3-4B — read the option letter's logits instead of generating JSON. Preregistered experiment, results, teaching bench.",
       "description_en": "mini-Jev: what a Jev-style typed-decision interface looks like on a frozen Qwen3-4B — read the option letter's logits instead of generating JSON. Preregistered experiment, results, teaching bench.",
-      "stars": 40,
+      "stars": 41,
       "forks": 3,
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-18T12:05:38Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377249589,
@@ -2023,9 +1755,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T16:05:37Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377195966,
@@ -2038,9 +1768,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-19T13:39:07Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373664881,
@@ -2053,9 +1781,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-19T06:02:27Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374296003,
@@ -2068,9 +1794,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-17T11:16:03Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375279784,
@@ -2083,9 +1807,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-21T09:09:08Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374794531,
@@ -2098,9 +1820,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T15:10:53Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377927974,
@@ -2113,9 +1833,7 @@
       "language": "JavaScript",
       "category": "research",
       "pushed_at": "2026-09-21T15:49:18Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374559998,
@@ -2128,9 +1846,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-21T17:59:52Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378973913,
@@ -2143,9 +1859,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T06:42:17Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378764687,
@@ -2158,9 +1872,7 @@
       "language": "HTML",
       "category": "applications",
       "pushed_at": "2026-09-20T21:07:23Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1322698857,
@@ -2173,9 +1885,7 @@
       "language": "Rust",
       "category": "applications",
       "pushed_at": "2026-09-20T09:49:41Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376012183,
@@ -2188,9 +1898,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-19T20:45:13Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377573287,
@@ -2203,9 +1911,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-20T00:17:16Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1379612416,
@@ -2218,9 +1924,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T13:14:21Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373904888,
@@ -2233,9 +1937,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-20T21:09:11Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375878661,
@@ -2247,10 +1949,8 @@
       "forks": 3,
       "language": "Rust",
       "category": "tools",
-      "pushed_at": "2026-09-22T03:05:19Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "pushed_at": "2026-09-22T03:21:48Z",
+      "evidence": "repository metadata"
     },
     {
       "id": 1377753108,
@@ -2263,9 +1963,7 @@
       "language": "Java",
       "category": "tools",
       "pushed_at": "2026-09-20T00:54:16Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1361152392,
@@ -2278,9 +1976,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T13:18:03Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1379915055,
@@ -2293,9 +1989,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T14:37:49Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377319093,
@@ -2308,9 +2002,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-19T15:31:40Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375072965,
@@ -2323,9 +2015,7 @@
       "language": "Elixir",
       "category": "applications",
       "pushed_at": "2026-09-21T13:13:02Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1366680224,
@@ -2338,9 +2028,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T17:24:48Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373347047,
@@ -2353,9 +2041,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-16T16:39:24Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375719666,
@@ -2368,9 +2054,7 @@
       "language": "TypeScript",
       "category": "resources",
       "pushed_at": "2026-09-19T23:15:49Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1129878667,
@@ -2383,9 +2067,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T07:38:04Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374004718,
@@ -2398,9 +2080,7 @@
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-17T07:06:55Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373411598,
@@ -2413,9 +2093,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-16T17:27:31Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1279923114,
@@ -2428,9 +2106,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T14:55:37Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376451596,
@@ -2443,9 +2119,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-22T01:54:04Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1379617146,
@@ -2457,10 +2131,8 @@
       "forks": 10,
       "language": "Python",
       "category": "applications",
-      "pushed_at": "2026-09-22T03:13:40Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "pushed_at": "2026-09-22T03:20:29Z",
+      "evidence": "repository metadata"
     },
     {
       "id": 1377506078,
@@ -2473,24 +2145,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-20T17:52:06Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
-    },
-    {
-      "id": 1378116070,
-      "name": "safzanpirani/pi-jev-skill-picker",
-      "url": "https://github.com/safzanpirani/pi-jev-skill-picker",
-      "description": "Rank Pi Agent Skills for the current task with TypeSafe Jev",
-      "description_en": "Rank Pi Agent Skills for the current task with TypeSafe Jev",
-      "stars": 23,
-      "forks": 2,
-      "language": "TypeScript",
-      "category": "tools",
-      "pushed_at": "2026-09-20T10:04:24Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374936836,
@@ -2503,9 +2158,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-18T10:53:50Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375186168,
@@ -2518,9 +2171,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-18T02:46:36Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373871278,
@@ -2533,9 +2184,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-17T18:22:58Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376641124,
@@ -2548,9 +2197,7 @@
       "language": "CSS",
       "category": "applications",
       "pushed_at": "2026-09-21T05:26:21Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375012405,
@@ -2563,9 +2210,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-21T08:32:12Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374583864,
@@ -2578,9 +2223,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-17T18:44:11Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375059982,
@@ -2593,9 +2236,7 @@
       "language": "JavaScript",
       "category": "research",
       "pushed_at": "2026-09-21T14:00:02Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1379859926,
@@ -2608,9 +2249,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-21T21:52:51Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376809003,
@@ -2623,9 +2262,7 @@
       "language": "—",
       "category": "applications",
       "pushed_at": "2026-09-22T03:01:38Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375408551,
@@ -2638,9 +2275,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-18T16:57:22Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375477393,
@@ -2653,9 +2288,7 @@
       "language": "Rust",
       "category": "applications",
       "pushed_at": "2026-09-22T02:51:05Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1368683469,
@@ -2668,9 +2301,7 @@
       "language": "C",
       "category": "applications",
       "pushed_at": "2026-09-21T14:08:51Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375579368,
@@ -2683,9 +2314,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-20T20:25:27Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375725140,
@@ -2698,9 +2327,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-18T17:48:37Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377798973,
@@ -2713,9 +2340,7 @@
       "language": "Ruby",
       "category": "applications",
       "pushed_at": "2026-09-21T02:08:27Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373742699,
@@ -2728,9 +2353,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-19T12:23:45Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1184456847,
@@ -2743,9 +2366,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-21T12:15:46Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375566392,
@@ -2758,9 +2379,7 @@
       "language": "—",
       "category": "resources",
       "pushed_at": "2026-09-20T14:33:04Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376447184,
@@ -2773,9 +2392,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T08:09:31Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375750028,
@@ -2788,9 +2405,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T03:17:28Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375122933,
@@ -2803,9 +2418,7 @@
       "language": "—",
       "category": "resources",
       "pushed_at": "2026-09-21T15:36:53Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377009676,
@@ -2818,9 +2431,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-19T14:43:25Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378336518,
@@ -2833,9 +2444,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-20T15:00:32Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376291528,
@@ -2848,9 +2457,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-19T00:08:44Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1213316537,
@@ -2863,9 +2470,7 @@
       "language": "Python",
       "category": "official",
       "pushed_at": "2026-09-09T10:46:36Z",
-      "evidence": "official organization",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "official organization"
     },
     {
       "id": 1377536729,
@@ -2878,9 +2483,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T07:40:26Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378713828,
@@ -2893,9 +2496,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T01:17:48Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376517161,
@@ -2908,9 +2509,7 @@
       "language": "Ruby",
       "category": "applications",
       "pushed_at": "2026-09-19T23:29:30Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377411396,
@@ -2923,9 +2522,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-20T13:33:06Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377281798,
@@ -2938,9 +2535,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-19T16:45:36Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376459452,
@@ -2953,9 +2548,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-21T02:19:55Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378390810,
@@ -2968,9 +2561,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-20T21:08:36Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375874218,
@@ -2983,9 +2574,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-21T17:52:50Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377367635,
@@ -2998,9 +2587,7 @@
       "language": "BAML",
       "category": "applications",
       "pushed_at": "2026-09-19T18:24:36Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373637204,
@@ -3013,9 +2600,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-16T21:05:53Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376366074,
@@ -3028,9 +2613,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T18:30:16Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374577976,
@@ -3043,9 +2626,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-17T14:35:29Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377012125,
@@ -3058,9 +2639,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-20T16:53:20Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375922101,
@@ -3073,9 +2652,7 @@
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-22T03:06:14Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373184607,
@@ -3088,9 +2665,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-18T08:47:45Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1379166549,
@@ -3103,9 +2678,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-22T02:34:50Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1373893740,
@@ -3118,9 +2691,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-17T03:53:37Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376577535,
@@ -3133,9 +2704,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-20T23:39:00Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1372550793,
@@ -3148,9 +2717,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-21T15:09:15Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376904097,
@@ -3163,9 +2730,7 @@
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-19T12:37:20Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376891056,
@@ -3178,9 +2743,7 @@
       "language": "Rust",
       "category": "tools",
       "pushed_at": "2026-09-21T16:10:53Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375177458,
@@ -3193,9 +2756,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-19T00:48:16Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375491494,
@@ -3208,9 +2769,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-18T07:28:38Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378013456,
@@ -3223,9 +2782,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T13:26:57Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1379381234,
@@ -3238,9 +2795,7 @@
       "language": "Rust",
       "category": "tools",
       "pushed_at": "2026-09-22T00:47:59Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378047861,
@@ -3253,9 +2808,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T22:24:07Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375831882,
@@ -3268,9 +2821,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-21T23:05:24Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375225128,
@@ -3283,9 +2834,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-18T18:50:46Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376691540,
@@ -3298,9 +2847,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-19T08:58:29Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378149911,
@@ -3313,9 +2860,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-20T21:00:13Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376580317,
@@ -3328,9 +2873,7 @@
       "language": "Python",
       "category": "resources",
       "pushed_at": "2026-09-21T13:29:11Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1379691269,
@@ -3343,9 +2886,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T14:42:09Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377265038,
@@ -3358,9 +2899,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-19T14:43:49Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376182232,
@@ -3373,9 +2912,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T18:52:48Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375554513,
@@ -3388,9 +2925,7 @@
       "language": "Python",
       "category": "resources",
       "pushed_at": "2026-09-21T14:00:28Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376854858,
@@ -3403,9 +2938,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-20T03:49:01Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377513325,
@@ -3418,9 +2951,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-20T07:48:45Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377462717,
@@ -3433,9 +2964,7 @@
       "language": "Go",
       "category": "applications",
       "pushed_at": "2026-09-21T20:19:41Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374680589,
@@ -3448,9 +2977,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T22:19:08Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377510956,
@@ -3463,9 +2990,20 @@
       "language": "Swift",
       "category": "tools",
       "pushed_at": "2026-09-19T19:09:14Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
+    },
+    {
+      "id": 1377893932,
+      "name": "PerryLink/jevcore",
+      "url": "https://github.com/PerryLink/jevcore",
+      "description": "TypeSafe Jev for DeepSeek Harness, the Model Context Protocol, and plain Node: typed judgments instead of prose, offline by default.",
+      "description_en": "TypeSafe Jev for DeepSeek Harness, the Model Context Protocol, and plain Node: typed judgments instead of prose, offline by default.",
+      "stars": 8,
+      "forks": 0,
+      "language": "TypeScript",
+      "category": "applications",
+      "pushed_at": "2026-09-21T15:11:45Z",
+      "evidence": "repository metadata"
     },
     {
       "id": 1378234603,
@@ -3478,9 +3016,7 @@
       "language": "Ruby",
       "category": "applications",
       "pushed_at": "2026-09-21T15:22:39Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375142187,
@@ -3493,9 +3029,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-18T22:53:48Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375665053,
@@ -3508,9 +3042,7 @@
       "language": "—",
       "category": "resources",
       "pushed_at": "2026-09-21T11:23:18Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376770928,
@@ -3523,9 +3055,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-19T05:36:45Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374089307,
@@ -3538,9 +3068,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-17T14:42:22Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1287443949,
@@ -3553,9 +3081,7 @@
       "language": "Rust",
       "category": "applications",
       "pushed_at": "2026-09-20T12:10:38Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378888384,
@@ -3568,9 +3094,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T01:47:12Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377956199,
@@ -3583,9 +3107,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T18:36:47Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375891003,
@@ -3598,9 +3120,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-19T12:03:40Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375595277,
@@ -3613,24 +3133,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-19T05:26:11Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
-    },
-    {
-      "id": 1377893932,
-      "name": "PerryLink/jevcore",
-      "url": "https://github.com/PerryLink/jevcore",
-      "description": "TypeSafe Jev for DeepSeek Harness, the Model Context Protocol, and plain Node: typed judgments instead of prose, offline by default.",
-      "description_en": "TypeSafe Jev for DeepSeek Harness, the Model Context Protocol, and plain Node: typed judgments instead of prose, offline by default.",
-      "stars": 7,
-      "forks": 0,
-      "language": "TypeScript",
-      "category": "applications",
-      "pushed_at": "2026-09-21T15:11:45Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375395939,
@@ -3643,9 +3146,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-22T03:16:57Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375122659,
@@ -3658,9 +3159,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T11:34:20Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378760157,
@@ -3673,9 +3172,7 @@
       "language": "JavaScript",
       "category": "tools",
       "pushed_at": "2026-09-21T16:14:26Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377903813,
@@ -3688,9 +3185,7 @@
       "language": "HTML",
       "category": "applications",
       "pushed_at": "2026-09-20T11:38:16Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1379051558,
@@ -3703,9 +3198,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-21T07:40:05Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376104148,
@@ -3718,9 +3211,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-21T22:58:53Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1374355576,
@@ -3733,9 +3224,7 @@
       "language": "TypeScript",
       "category": "tools",
       "pushed_at": "2026-09-20T02:40:02Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1378087447,
@@ -3748,9 +3237,7 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-20T16:08:25Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377981619,
@@ -3763,9 +3250,7 @@
       "language": "HTML",
       "category": "resources",
       "pushed_at": "2026-09-20T10:46:08Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1379229326,
@@ -3778,9 +3263,20 @@
       "language": "Python",
       "category": "applications",
       "pushed_at": "2026-09-21T07:20:36Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
+    },
+    {
+      "id": 1375320131,
+      "name": "buchmark/claude-jev",
+      "url": "https://github.com/buchmark/claude-jev",
+      "description": "Claude Code plugin that scores review findings, debug hypotheses and design options with TypeSafe's Jev — calibrated probabilities instead of one more opinion.",
+      "description_en": "Claude Code plugin that scores review findings, debug hypotheses and design options with TypeSafe's Jev — calibrated probabilities instead of one more opinion.",
+      "stars": 5,
+      "forks": 0,
+      "language": "TypeScript",
+      "category": "tools",
+      "pushed_at": "2026-09-21T04:27:42Z",
+      "evidence": "repository metadata"
     },
     {
       "id": 1378195179,
@@ -3793,9 +3289,7 @@
       "language": "TypeScript",
       "category": "applications",
       "pushed_at": "2026-09-20T15:38:42Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377445701,
@@ -3808,9 +3302,7 @@
       "language": "JavaScript",
       "category": "applications",
       "pushed_at": "2026-09-20T12:31:52Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376463163,
@@ -3823,9 +3315,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-19T05:27:05Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1377418602,
@@ -3838,9 +3328,7 @@
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-21T06:59:12Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1351902995,
@@ -3853,9 +3341,7 @@
       "language": "Python",
       "category": "official",
       "pushed_at": "2026-09-03T00:50:37Z",
-      "evidence": "official organization",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "official organization"
     },
     {
       "id": 1376095310,
@@ -3868,9 +3354,7 @@
       "language": "Kotlin",
       "category": "applications",
       "pushed_at": "2026-09-19T16:45:27Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1375464842,
@@ -3883,9 +3367,7 @@
       "language": "Python",
       "category": "tools",
       "pushed_at": "2026-09-18T08:48:13Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 1376559916,
@@ -3898,9 +3380,7 @@
       "language": "Python",
       "category": "research",
       "pushed_at": "2026-09-20T15:04:13Z",
-      "evidence": "repository metadata",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "repository metadata"
     },
     {
       "id": 807302606,
@@ -3913,28 +3393,26 @@
       "language": "HTML",
       "category": "official",
       "pushed_at": "2026-06-04T14:36:15Z",
-      "evidence": "official organization",
-      "delta_1d": null,
-      "delta_7d": null
+      "evidence": "official organization"
     }
   ],
   "sources": {
     "github": {
       "state": "ok",
-      "fetched_at": "2026-09-22T03:17:34Z",
+      "fetched_at": "2026-09-22T03:22:55Z",
       "count": 261,
       "queries": [
         {
           "query": "jev in:name,description fork:false archived:false stars:>=2",
           "returned": 200,
-          "total": 1062,
+          "total": 1063,
           "truncated": true,
           "incomplete": false
         },
         {
           "query": "topic:jev fork:false archived:false",
           "returned": 200,
-          "total": 1095,
+          "total": 1096,
           "truncated": true,
           "incomplete": false
         },
@@ -3958,24 +3436,24 @@
     },
     "hacker_news": {
       "state": "ok",
-      "fetched_at": "2026-09-22T03:17:35Z",
+      "fetched_at": "2026-09-22T03:22:56Z",
       "count": 8
     },
     "reddit": {
       "state": "unavailable",
       "fetched_at": null,
-      "attempted_at": "2026-09-22T03:17:38Z",
+      "attempted_at": "2026-09-22T03:22:59Z",
       "count": 0,
       "error": "FetchError: HTTP 403"
     },
     "huggingface": {
       "state": "ok",
-      "fetched_at": "2026-09-22T03:17:38Z",
+      "fetched_at": "2026-09-22T03:22:59Z",
       "count": 8
     },
     "news": {
       "state": "ok",
-      "fetched_at": "2026-09-22T03:17:39Z",
+      "fetched_at": "2026-09-22T03:23:00Z",
       "count": 8
     }
   },
@@ -4240,9 +3718,9 @@
       "published_at": "Mon, 21 Sep 2026 02:26:52 GMT"
     },
     {
-      "title": "Companies are putting Jev in charge of AI agent decisions — and prompt injection can influence the verdict - venturebeat.com",
+      "title": "Companies are putting Jev in charge of AI agent decisions — and prompt injection can influence the verdict - VentureBeat",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOc1hBN0prXzg3NTNHbUhNR3p2Wm1yMVJLcW1uckpOUVVfUGpxSWNPVHdhNW1rUWl0U2VEWWJ5R3BrSGFiY09zUHMwOTg1bDM2ZTVqei1ndHRHMzJsMDJiZ2NRc2tNQURsWTRUNkNSb1JPU2NURUM3UEdFSmpHNV95S1hoREhMbndqcWdMVmk0TUExRm4zd1M0UUdOa3lIT0EwSko4bGtYc0hKVkxrelhFZ3lhWklhRkRtVHc5QkJtOFNNeEpKdnJOcFJ6a3ltVTJXbFVN?oc=5",
-      "publisher": "venturebeat.com",
+      "publisher": "VentureBeat",
       "published_at": "Mon, 21 Sep 2026 22:21:26 GMT"
     },
     {
@@ -4252,9 +3730,9 @@
       "published_at": "Sun, 20 Sep 2026 06:48:49 GMT"
     },
     {
-      "title": "TypeSafe launched Jev because sequential LLMs are \"totally useless for computers\" - The New Stack",
+      "title": "TypeSafe launched Jev because sequential LLMs are \"totally useless for computers\" - thenewstack.io",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1zYlhYOUtCRTZBTUJ2d1gtNUVtdy1oZmVYb3owYWNBQklaMjV6RXVrd3JOcF9XWXBpQ242d2hJZjlreE4wTU1HLXZGUXgxWFRqZUI3R3NPR3g5MUk?oc=5",
-      "publisher": "The New Stack",
+      "publisher": "thenewstack.io",
       "published_at": "Mon, 21 Sep 2026 19:40:15 GMT"
     },
     {
@@ -4275,9 +3753,5 @@
       "publisher": "36kr.com",
       "published_at": "Sun, 20 Sep 2026 09:48:00 GMT"
     }
-  ],
-  "baselines": {
-    "1d": null,
-    "7d": null
-  }
+  ]
 }
