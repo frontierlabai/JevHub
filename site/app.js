@@ -67,9 +67,27 @@ function renderPapers(data) {
 }
 
 function renderRadar(data) {
-  const definitions = [['hacker_news', 'Hacker News', 'points', 'comments'], ['reddit', 'Reddit', 'score', 'comments'], ['huggingface', 'Hugging Face', 'likes', 'downloads']];
-  const cards = definitions.map(([key, title, metric, second]) => { const rows = data[key] || []; const status = rows.length ? `${rows.length} ${isEnglish ? 'discoveries' : '条相关发现'} · ${data.sources?.[key]?.state === 'ok' ? (isEnglish ? 'updated' : '已更新') : (isEnglish ? 'cached' : '缓存')}` : (isEnglish ? 'No relevant results' : '暂无可展示结果'); return `<article class="radar-card"><h3>${escapeHTML(title)}</h3><p>${status}</p>${rows.slice(0, 3).map((row) => `<a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a>`).join('')}</article>`; });
-  $('#radar-grid').innerHTML = cards.join('');
+  const definitions = [['hacker_news', 'Hacker News'], ['reddit', 'Reddit'], ['huggingface', 'Hugging Face']];
+  $('#radar-grid').innerHTML = definitions.map(([key, title]) => {
+    const rows = data[key] || [];
+    const source = data.sources?.[key];
+    const available = source?.state === 'ok';
+    const status = rows.length
+      ? `${rows.length} ${isEnglish ? 'discoveries' : '条相关发现'} · ${available ? (isEnglish ? 'Updated' : '已更新') : (isEnglish ? 'Cached' : '缓存')}`
+      : available ? (isEnglish ? 'No matching results in this refresh' : '本次未检索到相关结果')
+        : (isEnglish ? 'Automatic collection unavailable' : '自动抓取暂不可用');
+    let content = rows.slice(0, 3).map((row) => `<a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a>`).join('');
+    if (key === 'reddit') {
+      if (!rows.length) {
+        const curated = (data.curated_resources || []).filter((row) => {
+          try { return /^(www\.)?reddit\.com$/.test(new URL(row.url).hostname); } catch { return false; }
+        });
+        if (curated.length) content += `<p class="radar-note">${isEnglish ? 'Curated discussions · not live results' : '精选讨论 · 非本次自动抓取'}</p>` + curated.slice(0, 3).map((row) => `<a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(isEnglish ? (row.title_en || row.title) : row.title)}</a>`).join('');
+      }
+      content += `<a href="https://www.reddit.com/search/?q=Jev%20TypeSafe&amp;sort=new" target="_blank" rel="noreferrer">${isEnglish ? 'Search Reddit discussions' : '在 Reddit 搜索更多讨论'} ↗</a>`;
+    }
+    return `<article class="radar-card"><h3>${escapeHTML(title)}</h3><p>${status}</p>${content}</article>`;
+  }).join('');
 }
 
 function renderResources(data) {
