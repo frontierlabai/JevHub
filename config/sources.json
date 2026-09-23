@@ -180,6 +180,10 @@
     "https://news.google.com/rss/search?q=Jev+TypeSafe&hl=en-US&gl=US&ceid=US:en",
     "https://news.google.com/rss/search?q=Jev+TypeSafe&hl=zh-CN&gl=CN&ceid=CN:zh-Hans"
   ],
+  "arxiv_queries": [
+    "all:Jev",
+    "all:\"System One\" AND all:decision"
+  ],
   "curated_resources": [
     {
       "title": "Jev 官方发布公告",

@@ -43,7 +43,7 @@ function renderProjects(data) {
 }
 
 function renderRadar(data) {
-  const definitions = [['hacker_news', 'Hacker News', 'points', 'comments'], ['reddit', 'Reddit', 'score', 'comments'], ['huggingface', 'Hugging Face', 'likes', 'downloads']];
+  const definitions = [['hacker_news', 'Hacker News', 'points', 'comments'], ['reddit', 'Reddit', 'score', 'comments'], ['huggingface', 'Hugging Face', 'likes', 'downloads'], ['arxiv', 'arXiv', 'authors', 'published_at']];
   const cards = definitions.map(([key, title, metric, second]) => { const rows = data[key] || []; const status = rows.length ? `${rows.length} ${isEnglish ? 'discoveries' : '条相关发现'} · ${data.sources?.[key]?.state === 'ok' ? (isEnglish ? 'updated' : '已更新') : (isEnglish ? 'cached' : '缓存')}` : (isEnglish ? 'No relevant results' : '暂无可展示结果'); return `<article class="radar-card"><h3>${escapeHTML(title)}</h3><p>${status}</p>${rows.slice(0, 3).map((row) => `<a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a>`).join('')}</article>`; });
   $('#radar-grid').innerHTML = cards.join('');
 }

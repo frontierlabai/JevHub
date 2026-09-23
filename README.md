@@ -134,6 +134,12 @@
 - [Jev AI agent security: Prompt injection risk - VentureBeat](https://news.google.com/rss/articles/CBMi0wFBVV95cUxOc1hBN0prXzg3NTNHbUhNR3p2Wm1yMVJLcW1uckpOUVVfUGpxSWNPVHdhNW1rUWl0U2VEWWJ5R3BrSGFiY09zUHMwOTg1bDM2ZTVqei1ndHRHMzJsMDJiZ2NRc2tNQURsWTRUNkNSb1JPU2NURUM3UEdFSmpHNV95S1hoREhMbndqcWdMVmk0TUExRm4zd1M0UUdOa3lIT0EwSko4bGtYc0hKVkxrelhFZ3lhWklhRkRtVHc5QkJtOFNNeEpKdnJOcFJ6a3ltVTJXbFVN?oc=5)
 - [有人拿Jev 给聊天软件配了个“AI 副驾”——读懂对方意图，但不替你发- OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA](https://news.google.com/rss/articles/CBMiS0FVX3lxTE93ZWlCcU9TVzFQb2NBMGR5RjNISXByR05Gdy04UW56dXRHUTFWTHFiVW80WjNwVTFBdTdvZmpPM3cwMDR4emZYZHFFRQ?oc=5)
 
+### arXiv
+
+暂不可用 · 最近成功抓取: —
+
+本次没有可展示的相关结果。
+
 <a id="curated-resources"></a>
 
 ## 💎 精选阅读与入口

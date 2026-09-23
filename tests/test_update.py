@@ -355,6 +355,27 @@ class CommunityCollectionTests(unittest.TestCase):
         rows = update.collect_huggingface(client, {"community_limit": 2})
         self.assertEqual([row["title"] for row in rows], ["community/jev", "community/openjev"])
 
+    def test_arxiv_filters_context_deduplicates_and_orders_recent_papers(self):
+        atom = "http://www.w3.org/2005/Atom"
+        root = ET.Element(f"{{{atom}}}feed")
+        for ident, title, published in [
+            ("https://arxiv.org/abs/2", "Jev for typed AI decisions", "2026-09-22T00:00:00Z"),
+            ("https://arxiv.org/abs/1", "Jev for typed AI decisions", "2026-09-20T00:00:00Z"),
+            ("https://arxiv.org/abs/3", "Jevons paradox in economics", "2026-09-23T00:00:00Z"),
+        ]:
+            entry = ET.SubElement(root, f"{{{atom}}}entry")
+            ET.SubElement(entry, f"{{{atom}}}id").text = ident
+            ET.SubElement(entry, f"{{{atom}}}title").text = title
+            ET.SubElement(entry, f"{{{atom}}}summary").text = "System One decision model"
+            ET.SubElement(entry, f"{{{atom}}}published").text = published
+            author = ET.SubElement(entry, f"{{{atom}}}author")
+            ET.SubElement(author, f"{{{atom}}}name").text = "Researcher"
+        client = Mock()
+        client.get.return_value = ET.tostring(root, encoding="unicode")
+        rows = update.collect_arxiv(client, {"arxiv_queries": ["all:Jev"], "community_limit": 8})
+        self.assertEqual([row["url"] for row in rows], ["https://arxiv.org/abs/2", "https://arxiv.org/abs/1"])
+        self.assertEqual(rows[0]["authors"], ["Researcher"])
+
 
 class RefreshAndCliTests(unittest.TestCase):
     """Use a real temporary workspace and fake transport; no live APIs or repository writes."""

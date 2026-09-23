@@ -242,6 +242,27 @@ def collect_news(client, config):
     return list(combined.values())[:config["community_limit"]]
 
 
+def collect_arxiv(client, config):
+    """Collect recent papers and preprints that mention Jev in an AI context."""
+    atom = "{http://www.w3.org/2005/Atom}"
+    rows = {}
+    for query in config.get("arxiv_queries", []):
+        url = "https://export.arxiv.org/api/query?" + urlencode({
+            "search_query": query, "start": 0, "max_results": 25,
+            "sortBy": "submittedDate", "sortOrder": "descending"})
+        root = ET.fromstring(client.get(url, raw=True))
+        for entry in root.findall(f"{atom}entry"):
+            title = " ".join((entry.findtext(f"{atom}title", "") or "").split())
+            summary = " ".join((entry.findtext(f"{atom}summary", "") or "").split())
+            paper_url = entry.findtext(f"{atom}id", "")
+            if not title or not safe_url(paper_url) or not relevant(title + " " + summary):
+                continue
+            authors = [name.text.strip() for name in entry.findall(f"{atom}author/{atom}name") if name.text]
+            rows[paper_url] = {"title": title, "url": paper_url, "summary": summary,
+                               "authors": authors, "published_at": entry.findtext(f"{atom}published", "")}
+    return sorted(rows.values(), key=lambda row: row.get("published_at", ""), reverse=True)[:config["community_limit"]]
+
+
 def load_json(path, default=None):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
 
@@ -311,8 +332,8 @@ def dashboard(data, english=False):
         "", '<a id="community-radar"></a>', "", tr("## 🌐 站外发现与讨论", "## 🌐 Beyond GitHub"), "",
         tr("各平台独立展示：HN points、Reddit score、Hugging Face likes / 近 30 天 downloads 不混算成 Star。新闻是检索发现，未验证传播量。",
            "Platform signals stay separate: HN points, Reddit scores, and Hugging Face likes / trailing 30-day downloads are not GitHub stars. News is discovery, with no verified reach metric.")]
-    for name, title in (("hacker_news", "Hacker News"), ("reddit", "Reddit"), ("huggingface", "Hugging Face"), ("news", tr("新闻 / 文章", "News / articles"))):
-        status = sources[name]
+    for name, title in (("hacker_news", "Hacker News"), ("reddit", "Reddit"), ("huggingface", "Hugging Face"), ("news", tr("新闻 / 文章", "News / articles")), ("arxiv", "arXiv")):
+        status = sources.get(name, {"state": "unavailable", "fetched_at": None})
         state = {"ok": tr("已更新", "updated"), "stale": tr("旧缓存", "stale cache"),
                  "unavailable": tr("暂不可用", "unavailable")}[status["state"]]
         lines += ["", f"### {title}", "", f"{state} · {tr('最近成功抓取', 'Last successful fetch')}: {status.get('fetched_at') or '—'}", ""]
@@ -326,6 +347,11 @@ def dashboard(data, english=False):
                          "Community uploads / independent implementations; not official TypeSafe model weights."), "",
                       "| Model | ♥ Likes | ↓ Downloads (30d) |", "| :-- | --: | --: |"]
             lines += [f"| {link(r['title'], r['url'])} | {r['likes']:,} | {r['downloads']:,} |" for r in rows]
+        elif name == "arxiv":
+            lines += [tr("论文与预印本；仅作为发现入口，不代表同行评审或官方关联。",
+                         "Papers and preprints for discovery; not a peer-review or official-affiliation claim."), "",
+                      tr("| 论文 | 作者 | 提交时间 |", "| Paper | Authors | Submitted |"), "| :-- | :-- | :-- |"]
+            lines += [f"| {link(r['title'], r['url'])} | {cell(', '.join(r.get('authors', [])) or '—', 70)} | {cell(r.get('published_at', '')[:10])} |" for r in rows]
         elif name == "news":
             lines += [f"- {link(r['title'], r['url'])}" for r in rows]
         else:
@@ -403,7 +429,8 @@ def refresh(config, previous, client):
             "daily_brief": {"count": len(new_repositories),
                             "repositories": new_repositories[:8]}}
     for name, collector in (("hacker_news", collect_hn), ("reddit", collect_reddit),
-                            ("huggingface", collect_huggingface), ("news", collect_news)):
+                            ("huggingface", collect_huggingface), ("news", collect_news),
+                            ("arxiv", collect_arxiv)):
         print(f"Collecting {name}...", flush=True)
         try:
             data[name] = collector(client, config)
