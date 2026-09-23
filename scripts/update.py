@@ -246,9 +246,12 @@ def collect_arxiv(client, config):
     """Collect recent papers and preprints that mention Jev in an AI context."""
     atom = "{http://www.w3.org/2005/Atom}"
     rows = {}
+    since = datetime.fromisoformat(config.get("arxiv_since") or config.get("launched_at", stamp()[:10])).strftime("%Y%m%d0000")
+    until = datetime.now(timezone.utc).strftime("%Y%m%d2359")
     for query in config.get("arxiv_queries", []):
+        dated_query = f"({query}) AND submittedDate:[{since} TO {until}]"
         url = "https://export.arxiv.org/api/query?" + urlencode({
-            "search_query": query, "start": 0, "max_results": 25,
+            "search_query": dated_query, "start": 0, "max_results": 25,
             "sortBy": "submittedDate", "sortOrder": "descending"})
         root = ET.fromstring(client.get(url, raw=True))
         for entry in root.findall(f"{atom}entry"):

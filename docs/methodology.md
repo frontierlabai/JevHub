@@ -11,7 +11,7 @@ JevHub 是 TypeSafe Jev 生态的公开资源目录。它按 GitHub 关注度帮
 | Reddit public JSON | 最近一个月检索结果前 100 条，再按 Jev 与 AI 上下文过滤 | score 降序 |
 | Hugging Face API | Jev 关键词模型检索，按 likes 获取前 30 条 | likes 降序，downloads 作为同分排序 |
 | Google News RSS | Jev + TypeSafe 的中英文公开新闻检索 | 各语言交替，保留来源内部顺序；无热度分数 |
-| arXiv API | Jev、System One 与 decision 关键词的近期论文和预印本 | 按 submitted date 倒序；去重后取配置上限 |
+| arXiv API | Jev 爆火起始日之后的 Jev、System One 与 decision 论文和预印本 | 按 submitted date 倒序；去重后取配置上限 |
 | 精选资源 | 人工核验的官方入口、作者文章、视频元数据与讨论链接 | 编辑顺序 |
 
 GitHub 搜索总数可能大于采集数；README 的“检索范围与数据状态”逐条列出实际数量。超过页数上限的结果不是抓取错误，但可能漏掉排名靠后的资源。近期检索通道按更新时间排序，专门补捉低 Star 但刚出现的仓库。API 返回 incomplete_results、搜索或种子请求失败时，整次 GitHub 更新失败，保留已提交数据。工作流保持失败状态，方便维护者发现问题。

@@ -184,6 +184,7 @@
     "all:Jev",
     "all:\"System One\" AND all:decision"
   ],
+  "arxiv_since": "2026-09-15",
   "curated_resources": [
     {
       "title": "Jev 官方发布公告",
