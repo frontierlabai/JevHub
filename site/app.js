@@ -47,7 +47,7 @@ function renderPapers(data) {
   $('#papers-list').innerHTML = rows.length ? rows.slice(0, 8).map((row) => {
     const authors = (row.authors || []).join(', ') || (isEnglish ? 'Unknown authors' : '作者未提供');
     const date = row.published_at ? new Date(row.published_at).toLocaleDateString(isEnglish ? 'en-US' : 'zh-CN', { year: 'numeric', month: 'short', day: 'numeric' }) : '—';
-    return `<article class="paper"><div><a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a><p>${escapeHTML(authors)}</p></div><time>${escapeHTML(date)}</time></article>`;
+    return `<article class="paper"><div><span class="paper-label">arXiv · ${isEnglish ? 'PREPRINT' : '预印本'}</span><a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a><p>${escapeHTML(authors)}</p></div><time>${escapeHTML(date)}</time></article>`;
   }).join('') : `<p class="empty">${isEnglish ? 'No recent arXiv papers are available.' : '暂无符合时间范围的 arXiv 论文。'}</p>`;
 }
 
