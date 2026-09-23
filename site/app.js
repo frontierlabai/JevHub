@@ -2,6 +2,15 @@ const isEnglish = document.documentElement.lang === 'en';
 const state = { data: null, category: 'all', query: '', shown: 9, papersExpanded: false };
 const labels = isEnglish ? { official: 'Official', research: 'Independent research', resources: 'Resources', tools: 'Tools', applications: 'Apps / integrations' } : { official: '官方项目', research: '独立研究', resources: '资源合集', tools: '开发工具', applications: '应用 / 集成' };
 const $ = (selector) => document.querySelector(selector);
+const visitCounter = $('#site-visit-counter');
+if (visitCounter) {
+  const showVisitFailure = () => {
+    visitCounter.hidden = true;
+    $('#visits-unavailable').hidden = false;
+  };
+  visitCounter.addEventListener('error', showVisitFailure);
+  if (visitCounter.complete && !visitCounter.naturalWidth) showVisitFailure();
+}
 const formatNumber = (value) => new Intl.NumberFormat('zh-CN').format(value || 0);
 const formatDate = (value) => value ? new Date(value).toLocaleDateString(isEnglish ? 'en-US' : 'zh-CN', { month: 'short', day: 'numeric' }) : '—';
 const escapeHTML = (value) => String(value ?? '').replace(/[&<>"']/g, (character) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[character]));

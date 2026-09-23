@@ -49,6 +49,8 @@ h1 { grid-column: 1; margin: 0; font-size: clamp(28px, 3.4vw, 42px); font-weight
 .stats strong { font-size: 23px; line-height: 1.2; letter-spacing: -.6px; font-variant-numeric: tabular-nums; }
 .stats span, .stats small { color: var(--muted); font-size: 11px; }
 .stats .stats-note { display: block; font-size: 12px; }
+.site-visits { display: flex; width: fit-content; max-width: 100%; margin-top: 8px; text-decoration: none; }
+.site-visits img { display: block; max-width: 100%; height: 20px; }
 .live-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: var(--teal); margin-right: 6px; }
 .brief { display: flex; gap: 20px; padding-block: 17px 0; font-size: 12px; }
 .brief-kicker { flex-shrink: 0; color: var(--teal); font-weight: 700; }
