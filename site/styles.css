@@ -235,3 +235,10 @@ h2 { margin: 0; font-size: 25px; line-height: 1.25; font-weight: 650; letter-spa
   .brief-projects { grid-template-columns: minmax(0, 1fr); }
   .brief-project:nth-child(2) { border-top: 1px solid var(--line); }
 }
+
+#show-all-projects { border-color: transparent; margin-top: 4px; color: var(--blue); }
+.radar-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; }
+.radar-entry p { margin: -4px 0 10px; color: var(--muted); font-size: 11px; overflow-wrap: anywhere; }
+.radar-more summary { padding-block: 12px; color: var(--blue); font-size: 12px; }
+.retry-data { padding: 8px 12px; border: 1px solid var(--line); border-radius: 6px; background: var(--surface); color: var(--ink); }
+@media (max-width: 600px) { .radar-grid { grid-template-columns: minmax(0, 1fr); } }

@@ -62,6 +62,10 @@ function renderProjects(data) {
   const visible = projects.slice(0, state.shown);
   $('#projects-grid').innerHTML = visible.length ? visible.map((item) => `<article class="project-card" data-category="${escapeHTML(item.category)}"><div class="project-meta"><span class="category">${escapeHTML(labels[item.category] || item.category)}</span><span class="stars">★ ${formatNumber(item.stars)}</span></div><div class="card-title"><a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer"><span class="repo-owner">${escapeHTML(item.name.split("/")[0])} /</span>${escapeHTML(item.name.split("/").slice(1).join("/") || item.name)}</a></div><p class="description">${escapeHTML((isEnglish ? item.description_en : item.description) || (isEnglish ? 'Open the repository for details.' : '打开仓库查看详情。'))}</p><div class="card-foot">${escapeHTML(item.language || '—')} · ${isEnglish ? 'Updated' : '更新于'} ${formatDate(item.pushed_at)}</div></article>`).join('') : `<p class="empty">${isEnglish ? 'No matching projects. Try another search or category.' : '没有匹配的项目，请尝试其他关键词或分类。'}</p>`;
   $('#project-results').textContent = isEnglish ? `Showing ${visible.length} of ${projects.length} projects` : `显示 ${visible.length} / ${projects.length} 个项目`;
+  const all = $('#show-all-projects');
+  all.hidden = projects.length <= state.shown;
+  all.textContent = isEnglish ? `Show all ${projects.length} projects` : `显示全部 ${projects.length} 个项目`;
+  all.onclick = () => { state.shown = projects.length; renderProjects(data); };
   const more = $('#load-more'); more.hidden = projects.length <= state.shown; more.onclick = () => { state.shown += 9; renderProjects(data); };
 }
 
@@ -80,7 +84,7 @@ function renderPapers(data) {
 }
 
 function renderRadar(data) {
-  const definitions = [['hacker_news', 'Hacker News'], ['reddit', 'Reddit'], ['huggingface', 'Hugging Face']];
+  const definitions = [['hacker_news', 'Hacker News'], ['reddit', 'Reddit'], ['huggingface', 'Hugging Face'], ['news', isEnglish ? 'News / articles' : '新闻 / 文章']];
   $('#radar-grid').innerHTML = definitions.map(([key, title]) => {
     const rows = data[key] || [];
     const source = data.sources?.[key];
@@ -89,13 +93,18 @@ function renderRadar(data) {
       ? `${rows.length} ${isEnglish ? 'discoveries' : '条相关发现'} · ${available ? (isEnglish ? 'Updated' : '已更新') : (isEnglish ? 'Cached' : '缓存')}`
       : available ? (isEnglish ? 'No matching results in this refresh' : '本次未检索到相关结果')
         : (isEnglish ? 'Automatic collection unavailable' : '自动抓取暂不可用');
-    let content = rows.slice(0, 3).map((row) => `<a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a>`).join('');
+    const renderRow = (row) => {
+      const metadata = [row.publisher, row.published_at ? formatDate(row.published_at) : '', row.score != null ? `${formatNumber(row.score)} ${isEnglish ? 'points' : '分'}` : '', row.comments != null ? `${formatNumber(row.comments)} ${isEnglish ? 'comments' : '条评论'}` : '', row.likes != null ? `${formatNumber(row.likes)} likes` : '', row.downloads != null ? `${formatNumber(row.downloads)} ${isEnglish ? 'downloads' : '次下载'}` : ''].filter(Boolean).join(' · ');
+      return `<div class="radar-entry"><a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a>${metadata ? `<p>${escapeHTML(metadata)}</p>` : ''}${row.summary ? `<p>${escapeHTML(row.summary)}</p>` : ''}</div>`;
+    };
+    let content = rows.slice(0, 3).map(renderRow).join('');
+    if (rows.length > 3) content += `<details class="radar-more"><summary>${isEnglish ? `View all ${rows.length} items` : `查看全部 ${rows.length} 条`}</summary>${rows.slice(3).map(renderRow).join('')}</details>`;
     if (key === 'reddit') {
       if (!rows.length) {
         const curated = (data.curated_resources || []).filter((row) => {
           try { return /^(www\.)?reddit\.com$/.test(new URL(row.url).hostname); } catch { return false; }
         });
-        if (curated.length) content += `<p class="radar-note">${isEnglish ? 'Curated discussions · not live results' : '精选讨论 · 非本次自动抓取'}</p>` + curated.slice(0, 3).map((row) => `<a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(isEnglish ? (row.title_en || row.title) : row.title)}</a>`).join('');
+        if (curated.length) content += `<p class="radar-note">${isEnglish ? 'Curated discussions · not live results' : '精选讨论 · 非本次自动抓取'}</p>` + curated.map((row) => `<a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(isEnglish ? (row.title_en || row.title) : row.title)}</a>`).join('');
       }
       content += `<a href="https://www.reddit.com/search/?q=Jev%20TypeSafe&amp;sort=new" target="_blank" rel="noreferrer">${isEnglish ? 'Search Reddit discussions' : '在 Reddit 搜索更多讨论'} ↗</a>`;
     }
@@ -104,7 +113,8 @@ function renderRadar(data) {
 }
 
 function renderResources(data) {
-  $('#resources-list').innerHTML = (data.curated_resources || []).slice(0, 6).map((item) => `<article class="resource"><div><a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer">${escapeHTML(isEnglish ? (item.title_en || item.title) : item.title)}</a><p>${escapeHTML(isEnglish ? (item.description_en || item.description) : item.description)}</p></div><span class="resource-arrow">↗</span></article>`).join('');
+  $('#resources-count').textContent = isEnglish ? `${(data.curated_resources || []).length} resources` : `共 ${(data.curated_resources || []).length} 条资源`;
+  $('#resources-list').innerHTML = (data.curated_resources || []).map((item) => `<article class="resource"><div><a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer">${escapeHTML(isEnglish ? (item.title_en || item.title) : item.title)}</a><p>${escapeHTML(isEnglish ? (item.description_en || item.description) : item.description)}</p></div><span class="resource-arrow">↗</span></article>`).join('');
 }
 
 async function init() {
@@ -129,8 +139,10 @@ async function init() {
     $('#search').addEventListener('input', (event) => { state.query = event.target.value.trim(); state.shown = 9; renderProjects(state.data); });
   } catch (error) {
     $('#load-more').hidden = true;
-    const message = `<p class="empty">${isEnglish ? 'Data could not be loaded. Refresh this page or ' : '数据加载失败，请刷新页面或'}<a href="https://github.com/frontierlabai/JevHub">${isEnglish ? 'browse the repository' : '查看仓库'}</a>。</p>`;
+    $('#show-all-projects').hidden = true;
+    const message = `<div class="empty">${isEnglish ? 'Data could not be loaded.' : '数据暂时加载失败。'} <button type="button" class="retry-data">${isEnglish ? 'Retry' : '重新加载'}</button></div>`;
     ['#projects-grid', '#papers-list', '#radar-grid', '#resources-list'].forEach((selector) => { $(selector).innerHTML = message; });
+    document.querySelectorAll('.retry-data').forEach((button) => button.addEventListener('click', () => location.reload()));
   }
 }
 init();
