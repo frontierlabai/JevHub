@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#08111f" />
+    <meta name="description" content="JevHub：发现 Jev 项目、工具、研究与社区讨论。" />
+    <title>JevHub · Jev 生态地图</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="noise"></div>
+    <header class="topbar shell">
+      <a class="brand" href="#top" aria-label="JevHub home"><span class="brand-mark">J</span><span>Jev<span class="brand-accent">Hub</span></span></a>
+      <nav>
+        <a href="#projects">项目</a>
+        <a href="#radar">社区雷达</a>
+        <a href="#resources">精选资源</a>
+      </nav>
+      <a class="language" href="../README.en.md">EN <span>↗</span></a>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i> INDEPENDENT COMMUNITY RADAR</p>
+          <h1>看见 Jev<br /><em>正在发生什么。</em></h1>
+          <p class="lede">把值得关注的项目、工具、研究和讨论，整理成一张持续更新的生态地图。</p>
+          <div class="hero-actions"><a class="button primary" href="#projects">探索项目 <span>↓</span></a><a class="button quiet" href="https://docs.typesafe.ai/introduction" target="_blank" rel="noreferrer">了解 Jev ↗</a></div>
+        </div>
+        <div class="hero-orbit" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="orbit-core">J</div><span class="node node-a"></span><span class="node node-b"></span><span class="node node-c"></span><span class="node node-d"></span></div>
+      </section>
+
+      <section class="stats shell" aria-label="数据概览">
+        <div><strong id="repo-count">—</strong><span>相关项目</span></div>
+        <div><strong id="star-count">—</strong><span>累计 Stars</span></div>
+        <div><strong id="updated-at">—</strong><span>最近更新</span></div>
+        <div class="stats-note"><span class="live-dot"></span>每日自动刷新<br /><small>UTC 01:17 · 北京 09:17</small></div>
+      </section>
+
+      <section id="projects" class="section shell">
+        <div class="section-heading"><div><p class="eyebrow">01 / PROJECTS</p><h2>项目精选</h2></div><p class="section-intro">从官方 SDK 到独立复现，从 Agent 工具到真实应用。按当前 Stars 排序，先看项目，再看热度。</p></div>
+        <div class="toolbar"><label class="search"><span>⌕</span><input id="search" type="search" placeholder="搜索项目、描述或类别…" /></label><div id="filters" class="filters" role="tablist" aria-label="项目类别"></div></div>
+        <div id="projects-grid" class="project-grid" aria-live="polite"></div>
+        <button id="load-more" class="load-more" type="button">加载更多项目 <span>↓</span></button>
+      </section>
+
+      <section id="radar" class="section shell split-section">
+        <div class="section-heading compact"><div><p class="eyebrow">02 / RADAR</p><h2>社区雷达</h2></div><p class="section-intro">不把不同平台的数字混成一个分数，只把它们作为发现线索。</p></div>
+        <div id="radar-grid" class="radar-grid"></div>
+      </section>
+
+      <section id="resources" class="section shell resources-section">
+        <div class="section-heading compact"><div><p class="eyebrow">03 / START HERE</p><h2>精选入口</h2></div><a class="text-link" href="../README.md#curated-resources">查看完整目录 ↗</a></div>
+        <div id="resources-list" class="resources-list"></div>
+      </section>
+    </main>
+    <footer class="shell footer"><span>JevHub · Built for curious builders.</span><span>Public sources · Community maintained · <a href="https://github.com/frontierlabai/JevHub" target="_blank" rel="noreferrer">GitHub ↗</a></span></footer>
+    <script src="app.js"></script>
+  </body>
+</html>
