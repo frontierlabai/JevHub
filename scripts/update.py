@@ -257,10 +257,21 @@ def dashboard(data, english=False):
         return en if english else zh
     repos, sources = data["repositories"], data["sources"]
     total = sum(r["stars"] for r in repos)
+    brief = data.get("daily_brief", {})
+    new_repos = brief.get("repositories", [])
+    if "daily_brief" not in data:
+        brief_line = tr("每日简报将在下一次成功刷新后生成。", "The daily brief will appear after the next successful refresh.")
+    elif new_repos:
+        brief_line = (tr("本次发现 ", "This refresh found ") + str(brief.get("count", len(new_repos))) +
+                      tr(" 个新项目：", " new project(s): ") + "；".join(link(r["name"], r["url"]) for r in new_repos))
+    else:
+        brief_line = tr("本次没有发现新增项目。", "No new projects were found in this refresh.")
     lines = [
         f"> {tr('更新于', 'Updated')} **{data['generated_at']}** · **{len(repos)}** {tr('个相关仓库', 'related repositories')} · **{total:,}** {tr('个累计 Star', 'total repository stars')}",
         "", tr("仓库 Star 包含其全部功能获得的关注，不等于 Jev 功能的热度；以下为检索范围内的结果。",
                "Repository stars cover all features, not just Jev. Rankings cover the configured search scope."),
+        "", '<a id="daily-brief"></a>', "", tr("## 🆕 今日新增", "## 🆕 New today"), "",
+        brief_line,
         "", '<a id="github-ranking"></a>', "", tr("## 🔥 项目精选", "## 🔥 Featured projects"), "",
         tr("按当前 Star 总数降序排列；同分按仓库名排序。先看项目，再看热度与一句话介绍。",
            "Sorted by total stars, with repository name as the tie-breaker. Start with the projects, then scan their signals and context."), "",
@@ -362,9 +373,13 @@ def refresh(config, previous, client):
     print("Collecting GitHub repositories...", flush=True)
     repos, github_status = collect_github(client, config)
     repos.sort(key=lambda r: (-r["stars"], r["name"].lower()))
+    previous_ids = {str(row.get("id")) for row in previous.get("repositories", [])}
+    new_repositories = [row for row in repos if str(row["id"]) not in previous_ids]
     data = {"schema_version": 1, "generated_at": stamp(), "repositories": repos,
             "sources": {"github": github_status}, "curated_resources": config["curated_resources"],
-            "limits": {"repositories": config["readme_limit"]}}
+            "limits": {"repositories": config["readme_limit"]},
+            "daily_brief": {"count": len(new_repositories),
+                            "repositories": new_repositories[:8]}}
     for name, collector in (("hacker_news", collect_hn), ("reddit", collect_reddit),
                             ("huggingface", collect_huggingface), ("news", collect_news)):
         print(f"Collecting {name}...", flush=True)

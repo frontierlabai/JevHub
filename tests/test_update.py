@@ -448,6 +448,8 @@ class RefreshAndCliTests(unittest.TestCase):
             stack.enter_context(redirect_stdout(io.StringIO()))
             data = update.refresh(self.config, {}, FakeClient())
         self.assertEqual([row["id"] for row in data["repositories"]], [4, 3, 2, 1])
+        self.assertEqual(data["daily_brief"]["count"], 4)
+        self.assertEqual([row["id"] for row in data["daily_brief"]["repositories"]], [4, 3, 2, 1])
         for name in self.OPTIONAL:
             with self.subTest(source=name):
                 self.assertEqual(data[name], [])

@@ -28,6 +28,12 @@
 
 Repository stars cover all features, not just Jev. Rankings cover the configured search scope.
 
+<a id="daily-brief"></a>
+
+## 🆕 New today
+
+The daily brief will appear after the next successful refresh.
+
 <a id="github-ranking"></a>
 
 ## 🔥 Featured projects

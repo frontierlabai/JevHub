@@ -11,6 +11,14 @@ function renderStats(data) {
   $('#updated-at').textContent = formatDate(data.generated_at);
 }
 
+function renderBrief(data) {
+  const brief = data.daily_brief;
+  if (!brief) return;
+  const rows = brief.repositories || [];
+  const names = rows.map((item) => `<a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer">${escapeHTML(item.name)}</a>`).join('、');
+  $('#brief-text').innerHTML = rows.length ? `本次刷新发现 ${brief.count} 个新项目：${names}${brief.count > rows.length ? `，以及另外 ${brief.count - rows.length} 个项目` : ''}。` : '本次刷新没有发现新增项目。';
+}
+
 function renderFilters(data) {
   const counts = data.repositories.reduce((map, item) => { map[item.category] = (map[item.category] || 0) + 1; return map; }, {});
   const filters = [['all', '全部', data.repositories.length], ...Object.entries(labels).map(([key, name]) => [key, name, counts[key] || 0])];
@@ -48,7 +56,7 @@ async function init() {
     const response = await fetch('../data/latest.json');
     if (!response.ok) throw new Error('data unavailable');
     state.data = await response.json();
-    renderStats(state.data); renderFilters(state.data); renderProjects(state.data); renderRadar(state.data); renderResources(state.data);
+    renderStats(state.data); renderBrief(state.data); renderFilters(state.data); renderProjects(state.data); renderRadar(state.data); renderResources(state.data);
     $('#search').addEventListener('input', (event) => { state.query = event.target.value.trim(); state.shown = 9; renderProjects(state.data); });
   } catch (error) {
     $('#projects-grid').innerHTML = '<p class="empty">数据暂时无法加载。请通过本地服务器打开此页面，或查看 README。</p>';
