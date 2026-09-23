@@ -288,7 +288,7 @@ def hydrate_daily_brief(data):
     previous_ids = {str(row.get("id")) for row in prior.get("repositories", [])}
     new_repositories = [row for row in data.get("repositories", []) if str(row.get("id")) not in previous_ids]
     hydrated = dict(data)
-    hydrated["daily_brief"] = {"count": len(new_repositories), "repositories": new_repositories[:8]}
+    hydrated["daily_brief"] = {"count": len(new_repositories), "repositories": new_repositories}
     return hydrated
 
 
@@ -440,7 +440,7 @@ def refresh(config, previous, client):
             "sources": {"github": github_status}, "curated_resources": config["curated_resources"],
             "limits": {"repositories": config["readme_limit"]},
             "daily_brief": {"count": len(new_repositories),
-                            "repositories": new_repositories[:8]}}
+                            "repositories": new_repositories}}
     for name, collector in (("hacker_news", collect_hn), ("reddit", collect_reddit),
                             ("huggingface", collect_huggingface), ("news", collect_news),
                             ("arxiv", collect_arxiv)):

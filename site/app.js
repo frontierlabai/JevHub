@@ -27,6 +27,19 @@ function renderBrief(data) {
   const rows = (brief.repositories || []).slice(0, 3);
   const names = rows.map((item) => `<a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer">${escapeHTML(item.name)}</a>`).join(isEnglish ? ', ' : '、');
   $('#brief-text').innerHTML = rows.length ? (isEnglish ? `This refresh found ${brief.count} new project(s): ${names}${brief.count > rows.length ? `, plus ${brief.count - rows.length} more` : ''}.` : `本次刷新发现 ${brief.count} 个新项目：${names}${brief.count > rows.length ? `，以及另外 ${brief.count - rows.length} 个项目` : ''}。`) : (isEnglish ? 'No new projects were found in this refresh.' : '本次刷新没有发现新增项目。');
+  const projects = brief.repositories || [];
+  const toggle = $('#brief-toggle');
+  const panel = $('#brief-projects');
+  panel.innerHTML = projects.map((item) => `<article class="brief-project"><div><a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer">${escapeHTML(item.name)}</a><span class="stars">☆ ${formatNumber(item.stars)}</span></div><p>${escapeHTML(isEnglish ? (item.description_en || item.description) : item.description)}</p></article>`).join('');
+  toggle.hidden = !projects.length;
+  toggle.onclick = () => {
+    const expanded = toggle.getAttribute('aria-expanded') !== 'true';
+    toggle.setAttribute('aria-expanded', String(expanded));
+    const label = isEnglish ? (expanded ? 'Hide new projects' : 'Show new projects') : (expanded ? '收起新增项目' : '展开新增项目');
+    toggle.setAttribute('aria-label', label);
+    toggle.title = label;
+    panel.hidden = !expanded;
+  };
 }
 
 function renderFilters(data) {
@@ -109,7 +122,7 @@ async function init() {
         const snapshot = await history.json();
         const ids = new Set((snapshot.repositories || []).map((item) => String(item.id)));
         const rows = state.data.repositories.filter((item) => !ids.has(String(item.id)));
-        state.data.daily_brief = { count: rows.length, repositories: rows.slice(0, 8) };
+        state.data.daily_brief = { count: rows.length, repositories: rows };
       }
     }
     renderStats(state.data); renderBrief(state.data); renderFilters(state.data); renderProjects(state.data); renderPapers(state.data); renderRadar(state.data); renderResources(state.data);
