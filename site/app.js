@@ -1,5 +1,5 @@
 const isEnglish = document.documentElement.lang === 'en';
-const state = { data: null, category: 'all', query: '', shown: 9 };
+const state = { data: null, category: 'all', query: '', shown: 9, papersExpanded: false };
 const labels = isEnglish ? { official: 'Official', research: 'Independent research', resources: 'Resources', tools: 'Tools', applications: 'Apps / integrations' } : { official: '官方项目', research: '独立研究', resources: '资源合集', tools: '开发工具', applications: '应用 / 集成' };
 const $ = (selector) => document.querySelector(selector);
 const formatNumber = (value) => new Intl.NumberFormat('zh-CN').format(value || 0);
@@ -15,15 +15,15 @@ function renderStats(data) {
 function renderBrief(data) {
   const brief = data.daily_brief;
   if (!brief) return;
-  const rows = brief.repositories || [];
+  const rows = (brief.repositories || []).slice(0, 3);
   const names = rows.map((item) => `<a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer">${escapeHTML(item.name)}</a>`).join(isEnglish ? ', ' : '、');
   $('#brief-text').innerHTML = rows.length ? (isEnglish ? `This refresh found ${brief.count} new project(s): ${names}${brief.count > rows.length ? `, plus ${brief.count - rows.length} more` : ''}.` : `本次刷新发现 ${brief.count} 个新项目：${names}${brief.count > rows.length ? `，以及另外 ${brief.count - rows.length} 个项目` : ''}。`) : (isEnglish ? 'No new projects were found in this refresh.' : '本次刷新没有发现新增项目。');
 }
 
 function renderFilters(data) {
   const counts = data.repositories.reduce((map, item) => { map[item.category] = (map[item.category] || 0) + 1; return map; }, {});
-  const filters = [['all', '全部', data.repositories.length], ...Object.entries(labels).map(([key, name]) => [key, name, counts[key] || 0])];
-  $('#filters').innerHTML = filters.map(([key, name, count]) => `<button class="filter ${state.category === key ? 'active' : ''}" data-category="${escapeHTML(key)}" role="tab">${escapeHTML(name)} <span>${count}</span></button>`).join('');
+  const filters = [['all', isEnglish ? 'All' : '全部', data.repositories.length], ...Object.entries(labels).map(([key, name]) => [key, name, counts[key] || 0])];
+  $('#filters').innerHTML = filters.map(([key, name, count]) => `<button class="filter ${state.category === key ? 'active' : ''}" data-category="${escapeHTML(key)}" aria-pressed="${state.category === key}">${escapeHTML(name)} <span>${count}</span></button>`).join('');
   $('#filters').querySelectorAll('.filter').forEach((button) => button.addEventListener('click', () => { state.category = button.dataset.category; state.shown = 9; renderFilters(data); renderProjects(data); }));
 }
 
@@ -38,17 +38,23 @@ function filteredProjects(data) {
 function renderProjects(data) {
   const projects = filteredProjects(data);
   const visible = projects.slice(0, state.shown);
-  $('#projects-grid').innerHTML = visible.length ? visible.map((item, index) => `<article class="project-card"><span class="rank">${String(index + 1).padStart(2, '0')} / ${escapeHTML(labels[item.category] || 'PROJECT')}</span><div class="card-title"><a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer">${escapeHTML(item.name)}</a><span class="stars">★ ${formatNumber(item.stars)}</span></div><span class="category">${escapeHTML(labels[item.category] || item.category)}</span><p class="description">${escapeHTML((isEnglish ? item.description_en : item.description) || (isEnglish ? 'No description; open the repository for details.' : '暂无简介；打开仓库查看详情。'))}</p><div class="card-foot">${escapeHTML(item.language || '—')} · ${isEnglish ? 'updated' : '更新于'} ${formatDate(item.pushed_at)}</div></article>`).join('') : `<p class="empty">${isEnglish ? 'No matching projects. Try another search.' : '没有找到匹配的项目。试试别的关键词。'}</p>`;
+  $('#projects-grid').innerHTML = visible.length ? visible.map((item) => `<article class="project-card" data-category="${escapeHTML(item.category)}"><div class="project-meta"><span class="category">${escapeHTML(labels[item.category] || item.category)}</span><span class="stars">★ ${formatNumber(item.stars)}</span></div><div class="card-title"><a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer">${escapeHTML(item.name)}</a></div><p class="description">${escapeHTML((isEnglish ? item.description_en : item.description) || (isEnglish ? 'Open the repository for details.' : '打开仓库查看详情。'))}</p><div class="card-foot">${escapeHTML(item.language || '—')} · ${isEnglish ? 'Updated' : '更新于'} ${formatDate(item.pushed_at)}</div></article>`).join('') : `<p class="empty">${isEnglish ? 'No matching projects. Try another search or category.' : '没有匹配的项目，请尝试其他关键词或分类。'}</p>`;
+  $('#project-results').textContent = isEnglish ? `Showing ${visible.length} of ${projects.length} projects` : `显示 ${visible.length} / ${projects.length} 个项目`;
   const more = $('#load-more'); more.hidden = projects.length <= state.shown; more.onclick = () => { state.shown += 9; renderProjects(data); };
 }
 
 function renderPapers(data) {
   const rows = data.arxiv || [];
-  $('#papers-list').innerHTML = rows.length ? rows.slice(0, 8).map((row) => {
+  $('#papers-list').innerHTML = rows.length ? rows.map((row, index) => {
     const authors = (row.authors || []).join(', ') || (isEnglish ? 'Unknown authors' : '作者未提供');
     const date = row.published_at ? new Date(row.published_at).toLocaleDateString(isEnglish ? 'en-US' : 'zh-CN', { year: 'numeric', month: 'short', day: 'numeric' }) : '—';
-    return `<article class="paper"><div><span class="paper-label">arXiv · ${isEnglish ? 'PREPRINT' : '预印本'}</span><a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a><p>${escapeHTML(authors)}</p></div><time>${escapeHTML(date)}</time></article>`;
+    return `<article class="paper" ${index >= 4 && !state.papersExpanded ? 'hidden' : ''}><div class="paper-meta"><span class="paper-label">arXiv · ${isEnglish ? 'Preprint' : '预印本'}</span><time datetime="${escapeHTML(row.published_at || '')}">${escapeHTML(date)}</time></div><a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a><p>${escapeHTML(authors)}</p>${row.summary ? `<details><summary>${isEnglish ? 'Read abstract' : '查看摘要'}</summary><p>${escapeHTML(row.summary)}</p></details>` : ''}</article>`;
   }).join('') : `<p class="empty">${isEnglish ? 'No recent arXiv papers are available.' : '暂无符合时间范围的 arXiv 论文。'}</p>`;
+  const more = $('#papers-more');
+  more.hidden = rows.length <= 4;
+  more.setAttribute('aria-expanded', String(state.papersExpanded));
+  more.textContent = state.papersExpanded ? (isEnglish ? 'Show fewer papers' : '收起论文') : (isEnglish ? `Show all ${rows.length} papers` : `展开全部 ${rows.length} 篇论文`);
+  more.onclick = () => { state.papersExpanded = !state.papersExpanded; renderPapers(data); };
 }
 
 function renderRadar(data) {
@@ -82,7 +88,9 @@ async function init() {
     renderStats(state.data); renderBrief(state.data); renderFilters(state.data); renderProjects(state.data); renderPapers(state.data); renderRadar(state.data); renderResources(state.data);
     $('#search').addEventListener('input', (event) => { state.query = event.target.value.trim(); state.shown = 9; renderProjects(state.data); });
   } catch (error) {
-    $('#projects-grid').innerHTML = `<p class="empty">${isEnglish ? 'Data could not be loaded. Open this page through a local server.' : '数据暂时无法加载。请通过本地服务器打开此页面，或查看 README。'}</p>`;
+    $('#load-more').hidden = true;
+    const message = `<p class="empty">${isEnglish ? 'Data could not be loaded. Refresh this page or ' : '数据加载失败，请刷新页面或'}<a href="https://github.com/frontierlabai/JevHub">${isEnglish ? 'browse the repository' : '查看仓库'}</a>。</p>`;
+    ['#projects-grid', '#papers-list', '#radar-grid', '#resources-list'].forEach((selector) => { $(selector).innerHTML = message; });
   }
 }
 init();
