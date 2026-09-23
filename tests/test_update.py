@@ -77,8 +77,8 @@ class FakeClient:
         parsed = urlparse(url)
         if parsed.path == "/search/repositories":
             query = parse_qs(parsed.query)
-            if query.get("sort") != ["stars"] or query.get("order") != ["desc"]:
-                raise AssertionError("Search must request descending star order")
+            if query.get("sort", [""])[0] not in {"stars", "updated"} or query.get("order") != ["desc"]:
+                raise AssertionError("Search must request descending stars or updated order")
             if query.get("per_page") != ["100"]:
                 raise AssertionError("Search must request full pages")
             value = self.searches[(query["q"][0], int(query["page"][0]))]
@@ -183,6 +183,15 @@ class GitHubCollectionTests(unittest.TestCase):
         self.assertEqual(len(rows), 1)
         self.assertEqual(rows[0]["id"], 42)
         self.assertEqual(rows[0]["name"], "new/jev")
+
+    def test_recent_query_uses_updated_sort_to_surface_new_repositories(self):
+        candidate = repository("community/new-jev", ident=77, stars=0)
+        client = FakeClient(searches={("jev model", 1): search_result([candidate])})
+        rows, status = update.collect_github(client, settings(github_recent_queries=["jev model"]))
+        self.assertEqual(rows[0]["id"], 77)
+        recent = [url for url in client.calls if "sort=updated" in url]
+        self.assertEqual(len(recent), 1)
+        self.assertEqual(status["queries"][1]["sort"], "updated")
 
     def test_paginates_deduplicates_filters_noise_and_fetches_named_seed(self):
         first = repository("community/jev-agent", ident=1, stars=25)
