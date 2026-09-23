@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import argparse
 import base64
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import html
 import json
 import os
@@ -116,11 +116,15 @@ def collect_github(client, config):
     found, queries, errors, readme_checks = {}, [], [], 0
     excluded = {x.lower() for x in config["exclude_repositories"]}
     seeds = {x.lower() for x in config["seed_repositories"]}
-    for query in config["github_queries"]:
+    recent_since = (datetime.now(timezone.utc) - timedelta(days=config.get("github_recent_days", 30))).date().isoformat()
+    search_specs = [(query, "stars") for query in config["github_queries"]]
+    search_specs += [(query.replace("{recent_since}", recent_since), "updated")
+                     for query in config.get("github_recent_queries", [])]
+    for query, sort in search_specs:
         count, total, incomplete = 0, 0, False
         for page in range(1, config["github_pages_per_query"] + 1):
             url = "https://api.github.com/search/repositories?" + urlencode({
-                "q": query, "sort": "stars", "order": "desc", "per_page": 100, "page": page})
+                "q": query, "sort": sort, "order": "desc", "per_page": 100, "page": page})
             try:
                 data = client.get(url)
                 total = data["total_count"]
@@ -133,7 +137,7 @@ def collect_github(client, config):
             except (FetchError, KeyError, TypeError) as error:
                 errors.append(f"search {query}: {error}")
                 break
-        queries.append({"query": query, "returned": count, "total": total,
+        queries.append({"query": query, "sort": sort, "returned": count, "total": total,
                         "truncated": total > count, "incomplete": incomplete})
     for name in config["seed_repositories"]:
         if name.lower() in found or name.lower() in excluded:

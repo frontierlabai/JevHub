@@ -5,8 +5,13 @@
     "jev typesafe in:readme fork:false archived:false stars:>=5",
     "org:typesafe-ai fork:false archived:false"
   ],
+  "github_recent_queries": [
+    "jev in:name,description fork:false archived:false pushed:>={recent_since}",
+    "jev typesafe in:readme fork:false archived:false pushed:>={recent_since}"
+  ],
+  "github_recent_days": 30,
   "github_pages_per_query": 2,
-  "readme_checks": 12,
+  "readme_checks": 100,
   "official_owners": ["typesafe-ai"],
   "seed_repositories": [
     "typesafe-ai/skills",

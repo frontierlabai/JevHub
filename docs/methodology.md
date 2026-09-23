@@ -6,14 +6,14 @@ JevHub 是 TypeSafe Jev 生态的公开资源目录。它按 GitHub 关注度帮
 
 | 来源 | 自动发现范围 | 展示顺序 |
 | --- | --- | --- |
-| GitHub REST Search | 名称/描述、topic、README 组合关键词，以及官方组织；每条 query 最多 2 页，每页 100 条；另补核验种子 | 总 Star 降序，名称作为同分排序 |
+| GitHub REST Search | 名称/描述、topic、README 组合关键词，以及最近 30 天更新的 Jev 仓库；每条 query 最多 2 页，每页 100 条；另补核验种子 | 项目榜按总 Star 降序；近期检索按更新时间发现新项目 |
 | Hacker News Algolia | 发布以来匹配 Jev 的前 100 条 story，再按模型上下文过滤 | points 降序 |
 | Reddit public JSON | 最近一个月检索结果前 100 条，再按 Jev 与 AI 上下文过滤 | score 降序 |
 | Hugging Face API | Jev 关键词模型检索，按 likes 获取前 30 条 | likes 降序，downloads 作为同分排序 |
 | Google News RSS | Jev + TypeSafe 的中英文公开新闻检索 | 各语言交替，保留来源内部顺序；无热度分数 |
 | 精选资源 | 人工核验的官方入口、作者文章、视频元数据与讨论链接 | 编辑顺序 |
 
-GitHub 搜索总数可能大于采集数；README 的“检索范围与数据状态”逐条列出实际数量。超过页数上限的结果不是抓取错误，但可能漏掉排名靠后的资源。API 返回 incomplete_results、搜索或种子请求失败时，整次 GitHub 更新失败，保留已提交数据。工作流保持失败状态，方便维护者发现问题。
+GitHub 搜索总数可能大于采集数；README 的“检索范围与数据状态”逐条列出实际数量。超过页数上限的结果不是抓取错误，但可能漏掉排名靠后的资源。近期检索通道按更新时间排序，专门补捉低 Star 但刚出现的仓库。API 返回 incomplete_results、搜索或种子请求失败时，整次 GitHub 更新失败，保留已提交数据。工作流保持失败状态，方便维护者发现问题。
 
 名称或描述需要直接提及 Jev，且元数据中包含 AI、model、agent、decision、TypeSafe 等上下文；只有 Jev topic 不足以自动收录。仅名称命中但元数据不足的仓库，按 Star 顺序最多读取 12 份 README。人工核验种子补充名字中没有 Jev 的 SDK、集成和独立模型。排除 fork、归档、禁用、私有仓库以及排除名单。启发式相关性仍可能误报或漏报，欢迎提交修正。
 
