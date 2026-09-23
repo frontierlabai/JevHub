@@ -68,3 +68,5 @@ h1 em { color: var(--ink); font-style: normal; }
 .radar-grid { grid-template-columns: repeat(3, 1fr); }
 @media (max-width: 850px) { .radar-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 560px) { .radar-grid { grid-template-columns: 1fr; } }
+html, body { max-width: 100%; overflow-x: hidden; }.card-title a, .paper > div { min-width: 0; }.card-title a { overflow-wrap: anywhere; }.paper a { overflow-wrap: anywhere; }.paper p { max-width: 100%; }
+@media (max-width: 980px) and (min-width: 561px) { nav { gap: 14px; margin-left: 20px; }.top-actions { gap: 9px; }.hero-orbit { margin-right: 0; transform: scale(.85); } }
