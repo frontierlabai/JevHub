@@ -47,7 +47,7 @@ function filteredProjects(data) {
 function renderProjects(data) {
   const projects = filteredProjects(data);
   const visible = projects.slice(0, state.shown);
-  $('#projects-grid').innerHTML = visible.length ? visible.map((item) => `<article class="project-card" data-category="${escapeHTML(item.category)}"><div class="project-meta"><span class="category">${escapeHTML(labels[item.category] || item.category)}</span><span class="stars">★ ${formatNumber(item.stars)}</span></div><div class="card-title"><a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer">${escapeHTML(item.name)}</a></div><p class="description">${escapeHTML((isEnglish ? item.description_en : item.description) || (isEnglish ? 'Open the repository for details.' : '打开仓库查看详情。'))}</p><div class="card-foot">${escapeHTML(item.language || '—')} · ${isEnglish ? 'Updated' : '更新于'} ${formatDate(item.pushed_at)}</div></article>`).join('') : `<p class="empty">${isEnglish ? 'No matching projects. Try another search or category.' : '没有匹配的项目，请尝试其他关键词或分类。'}</p>`;
+  $('#projects-grid').innerHTML = visible.length ? visible.map((item) => `<article class="project-card" data-category="${escapeHTML(item.category)}"><div class="project-meta"><span class="category">${escapeHTML(labels[item.category] || item.category)}</span><span class="stars">★ ${formatNumber(item.stars)}</span></div><div class="card-title"><a href="${escapeHTML(item.url)}" target="_blank" rel="noreferrer"><span class="repo-owner">${escapeHTML(item.name.split("/")[0])} /</span>${escapeHTML(item.name.split("/").slice(1).join("/") || item.name)}</a></div><p class="description">${escapeHTML((isEnglish ? item.description_en : item.description) || (isEnglish ? 'Open the repository for details.' : '打开仓库查看详情。'))}</p><div class="card-foot">${escapeHTML(item.language || '—')} · ${isEnglish ? 'Updated' : '更新于'} ${formatDate(item.pushed_at)}</div></article>`).join('') : `<p class="empty">${isEnglish ? 'No matching projects. Try another search or category.' : '没有匹配的项目，请尝试其他关键词或分类。'}</p>`;
   $('#project-results').textContent = isEnglish ? `Showing ${visible.length} of ${projects.length} projects` : `显示 ${visible.length} / ${projects.length} 个项目`;
   const more = $('#load-more'); more.hidden = projects.length <= state.shown; more.onclick = () => { state.shown += 9; renderProjects(data); };
 }
@@ -103,3 +103,27 @@ async function init() {
   }
 }
 init();
+
+// Keep the navigation tied to the section being read, including on mobile.
+const sectionLinks = [...document.querySelectorAll('nav a[href^="#"]')];
+const updateSectionNavigation = () => {
+  const boundary = Math.min(180, window.innerHeight / 3);
+  let current = null;
+  sectionLinks.forEach((link) => {
+    const section = document.querySelector(link.getAttribute('href'));
+    if (section && section.getBoundingClientRect().top <= boundary &&
+        (!current || section.offsetTop > current.section.offsetTop)) current = { link, section };
+  });
+  sectionLinks.forEach((link) => {
+    if (current?.link === link) link.setAttribute('aria-current', 'location');
+    else link.removeAttribute('aria-current');
+  });
+};
+let navigationFrame = false;
+window.addEventListener('scroll', () => {
+  if (navigationFrame) return;
+  navigationFrame = true;
+  requestAnimationFrame(() => { updateSectionNavigation(); navigationFrame = false; });
+}, { passive: true });
+window.addEventListener('resize', updateSectionNavigation);
+updateSectionNavigation();
