@@ -22,6 +22,7 @@ nav { display: flex; gap: 29px; margin-left: 100px; }
 nav a, .language { color: #5f5f5f; font-size: 13px; text-decoration: none; }
 nav a:hover, .language:hover, .text-link:hover { color: var(--green-dark); }
 .language { font-size: 12px; }.language span { color: var(--ink); font-size: 15px; }
+.top-actions { display: flex; align-items: center; gap: 18px; }.repo-link { padding: 8px 13px; border-radius: 7px; color: #fff; background: #202123; font-size: 12px; text-decoration: none; }.repo-link:hover { background: #000; }.repo-link span { margin-left: 6px; }
 .hero { min-height: 515px; display: flex; align-items: center; justify-content: space-between; position: relative; border-bottom: 1px solid var(--line); }
 .hero-copy { max-width: 640px; padding: 92px 0 88px; position: relative; z-index: 1; }
 .eyebrow { margin: 0 0 21px; color: #666; font-size: 11px; font-weight: 650; letter-spacing: .12em; }
