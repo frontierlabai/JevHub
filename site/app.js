@@ -56,6 +56,17 @@ async function init() {
     const response = await fetch('../data/latest.json');
     if (!response.ok) throw new Error('data unavailable');
     state.data = await response.json();
+    if (!state.data.daily_brief && state.data.generated_at) {
+      const date = new Date(`${state.data.generated_at.slice(0, 10)}T00:00:00Z`);
+      date.setUTCDate(date.getUTCDate() - 1);
+      const history = await fetch(`../data/history/${date.toISOString().slice(0, 10)}.json`);
+      if (history.ok) {
+        const snapshot = await history.json();
+        const ids = new Set((snapshot.repositories || []).map((item) => String(item.id)));
+        const rows = state.data.repositories.filter((item) => !ids.has(String(item.id)));
+        state.data.daily_brief = { count: rows.length, repositories: rows.slice(0, 8) };
+      }
+    }
     renderStats(state.data); renderBrief(state.data); renderFilters(state.data); renderProjects(state.data); renderRadar(state.data); renderResources(state.data);
     $('#search').addEventListener('input', (event) => { state.query = event.target.value.trim(); state.shown = 9; renderProjects(state.data); });
   } catch (error) {

@@ -246,6 +246,28 @@ def load_json(path, default=None):
     return json.loads(path.read_text(encoding="utf-8")) if path.exists() else default
 
 
+def hydrate_daily_brief(data):
+    """Recover a brief for older snapshots before the field was introduced."""
+    if "daily_brief" in data:
+        return data
+    current_day = data.get("generated_at", "")[:10]
+    history_dir = ROOT / "data" / "history"
+    snapshots = sorted(history_dir.glob("*.json")) if history_dir.exists() else []
+    prior = None
+    for path in snapshots:
+        if path.stem < current_day:
+            candidate = load_json(path)
+            if candidate and candidate.get("date") == path.stem:
+                prior = candidate
+    if not prior:
+        return data
+    previous_ids = {str(row.get("id")) for row in prior.get("repositories", [])}
+    new_repositories = [row for row in data.get("repositories", []) if str(row.get("id")) not in previous_ids]
+    hydrated = dict(data)
+    hydrated["daily_brief"] = {"count": len(new_repositories), "repositories": new_repositories[:8]}
+    return hydrated
+
+
 LABELS = {
     "official": ("官方项目", "Official"), "research": ("独立复现 / 研究", "Independent research"),
     "resources": ("资源合集", "Resources"), "tools": ("开发工具", "Tools"),
@@ -411,6 +433,7 @@ def main():
         data = dict(previous, curated_resources=config["curated_resources"], limits={"repositories": config["readme_limit"]})
     else:
         data = refresh(config, previous, Client(os.environ.get("GITHUB_TOKEN", "")))
+    data = hydrate_daily_brief(data)
     outputs = render(data)  # Validate every template before any persistent writes.
     if args.check:
         mismatches = [str(p.relative_to(ROOT)) for p, content in outputs.items()
