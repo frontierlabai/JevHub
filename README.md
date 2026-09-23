@@ -10,6 +10,10 @@
 </p>
 
 <p align="center">
+  <a href="https://frontierlabai.github.io/JevHub/site/"><img src="assets/website-badge.zh.svg" alt="访问 JevHub 网站 — https://frontierlabai.github.io/JevHub/site/" width="380"></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml"><img src="https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml/badge.svg" alt="每日更新工作流状态"></a>
   <a href="https://github.com/frontierlabai/JevHub/stargazers"><img src="https://img.shields.io/github/stars/frontierlabai/JevHub?style=flat&amp;color=6ee7b7" alt="Star JevHub"></a>
   <a href="#automation"><img src="https://img.shields.io/badge/refresh-daily%20%C2%B7%2009%3A17%20CST-67e8f9?style=flat" alt="计划每日北京时间 09:17 更新"></a>
@@ -18,7 +22,6 @@
 
 <p align="center">
   <strong>简体中文</strong> · <a href="README.en.md">English</a><br>
-  <a href="https://frontierlabai.github.io/JevHub/site/">🌐 打开 JevHub 网站</a> ·
   <a href="#github-ranking">项目精选</a> · <a href="#community-radar">社区雷达</a> · <a href="#curated-resources">精选资源</a> · <a href="#getting-started">快速入门</a>
 </p>
 

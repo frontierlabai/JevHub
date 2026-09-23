@@ -10,6 +10,10 @@
 </p>
 
 <p align="center">
+  <a href="https://frontierlabai.github.io/JevHub/site/en/"><img src="assets/website-badge.en.svg" alt="Explore JevHub — https://frontierlabai.github.io/JevHub/site/en/" width="380"></a>
+</p>
+
+<p align="center">
   <a href="https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml"><img src="https://github.com/frontierlabai/JevHub/actions/workflows/refresh.yml/badge.svg" alt="Daily refresh workflow status"></a>
   <a href="https://github.com/frontierlabai/JevHub/stargazers"><img src="https://img.shields.io/github/stars/frontierlabai/JevHub?style=flat&amp;color=6ee7b7" alt="Star JevHub"></a>
   <a href="#automation"><img src="https://img.shields.io/badge/refresh-daily%20%C2%B7%2001%3A17%20UTC-67e8f9?style=flat" alt="Scheduled daily at 01:17 UTC"></a>
@@ -18,7 +22,6 @@
 
 <p align="center">
   <a href="README.md">简体中文</a> · <strong>English</strong><br>
-  <a href="https://frontierlabai.github.io/JevHub/site/en/">🌐 Open the JevHub website</a> ·
   <a href="#github-ranking">Featured projects</a> · <a href="#community-radar">Community radar</a> · <a href="#curated-resources">Curated resources</a> · <a href="#getting-started">Get started</a>
 </p>
 
