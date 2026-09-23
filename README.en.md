@@ -75,6 +75,23 @@ Sorted by total stars, with repository name as the tie-breaker. Start with the p
 
 > 💡 Rankings use current repository stars as a discovery signal, not as a proxy for quality or official endorsement.
 
+<a id="papers"></a>
+
+## 📚 Recent papers
+
+Recent Jev-related arXiv papers and preprints from the launch window; discovery links, not peer-review or official-affiliation claims.
+
+| Paper | Authors | Submitted |
+| :-- | :-- | :-- |
+| [Type-Safe Is Not Error-Free: A Constrained Decision Head Follows the Option Name, Not the Rubric Bound to It](http://arxiv.org/abs/2609.26758v1) | Yu Sun, Junhao Xu | 2026-09-22 |
+| [JEV-as-a-Judge: Accept When Confident, Escalate When Unsure](http://arxiv.org/abs/2609.26550v1) | Yubo Li, Yidi Miao, Ramayya Krishnan, Rema Padman | 2026-09-22 |
+| [REFLEX with Jev for Efficient Selective Control in LLM Agents](http://arxiv.org/abs/2609.26532v1) | Tiantong Wu, Wei Yang Bryan Lim | 2026-09-22 |
+| [Visual Jev: Accurate and Efficient Decisions from Shared Visual Context](http://arxiv.org/abs/2609.25845v1) | Guanxu Yu, Yuhang Yao | 2026-09-22 |
+| [Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences](http://arxiv.org/abs/2609.24965v1) | Boyuan Deng, Shuyi Fan, Hongyang Zhang, Xinhong Xie | 2026-09-21 |
+| [JEVQA - Video Quality from Metadata, Bitstream, and Pixel Features with a General-Purpose Decision Model](http://arxiv.org/abs/2609.24395v1) | Werner Robitza | 2026-09-21 |
+| [Calibrated Decisions at Scale: Converting Police Crash Narratives into Probabilistic Crash Variables with a System One Model (Jev)](http://arxiv.org/abs/2609.24052v1) | Amir Rafe, Subasish Das | 2026-09-21 |
+| [Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents](http://arxiv.org/abs/2609.23986v1) | Dongming Jiang, Yi Li, Bingzhe Li | 2026-09-21 |
+
 <a id="community-radar"></a>
 
 ## 🌐 Beyond GitHub
@@ -133,23 +150,6 @@ updated · Last successful fetch: 2026-09-23T05:30:11Z
 - [刚刚，爆火模型Jev全面开放，所有用户送1.2亿token - 36kr.com](https://news.google.com/rss/articles/CBMiTkFVX3lxTE1wN1ZROVpYaVVKV3gtZDZyVXJCdEdzV1Ita21CZGpmNDZVMGE1QUUwZ0pVeGxjMUpsWDhmNmROcy03Smx2OFZRS3FlaE9UUQ?oc=5)
 - [What is Jev, an AI ‘generalist’ model with a new take on decision-making? - The Indian Express](https://news.google.com/rss/articles/CBMivwFBVV95cUxPajBjZXNYUlNPelVOVEIyNWpQZ09wcDh2SjlodEpNcUt6VzRNWW5Cd3hUREZuMmhwT2Q4T3ZzNUdIX2JCX0xDTW1SSlZnVm0zYXZPMDVhbE80YnItek9jdlN6UUdrU3QyX01PYWQ2YURGNENHRjhRc3FWVi1iM2hiWEptS0VaZHNXY2xlb0VlTWZiWEE5d1JjUnpBVGh3UXU1d0JVX0ZSd3U4a00tNWxjRVA0cWs2ajJRSWpPSmFqQdIBxgFBVV95cUxQQXNmUmRWZEQ5Ti1GMFJuV0VwaHkwWDhfOGhkd2RFalh3QnQxNXhJNjFSNWllanZIVFlJVXIteGVJclV0Y1FYWWdVT3l4aGdLMDNHN1ZCZmFzdUJZN3l1TnhUUG80b2RuSlpJMEhyNnEybHZjdlNVU2xpTmNYdGlOb053c0tENnUyajRpdU1EUnNsS0s3eWtuR2xEV01ESm9lMFJCa3RPVG1XNWZYZWVsUk5OWnRDOE9BdXRreFMxaVRmNlowLVE?oc=5)
 - [前 OpenAI 研究员发布Jev 模型，旨在帮助软件做出快速、结构化的决策- OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA](https://news.google.com/rss/articles/CBMifkFVX3lxTE9neEhiRUxoaWRjNURkVlZfbFBPU3ZmN05oaWtWWDdET0dDUm1Id0szam9udi1DLVF5N1dKTmJhVXlqY0JDWUtGanhfSWhUdjJ0M0hVNHBoTDdHU2F6b1ZMb3puX1J5YXp4cV92Q3M5eTFlS0tjMVl5VTViOGVZUQ?oc=5)
-
-### arXiv
-
-updated · Last successful fetch: 2026-09-23T05:30:29Z
-
-Papers and preprints for discovery; not a peer-review or official-affiliation claim.
-
-| Paper | Authors | Submitted |
-| :-- | :-- | :-- |
-| [Type-Safe Is Not Error-Free: A Constrained Decision Head Follows the Option Name, Not the Rubric Bound to It](http://arxiv.org/abs/2609.26758v1) | Yu Sun, Junhao Xu | 2026-09-22 |
-| [JEV-as-a-Judge: Accept When Confident, Escalate When Unsure](http://arxiv.org/abs/2609.26550v1) | Yubo Li, Yidi Miao, Ramayya Krishnan, Rema Padman | 2026-09-22 |
-| [REFLEX with Jev for Efficient Selective Control in LLM Agents](http://arxiv.org/abs/2609.26532v1) | Tiantong Wu, Wei Yang Bryan Lim | 2026-09-22 |
-| [Visual Jev: Accurate and Efficient Decisions from Shared Visual Context](http://arxiv.org/abs/2609.25845v1) | Guanxu Yu, Yuhang Yao | 2026-09-22 |
-| [Jev for Scientific Decisions: Evaluating Semantic Choices and Their Consequences](http://arxiv.org/abs/2609.24965v1) | Boyuan Deng, Shuyi Fan, Hongyang Zhang, Xinhong Xie | 2026-09-21 |
-| [JEVQA - Video Quality from Metadata, Bitstream, and Pixel Features with a General-Purpose Decision Model](http://arxiv.org/abs/2609.24395v1) | Werner Robitza | 2026-09-21 |
-| [Calibrated Decisions at Scale: Converting Police Crash Narratives into Probabilistic Crash Variables with a System One Model (Jev)](http://arxiv.org/abs/2609.24052v1) | Amir Rafe, Subasish Das | 2026-09-21 |
-| [Jev-Mem: System-One-Controlled Agentic Memory for Efficient AI Agents](http://arxiv.org/abs/2609.23986v1) | Dongming Jiang, Yi Li, Bingzhe Li | 2026-09-21 |
 
 <a id="curated-resources"></a>
 

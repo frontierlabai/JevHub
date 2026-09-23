@@ -332,10 +332,20 @@ def dashboard(data, english=False):
     lines += [
         "", tr("> 💡 排名按项目当前 Star 总数更新；Star 只作为发现信号，不代表项目质量或官方认可。",
                "> 💡 Rankings use current repository stars as a discovery signal, not as a proxy for quality or official endorsement."),
+        "", '<a id="papers"></a>', "", tr("## 📚 近期论文", "## 📚 Recent papers"), "",
+        tr("只收录 Jev 爆火起始日之后的相关 arXiv 论文与预印本；仅作为发现入口，不代表同行评审或官方关联。",
+           "Recent Jev-related arXiv papers and preprints from the launch window; discovery links, not peer-review or official-affiliation claims."), ""]
+    paper_rows = data.get("arxiv", [])
+    if paper_rows:
+        lines += [tr("| 论文 | 作者 | 提交时间 |", "| Paper | Authors | Submitted |"), "| :-- | :-- | :-- |"]
+        lines += [f"| {link(r['title'], r['url'])} | {cell(', '.join(r.get('authors', [])) or '—', 70)} | {cell(r.get('published_at', '')[:10])} |" for r in paper_rows]
+    else:
+        lines.append(tr("当前快照没有可展示的论文。", "No recent papers are available in this snapshot."))
+    lines += [
         "", '<a id="community-radar"></a>', "", tr("## 🌐 站外发现与讨论", "## 🌐 Beyond GitHub"), "",
         tr("各平台独立展示：HN points、Reddit score、Hugging Face likes / 近 30 天 downloads 不混算成 Star。新闻是检索发现，未验证传播量。",
            "Platform signals stay separate: HN points, Reddit scores, and Hugging Face likes / trailing 30-day downloads are not GitHub stars. News is discovery, with no verified reach metric.")]
-    for name, title in (("hacker_news", "Hacker News"), ("reddit", "Reddit"), ("huggingface", "Hugging Face"), ("news", tr("新闻 / 文章", "News / articles")), ("arxiv", "arXiv")):
+    for name, title in (("hacker_news", "Hacker News"), ("reddit", "Reddit"), ("huggingface", "Hugging Face"), ("news", tr("新闻 / 文章", "News / articles"))):
         status = sources.get(name, {"state": "unavailable", "fetched_at": None})
         state = {"ok": tr("已更新", "updated"), "stale": tr("旧缓存", "stale cache"),
                  "unavailable": tr("暂不可用", "unavailable")}[status["state"]]
