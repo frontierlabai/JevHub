@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">JevHub logo</title>
+  <desc id="desc">A rounded black mark with a white J and three decision nodes.</desc>
+  <rect width="64" height="64" rx="18" fill="#202123"/>
+  <path d="M37 14v23.5c0 7.9-4.3 12.5-11.2 12.5-5.3 0-9.1-2.4-11.3-6.9l5.2-3c1.5 2.8 3.4 4 5.9 4 3.2 0 4.8-2.2 4.8-6.7V14H37Z" fill="#fff"/>
+  <path d="M40.5 22.5 49 18M40.5 32 51 32M40.5 41.5 48 47" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="2" opacity=".75"/>
+  <circle cx="50" cy="17.5" r="3" fill="#10a37f"/>
+  <circle cx="52" cy="32" r="3" fill="#fff" opacity=".9"/>
+  <circle cx="49" cy="47.5" r="3" fill="#fff" opacity=".9"/>
+</svg>
