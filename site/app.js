@@ -42,6 +42,15 @@ function renderProjects(data) {
   const more = $('#load-more'); more.hidden = projects.length <= state.shown; more.onclick = () => { state.shown += 9; renderProjects(data); };
 }
 
+function renderPapers(data) {
+  const rows = data.arxiv || [];
+  $('#papers-list').innerHTML = rows.length ? rows.slice(0, 8).map((row) => {
+    const authors = (row.authors || []).join(', ') || (isEnglish ? 'Unknown authors' : '作者未提供');
+    const date = row.published_at ? new Date(row.published_at).toLocaleDateString(isEnglish ? 'en-US' : 'zh-CN', { year: 'numeric', month: 'short', day: 'numeric' }) : '—';
+    return `<article class="paper"><div><a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a><p>${escapeHTML(authors)}</p></div><time>${escapeHTML(date)}</time></article>`;
+  }).join('') : `<p class="empty">${isEnglish ? 'No recent arXiv papers are available.' : '暂无符合时间范围的 arXiv 论文。'}</p>`;
+}
+
 function renderRadar(data) {
   const definitions = [['hacker_news', 'Hacker News', 'points', 'comments'], ['reddit', 'Reddit', 'score', 'comments'], ['huggingface', 'Hugging Face', 'likes', 'downloads'], ['arxiv', 'arXiv', 'authors', 'published_at']];
   const cards = definitions.map(([key, title, metric, second]) => { const rows = data[key] || []; const status = rows.length ? `${rows.length} ${isEnglish ? 'discoveries' : '条相关发现'} · ${data.sources?.[key]?.state === 'ok' ? (isEnglish ? 'updated' : '已更新') : (isEnglish ? 'cached' : '缓存')}` : (isEnglish ? 'No relevant results' : '暂无可展示结果'); return `<article class="radar-card"><h3>${escapeHTML(title)}</h3><p>${status}</p>${rows.slice(0, 3).map((row) => `<a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a>`).join('')}</article>`; });
@@ -69,7 +78,7 @@ async function init() {
         state.data.daily_brief = { count: rows.length, repositories: rows.slice(0, 8) };
       }
     }
-    renderStats(state.data); renderBrief(state.data); renderFilters(state.data); renderProjects(state.data); renderRadar(state.data); renderResources(state.data);
+    renderStats(state.data); renderBrief(state.data); renderFilters(state.data); renderProjects(state.data); renderPapers(state.data); renderRadar(state.data); renderResources(state.data);
     $('#search').addEventListener('input', (event) => { state.query = event.target.value.trim(); state.shown = 9; renderProjects(state.data); });
   } catch (error) {
     $('#projects-grid').innerHTML = `<p class="empty">${isEnglish ? 'Data could not be loaded. Open this page through a local server.' : '数据暂时无法加载。请通过本地服务器打开此页面，或查看 README。'}</p>`;
