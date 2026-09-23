@@ -32,7 +32,7 @@
 
 ## 🆕 今日新增
 
-每日简报将在下一次成功刷新后生成。
+本次发现 183 个新项目：[jev-chat/jev-chat-windows](https://github.com/jev-chat/jev-chat-windows)；[malevrigns/agent-jev](https://github.com/malevrigns/agent-jev)；[Amal-David/awesome-jev](https://github.com/Amal-David/awesome-jev)；[dorkitude/webctl](https://github.com/dorkitude/webctl)；[kydlikebtc/awesome-jev](https://github.com/kydlikebtc/awesome-jev)；[SiliconLabAI/OpenJev](https://github.com/SiliconLabAI/OpenJev)；[Liyucheng1997/332\_lab-jev-chat](https://github.com/Liyucheng1997/332_lab-jev-chat)；[danielgshea/jev-as-a-judge](https://github.com/danielgshea/jev-as-a-judge)
 
 <a id="github-ranking"></a>
 

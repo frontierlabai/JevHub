@@ -32,7 +32,7 @@ Repository stars cover all features, not just Jev. Rankings cover the configured
 
 ## 🆕 New today
 
-The daily brief will appear after the next successful refresh.
+This refresh found 183 new project(s): [jev-chat/jev-chat-windows](https://github.com/jev-chat/jev-chat-windows)；[malevrigns/agent-jev](https://github.com/malevrigns/agent-jev)；[Amal-David/awesome-jev](https://github.com/Amal-David/awesome-jev)；[dorkitude/webctl](https://github.com/dorkitude/webctl)；[kydlikebtc/awesome-jev](https://github.com/kydlikebtc/awesome-jev)；[SiliconLabAI/OpenJev](https://github.com/SiliconLabAI/OpenJev)；[Liyucheng1997/332\_lab-jev-chat](https://github.com/Liyucheng1997/332_lab-jev-chat)；[danielgshea/jev-as-a-judge](https://github.com/danielgshea/jev-as-a-judge)
 
 <a id="github-ranking"></a>
 
