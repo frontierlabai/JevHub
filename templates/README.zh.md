@@ -18,7 +18,7 @@
 
 <p align="center">
   <strong>简体中文</strong> · <a href="README.en.md">English</a><br>
-  <a href="https://frontierlabai.github.io/JevHub/">🌐 打开网页</a> ·
+  <a href="https://frontierlabai.github.io/JevHub/site/">🌐 打开 JevHub 网站</a> ·
   <a href="#github-ranking">项目精选</a> · <a href="#community-radar">社区雷达</a> · <a href="#curated-resources">精选资源</a> · <a href="#getting-started">快速入门</a>
 </p>
 
