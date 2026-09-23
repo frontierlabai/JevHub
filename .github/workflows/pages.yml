@@ -7,6 +7,7 @@ on:
       - site/**
       - data/latest.json
       - .github/workflows/pages.yml
+      - scripts/build_site.py
   workflow_dispatch:
 
 permissions:
@@ -32,9 +33,7 @@ jobs:
       - name: Assemble website artifact
         run: |
           rm -rf _site
-          mkdir -p _site
-          cp -R site/. _site/
-          cp -R data _site/data
+          python3 scripts/build_site.py
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
         with:

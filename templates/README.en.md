@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://frontierlabai.github.io/JevHub/site/en/"><img src="assets/website-badge.en.svg" alt="Explore JevHub — https://frontierlabai.github.io/JevHub/site/en/" width="380"></a>
+  <a href="https://frontierlabai.github.io/JevHub/en/"><img src="assets/website-badge.en.svg" alt="Explore JevHub — https://frontierlabai.github.io/JevHub/en/" width="380"></a>
 </p>
 
 <p align="center">

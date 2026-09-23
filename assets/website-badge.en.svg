@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="380" height="100" viewBox="0 0 380 100" role="img" aria-labelledby="title desc">
   <title id="title">Explore JevHub</title>
-  <desc id="desc">frontierlabai.github.io/JevHub/site/en/</desc>
+  <desc id="desc">frontierlabai.github.io/JevHub/en/</desc>
   <rect x="1" y="1" width="378" height="98" rx="14" fill="#182129" stroke="#53616b" stroke-width="2"/>
   <svg x="16" y="22" width="56" height="56" viewBox="0 0 64 64">  <rect width="64" height="64" rx="17" fill="#163e64"/>
   <path d="M26 14H49V35C49 47 42 54 30 54C19 54 12 47 12 37H22C22 42 25 45 30 45C36 45 39 41 39 35V24H26Z" fill="#fff"/>
@@ -9,7 +9,7 @@
   <g font-family="-apple-system, BlinkMacSystemFont, Segoe UI, Arial, sans-serif">
     <text x="88" y="27" fill="#b8c9d4" font-size="12">Projects, papers &amp; community</text>
     <text x="88" y="55" fill="#ffffff" font-size="23" font-weight="700">Explore JevHub</text>
-    <text x="88" y="79" fill="#b8c9d4" font-size="10.5">frontierlabai.github.io/JevHub/site/en/</text>
+    <text x="88" y="79" fill="#b8c9d4" font-size="10.5">frontierlabai.github.io/JevHub/en/</text>
   </g>
   <path d="M346 30h10v10m0-10-13 13" stroke="#7bdac5" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>
