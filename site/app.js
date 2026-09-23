@@ -63,7 +63,8 @@ function renderResources(data) {
 
 async function init() {
   try {
-    const dataRoot = isEnglish ? '../../data' : '../data';
+    const localSite = window.location.pathname.includes('/site/');
+    const dataRoot = localSite ? (isEnglish ? '../../data' : '../data') : (isEnglish ? '../data' : 'data');
     const response = await fetch(`${dataRoot}/latest.json`);
     if (!response.ok) throw new Error('data unavailable');
     state.data = await response.json();
