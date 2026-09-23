@@ -70,3 +70,16 @@ h1 em { color: var(--ink); font-style: normal; }
 @media (max-width: 560px) { .radar-grid { grid-template-columns: 1fr; } }
 html, body { max-width: 100%; overflow-x: hidden; }.card-title a, .paper > div { min-width: 0; }.card-title a { overflow-wrap: anywhere; }.paper a { overflow-wrap: anywhere; }.paper p { max-width: 100%; }
 @media (max-width: 980px) and (min-width: 561px) { nav { gap: 14px; margin-left: 20px; }.top-actions { gap: 9px; }.hero-orbit { margin-right: 0; transform: scale(.85); } }
+@media (max-width: 560px) {
+  .shell { width: min(100% - 28px, 1180px); }
+  .topbar { height: 62px; }
+  .brand { gap: 7px; font-size: 16px; }.brand-logo { width: 25px; height: 25px; }
+  .top-actions { gap: 8px; }.language { font-size: 11px; }.repo-link { padding: 7px 9px; font-size: 10px; }.repo-link span { display: none; }
+  .hero { min-height: 0; }.hero-copy { max-width: 78%; padding: 48px 0 42px; }.eyebrow { margin-bottom: 16px; font-size: 10px; } h1 { margin-bottom: 15px; font-size: clamp(38px, 12vw, 48px); letter-spacing: -.08em; }.lede { font-size: 13px; line-height: 1.6; }.hero-actions { gap: 7px; margin-top: 20px; }.button { padding: 10px 12px; font-size: 12px; }
+  .hero-orbit { right: -178px; opacity: .3; transform: scale(.58); }
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 17px 0; }.stats > div:not(.stats-note) { min-height: 67px; padding: 12px; }.stats strong { font-size: 21px; }.stats span { font-size: 10px; }.stats-note { min-height: 67px; padding: 12px !important; font-size: 10px; }
+  .brief { display: block; padding-top: 20px; }.brief-kicker { font-size: 9px; }.brief p { margin-top: 8px; font-size: 12px; line-height: 1.65; }
+  .section { padding-top: 48px; }.papers-section { margin-top: 22px; padding: 34px 0 38px; }.section-heading { display: block; margin-bottom: 17px; }.section-heading h2 { font-size: 29px; }.section-intro { max-width: none; margin-top: 12px; font-size: 11px; }.papers-list { gap: 8px; }.paper { min-height: 0; padding: 14px; gap: 10px; }.paper a { font-size: 12px; }.paper p { margin-top: 6px; font-size: 9px; }.paper time { padding-top: 18px; font-size: 9px; }
+  .toolbar { margin-bottom: 17px; }.search { padding: 9px 11px; }.filters { gap: 6px; }.filter { padding: 6px 9px; font-size: 10px; }.project-card { min-height: 0; padding: 16px; }.card-title { gap: 8px; }.card-title a { font-size: 14px; }.description { font-size: 11px; line-height: 1.55; }.card-foot { padding-top: 13px; }.load-more { margin-top: 18px; padding: 9px 15px; font-size: 11px; }
+  .split-section { padding-top: 54px; }.radar-card { min-height: 0; padding: 17px; }.radar-card p { margin-bottom: 12px; }.radar-card a { padding: 7px 0; font-size: 11px; }.resources-section { padding-bottom: 55px; }.resource { padding: 14px 15px; }.resource a { font-size: 12px; }.resource p { font-size: 10px; }.footer { padding-bottom: 24px; font-size: 9px; }
+}
