@@ -9,6 +9,10 @@ on:
       - .github/workflows/pages.yml
       - scripts/build_site.py
   workflow_dispatch:
+  workflow_run:
+    workflows: [Daily refresh]
+    types: [completed]
+    branches: [main]
 
 permissions:
   contents: read
@@ -21,6 +25,7 @@ concurrency:
 
 jobs:
   deploy:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
@@ -28,6 +33,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: main
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Assemble website artifact
