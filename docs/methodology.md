@@ -39,7 +39,7 @@ HN points、Reddit score、HF likes 与下载量按各平台原始定义分别�
 
 ## 运行与维护
 
-Python 3.11+，仅用标准库。请求超时 25 秒，瞬时错误最多尝试 3 次，每次等待最多 60 秒；GitHub token 仅发送给 api.github.com。搜索请求限速；本地无 token 时仍可能触及 GitHub 的匿名限额。
+Python 3.11+，仅用标准库。请求超时 25 秒，瞬时错误最多尝试 3 次，每次等待最多 60 秒；GitHub token 仅发送给 api.github.com。GitHub 搜索请求限速；连续 arXiv API 请求至少间隔 3 秒，遇到其限流使用的 HTTP 406 时自动冷却重试。本地无 token 时仍可能触及 GitHub 的匿名限额。
 
 每天 UTC 01:17（北京时间 09:17）运行，支持 Actions 手动触发。首次推送到 main 后会运行更新。Fork 需要自行启用 Actions；工作流必须在默认分支，且仓库策略允许 bot 写入。分支保护可能阻止直接提交。GitHub 调度可能延迟，长期无活动的公开仓库可能被停用定时任务。
 

@@ -22,6 +22,7 @@ JEV = re.compile(r"(?<![a-z])(?:jev|nanojev|openjev|jevlike|jevify)(?![a-z])", r
 CONTEXT = re.compile(r"typesafe|system[ -]one|\bAI\b|\bLLM\b|agent|model|decision|classifier|inference|scoring|routing|模型|决策|智能|复现", re.I)
 UNRELATED = re.compile(r"encephalitis|flavivirus|jevons|faze\s+jev|乙型脑炎", re.I)
 REPO_NAME = re.compile(r"[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+\Z")
+ARXIV_REQUEST_INTERVAL = 3.1
 
 
 def stamp():
@@ -61,10 +62,22 @@ class Client:
     def __init__(self, token=""):
         self.token = token
         self.last_search = 0.0
+        self.last_arxiv_request = None
+
+    def pace_arxiv(self):
+        """Keep consecutive arXiv API requests outside its three-second window."""
+        now = time.monotonic()
+        if self.last_arxiv_request is not None:
+            delay = max(0, ARXIV_REQUEST_INTERVAL - (now - self.last_arxiv_request))
+            if delay > 0.001:
+                time.sleep(delay)
+                now += delay
+        self.last_arxiv_request = now
 
     def get(self, url, *, raw=False):
         headers = {"User-Agent": "JevHub/1.0 (+https://github.com/frontierlabai/JevHub)"}
-        if urlparse(url).hostname == "api.github.com":
+        hostname = urlparse(url).hostname
+        if hostname == "api.github.com":
             headers.update({"Accept": "application/vnd.github+json", "X-GitHub-Api-Version": "2022-11-28"})
             if self.token:
                 headers["Authorization"] = f"Bearer {self.token}"
@@ -72,6 +85,8 @@ class Client:
                 time.sleep(max(0, 6.2 - (time.monotonic() - self.last_search)))
                 self.last_search = time.monotonic()
         for attempt in range(3):
+            if hostname == "export.arxiv.org":
+                self.pace_arxiv()
             try:
                 with urlopen(Request(url, headers=headers), timeout=25) as response:
                     body = response.read(8_000_001)
@@ -80,10 +95,13 @@ class Client:
                     return body.decode("utf-8") if raw else json.loads(body)
             except HTTPError as error:
                 retryable = error.code in {429, 500, 502, 503, 504} or (
+                    hostname == "export.arxiv.org" and error.code == 406) or (
                     error.code == 403 and (error.headers.get("X-RateLimit-Remaining") == "0" or error.headers.get("Retry-After")))
                 if not retryable or attempt == 2:
                     raise FetchError(f"HTTP {error.code}") from error
-                delay = min(60, max(2 ** attempt, int(error.headers.get("Retry-After", "0"))))
+                minimum_delay = ARXIV_REQUEST_INTERVAL if hostname == "export.arxiv.org" else 0
+                delay = min(60, max(minimum_delay, 2 ** attempt,
+                                    int(error.headers.get("Retry-After", "0"))))
                 if error.headers.get("X-RateLimit-Reset"):
                     delay = min(60, max(delay, int(error.headers["X-RateLimit-Reset"]) - time.time() + 1))
                 time.sleep(delay)

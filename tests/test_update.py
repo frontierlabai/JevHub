@@ -304,6 +304,30 @@ class HttpClientTests(unittest.TestCase):
                 else:
                     self.assertNotIn("Authorization", headers)
 
+    def test_arxiv_requests_wait_at_least_three_seconds(self):
+        response = b"<feed xmlns='http://www.w3.org/2005/Atom'></feed>"
+        client = update.Client()
+        with patch.object(update, "urlopen", side_effect=[io.BytesIO(response), io.BytesIO(response)]), \
+                patch.object(update.time, "monotonic", side_effect=[100.0, 100.5]), \
+                patch.object(update.time, "sleep") as sleep:
+            client.get("https://export.arxiv.org/api/query?search_query=all:Jev", raw=True)
+            client.get("https://export.arxiv.org/api/query?search_query=all:decision", raw=True)
+        sleep.assert_called_once()
+        self.assertAlmostEqual(sleep.call_args.args[0], 2.6)
+
+    def test_arxiv_406_is_retried_after_cooldown(self):
+        error = HTTPError("https://export.arxiv.org/api/query", 406,
+                          "Not Acceptable", Message(), None)
+        self.addCleanup(error.close)
+        response = b"<feed xmlns='http://www.w3.org/2005/Atom'></feed>"
+        with patch.object(update, "urlopen", side_effect=[error, io.BytesIO(response)]) as request, \
+                patch.object(update.time, "monotonic", side_effect=[100.0, 103.1]), \
+                patch.object(update.time, "sleep") as sleep:
+            body = update.Client().get("https://export.arxiv.org/api/query?search_query=all:Jev", raw=True)
+        self.assertEqual(body, response.decode())
+        self.assertEqual(request.call_count, 2)
+        sleep.assert_called_once_with(update.ARXIV_REQUEST_INTERVAL)
+
 
 class CommunityCollectionTests(unittest.TestCase):
     def test_news_interleaves_languages_deduplicates_and_limits_relevant_results(self):
