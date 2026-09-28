@@ -5466,11 +5466,9 @@
       "count": 8
     },
     "arxiv": {
-      "state": "stale",
-      "fetched_at": "2026-09-27T05:08:34Z",
-      "attempted_at": "2026-09-28T06:52:23Z",
-      "count": 8,
-      "error": "FetchError: HTTP 406"
+      "state": "ok",
+      "fetched_at": "2026-09-28T09:46:44Z",
+      "count": 8
     }
   },
   "curated_resources": [
@@ -7532,6 +7530,48 @@
   ],
   "arxiv": [
     {
+      "title": "JevAdvBench: A Benchmark and Black-Box Attacks for Reinforcement Learning for Calibrated Decisions Models",
+      "url": "http://arxiv.org/abs/2609.31142v1",
+      "summary": "Models trained with reinforcement learning for calibrated decisions (RLCD), such as Jev, answer a typed question about an input, the state, with a probability, a choice, or a score, and software acts on the answer without a person reading it. Their robustness has not been measured: adversarial benchmarks score what a model generates or executes, whereas a typed model generates nothing and returns a well-formed answer even when manipulated. Measurement is also hard, because identical requests can return different answers, most available labels come from the model itself, and the API preprocesses each request out of view. Our key idea is to score each attacked decision against the model's own clean decision rather than against labels, and to read it against the change caused by an identical re-run. Building on this, we introduce JevAdvBench, to our knowledge the first adversarial benchmark for RLCD models, with 812 typed questions over 66 scenarios, and a black-box attack suite of 9,744 single-edit variants that each edit one part of a request, with billed input tokens confirming that the edit reached the model. On jev-1.13.0, rewording stays within 1.2 percentage points of the re-run baseline, and fields outside the schema never reach the model. In contrast, one unverified opinion appended to the state flips 12.1% of decisions, statistically tied with the strongest injected command (10.1%), and pushes 38% of confident answers below the 0.8 confidence threshold that routes them to human review. Applications built on RLCD models should therefore treat the state as untrusted, argued input. Project website: https://JevAdvBench.github.io/JevAdvBench/",
+      "authors": [
+        "Jianyi Hu",
+        "Hangtao Zhang",
+        "Yi Liu",
+        "Yeqi Zeng",
+        "Li Zeng",
+        "Xianlong Wang",
+        "Rui Wang",
+        "Leo Yu Zhang"
+      ],
+      "published_at": "2026-09-25T11:32:19Z"
+    },
+    {
+      "title": "JevSoup: System-One Routing for Training-Free LoRA Composition",
+      "url": "http://arxiv.org/abs/2609.30922v1",
+      "summary": "Building adaptable AI systems requires effective coordination of specialized capabilities across diverse tasks. Low-rank adaptation (LoRA) enables modular expertise, but existing routing approaches may require auxiliary data, additional training, or autoregressive decoding. We propose JevSoup, a training-free framework separating System One expert routing from System Two execution. Using only the input and expert descriptions, Jev selects two experts through structured probabilities. JevSoup retains the leading expert's update, projects the second onto the orthogonal complement of the first update's row space, and combines them with equal weights. Across 14 PorTAL tasks and three Qwen3 scales, JepSoup achieves absolute gains of up to 1.19\\% in task-macro and 1.21\\% in sample-micro accuracy over the strongest evaluated external baselines. Our code is available at https://github.com/Leowang980/JevSoup.",
+      "authors": [
+        "Xiuying Wang",
+        "Jiahua Cheng",
+        "Shuotian Li",
+        "Yufan Cheng",
+        "Bowen Deng",
+        "Zhexuan Bai",
+        "Yichen Li"
+      ],
+      "published_at": "2026-09-25T07:37:28Z"
+    },
+    {
+      "title": "LAVOIR: Teaching a Single-Pass Decision Encoder When and What to Ask with Amortized Value of Information",
+      "url": "http://arxiv.org/abs/2609.30706v1",
+      "summary": "\"System One\" decision models such as TypeSafe's Jev and its open counterpart Laya answer typed questions about a text in a single forward pass with calibrated probabilities, but they cannot ask for missing information: when a first message does not say what separates two departments, they guess. We present LAVOIR (Laya with Value-Of-Information Routing), which places the candidate pieces of missing information (slots) in the input next to the answer options, so that one forward pass returns both the decision distribution and, for every slot, the expected gain in the probability of the correct decision if the user were asked about it. VOI targets need no human labels: gold decisions come from schema rules, an LLM only verbalizes messages and answers, a model from another family checks every text, and pairing each message with several profiles makes regression on realized gains estimate the expected gain. A Gini-impurity cap bounds the predicted value by what a calibrated model can still gain. In a controlled study, decisions on seen schemas are statistically indistinguishable from the Bayes ceiling. The final model's question policy matches a greedy oracle VOI policy on seen schemas (AUC 0.799 vs. 0.797), and with at most 0.5 questions per conversation it is 14.1 points more accurate than never asking. On real ABCD conversations, one real exchange raises accuracy by 8.3 points where LAVOIR asks and leaves it unchanged where it does not; on SGD the cap lowers the asking rate from 93% to 8.6%. On Laya's twelve benchmarks LAVOIR is above Laya's reported scores on seven, and it answers a question in 31 ms (median, GH200).",
+      "authors": [
+        "Furkan Yilmaz",
+        "Habibe Aleyna Tasdemir",
+        "Muhammed Faruk Gozay"
+      ],
+      "published_at": "2026-09-25T02:31:02Z"
+    },
+    {
       "title": "JevOut: Natural Context Can Flip Decision Models",
       "url": "http://arxiv.org/abs/2609.30243v1",
       "summary": "Dedicated decision models such as Jev map unstructured language to probability distributions over finite choices, allowing their outputs to directly route requests, select tools, and trigger actions. Yet real-world inputs rarely arrive in isolation: they come with background details and surrounding context. We find that short additions that fit naturally into this context can nevertheless redirect an otherwise correct decision, even when the correct answer remains unchanged. To study this behavior, we fix a wrong target option for each initially correct item and use the model's option probabilities to refine fluent context additions while preserving the source, question, choices, and gold answer. Within 64 accepted target evaluations, the optimizer identifies contexts that redirect Jev on 312 of 508 initially correct decisions (61.4%); in 229 cases, Jev assigns at least 0.7 probability to the fixed wrong option. Across seven datasets, three additional decision systems show targeted flip rates of 64.9%-73.2% on decisions they initially answer correctly. Taken together, these results expose a pronounced fragility in current decision models: short, ordinary-looking context can shift a correct choice to a high-confidence wrong one. Because these models turn language directly into downstream choices, this sensitivity raises concerns about treating their probability outputs as reliable decision interfaces.",
@@ -7586,37 +7626,6 @@
         "Leo Yu Zhang"
       ],
       "published_at": "2026-09-24T11:49:30Z"
-    },
-    {
-      "title": "From Text Decisions to Pixels: An Study of Jev-Style Visual Choice Model",
-      "url": "http://arxiv.org/abs/2609.29283v1",
-      "summary": "Visual software often needs a decision over supplied alternatives rather than a generated explanation. We present PixelJev, a native-image decision interface that maps an image, a task instruction, and a runtime candidate set to a structured choice and candidate-conditioned probabilities using small open multimodal models. Its initial realization unifies recognition and multiplechoice visual question answering through an existing language-model readout, with separately evaluated options for frozen inference, language-side adaptation, and held-out calibration. Across seven benchmark evaluations, 64-shot source adaptation raises Pets accuracy from 60.13% to 92.40% across optimization seeds and transfers to natural resampling, new texture labels, and A-OKVQA without target fitting, while frozen inference already supports both VQA tasks. A matched prompt-only follow-up on Pets and ScienceQA attributes the large Pets gain to adaptation and identifies a narrower output validity benefit of candidate readout in adapted VQA. Specialist DINOv2 probes remain stronger on source recognition, frozen 4B is stronger than adapted 2B on DTD and ScienceQA, and accuracy gains do not ensure calibrated target probabilities. These findings establish a working starting point for general-purpose visual decision models and identify the remaining requirements: schema robustness, cross-family transfer, and reliable use of visual evidence.",
-      "authors": [
-        "Xunlan Zhou",
-        "Xianliang Yang",
-        "Li Zhao"
-      ],
-      "published_at": "2026-09-24T09:19:05Z"
-    },
-    {
-      "title": "Calibrated Decision Models for Autonomous Penetration-Testing Harnesses: JEV and Laya as System One Decision Layers for LLM-Driven Pentest Agents",
-      "url": "http://arxiv.org/abs/2609.28940v1",
-      "summary": "Autonomous penetration-testing harnesses use large language models (LLMs) for reconnaissance, exploitation, and reporting, but often rely on those same models to confirm findings, grade severity, and select agents. This can lead to false positives, inflated severity, and wasted compute. We examine how System One decision models, lightweight non-generative classifiers that return typed, calibrated verdicts, can support these decisions. We make five contributions. First, we define four decision points: finding adjudication, severity recalibration, agent pruning, and confirmation loops. Second, we present an exploratory NeuroSploit case study comparing one run with TypeSafe System One (Jev) and one without it against a web target containing 13 vulnerabilities. Differences in severity distribution, runtime, and grading by exposed data type motivate the architecture but do not establish statistical significance. Third, we review published specifications for Jev, Jev-Ultrafast, and the open-source Laya without assuming that results from other benchmarks transfer to penetration testing. Fourth, we discuss RLHF, RLAIF, RLCD, and RLHV as training approaches and their implications for trust in security decisions. Finally, we propose Rave, a domain-adapted System One model, and outline its training data, evaluation protocol, and potential effect on harness assurance.",
-      "authors": [
-        "Joas Antonio dos Santos Barbosa"
-      ],
-      "published_at": "2026-09-24T02:47:20Z"
-    },
-    {
-      "title": "Control the Harness, Control the Cost: Routing and Governing AI Coding Agents in the Enterprise",
-      "url": "http://arxiv.org/abs/2609.28919v1",
-      "summary": "Harnesses, the products that run AI coding agents, are multiplying, and enterprises are rolling them out to their employees: what started as pilots with a few hundred seats is scaling to tens of thousands. Most enterprises do not build these harnesses but buy them from large vendors, such as Anthropic's Claude Code or OpenAI's Codex. A harness decides which model answers, what the model reads, how the prompt cache is used and which subagents run, so it picks the rate on the price sheet and sets the volume bought at it. Enterprises that keep a proprietary or untuned harness at its defaults inherit these choices and their bill. We build a fast, customisable router in which Jev, a classifier with calibrated probabilities, labels every prompt against a bring-your-own taxonomy of agentic requests. Because one user turn is many requests over a prompt cache that belongs to one model, the router moves work only where no running conversation has to rebuild its cache: at session start, in side lanes and at subagent launch. From the price sheet we derive when a mid-task switch pays back, and a crossover: on long tool-heavy sessions the highest-priced model costs less than the next tier, as repricing about 10,000 real sessions from public datasets confirms. In an emulated enterprise of 10,000 seats with user behaviour taken from these datasets, the router recovers 14 to 21% of model spend at Anthropic's list prices of 21 September 2026, \\$3.3M to \\$5.0M a year. The paper also maps the risks across twenty harnesses, prices the dependence on one vendor's models, and proposes a control plane that enterprises can run from within, starting now, with a ladder for deciding later whether to own the harness.",
-      "authors": [
-        "Arian Abbasi",
-        "Alan Aqrawi",
-        "Ted Kwartler"
-      ],
-      "published_at": "2026-09-24T02:00:20Z"
     }
   ]
 }

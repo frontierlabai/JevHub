@@ -266,21 +266,26 @@ def collect_arxiv(client, config):
     rows = {}
     since = datetime.fromisoformat(config.get("arxiv_since") or config.get("launched_at", stamp()[:10])).strftime("%Y%m%d0000")
     until = datetime.now(timezone.utc).strftime("%Y%m%d2359")
-    for query in config.get("arxiv_queries", []):
-        dated_query = f"({query}) AND submittedDate:[{since} TO {until}]"
-        url = "https://export.arxiv.org/api/query?" + urlencode({
-            "search_query": dated_query, "start": 0, "max_results": 25,
-            "sortBy": "submittedDate", "sortOrder": "descending"})
-        root = ET.fromstring(client.get(url, raw=True))
-        for entry in root.findall(f"{atom}entry"):
-            title = " ".join((entry.findtext(f"{atom}title", "") or "").split())
-            summary = " ".join((entry.findtext(f"{atom}summary", "") or "").split())
-            paper_url = entry.findtext(f"{atom}id", "")
-            if not title or not safe_url(paper_url) or not relevant(title + " " + summary):
-                continue
-            authors = [name.text.strip() for name in entry.findall(f"{atom}author/{atom}name") if name.text]
-            rows[paper_url] = {"title": title, "url": paper_url, "summary": summary,
-                               "authors": authors, "published_at": entry.findtext(f"{atom}published", "")}
+    queries = config.get("arxiv_queries", [])
+    if not queries:
+        return []
+    # One union query avoids back-to-back API calls and still reserves the
+    # original per-query result budget before relevance filtering.
+    combined_query = " OR ".join(f"({query})" for query in queries)
+    dated_query = f"({combined_query}) AND submittedDate:[{since} TO {until}]"
+    url = "https://export.arxiv.org/api/query?" + urlencode({
+        "search_query": dated_query, "start": 0, "max_results": min(100, 25 * len(queries)),
+        "sortBy": "submittedDate", "sortOrder": "descending"})
+    root = ET.fromstring(client.get(url, raw=True))
+    for entry in root.findall(f"{atom}entry"):
+        title = " ".join((entry.findtext(f"{atom}title", "") or "").split())
+        summary = " ".join((entry.findtext(f"{atom}summary", "") or "").split())
+        paper_url = entry.findtext(f"{atom}id", "")
+        if not title or not safe_url(paper_url) or not relevant(title + " " + summary):
+            continue
+        authors = [name.text.strip() for name in entry.findall(f"{atom}author/{atom}name") if name.text]
+        rows[paper_url] = {"title": title, "url": paper_url, "summary": summary,
+                           "authors": authors, "published_at": entry.findtext(f"{atom}published", "")}
     return sorted(rows.values(), key=lambda row: row.get("published_at", ""), reverse=True)[:config["community_limit"]]
 
 

@@ -90,14 +90,14 @@ Recent Jev-related arXiv papers and preprints from the launch window; discovery 
 
 | Paper | Authors | Submitted |
 | :-- | :-- | :-- |
+| [JevAdvBench: A Benchmark and Black-Box Attacks for Reinforcement Learning for Calibrated Decisions Models](http://arxiv.org/abs/2609.31142v1) | Jianyi Hu, Hangtao Zhang, Yi Liu, Yeqi Zeng, Li Zeng, Xianlong Wang, … | 2026-09-25 |
+| [JevSoup: System-One Routing for Training-Free LoRA Composition](http://arxiv.org/abs/2609.30922v1) | Xiuying Wang, Jiahua Cheng, Shuotian Li, Yufan Cheng, Bowen Deng, Zhe… | 2026-09-25 |
+| [LAVOIR: Teaching a Single-Pass Decision Encoder When and What to Ask with Amortized Value of Information](http://arxiv.org/abs/2609.30706v1) | Furkan Yilmaz, Habibe Aleyna Tasdemir, Muhammed Faruk Gozay | 2026-09-25 |
 | [JevOut: Natural Context Can Flip Decision Models](http://arxiv.org/abs/2609.30243v1) | Zixiang Xu | 2026-09-24 |
 | [Jev in the Wild: A Data-Driven Analysis of the Jev Model's Functionality, Applications and Ecosystem](http://arxiv.org/abs/2609.30216v1) | Guoming Ling, Muen Xue, Zijian Ye | 2026-09-24 |
 | [Jev-Mobile: Jev as an Executor for Mobile GUI Agents](http://arxiv.org/abs/2609.30186v1) | Linghua Zhang | 2026-09-24 |
 | [JEV vs. LLMs as Rubric Judges: Cheaper, Faster, and Wrong in the Same Places](http://arxiv.org/abs/2609.29769v1) | Delip Rao, Chris Callison-Burch | 2026-09-24 |
 | [Just Ask Jev: Reinforcement Learning for Calibrated Decisions as a Zero-Shot Detector of AI Alignment Failures](http://arxiv.org/abs/2609.29429v1) | Ruoqi Guo, Yi Liu, Gelei Deng, Yuekang Li, Lida Zhao, Yutao Wu, Simin… | 2026-09-24 |
-| [From Text Decisions to Pixels: An Study of Jev-Style Visual Choice Model](http://arxiv.org/abs/2609.29283v1) | Xunlan Zhou, Xianliang Yang, Li Zhao | 2026-09-24 |
-| [Calibrated Decision Models for Autonomous Penetration-Testing Harnesses: JEV and Laya as System One Decision Layers for LLM-Driven Pentest Agents](http://arxiv.org/abs/2609.28940v1) | Joas Antonio dos Santos Barbosa | 2026-09-24 |
-| [Control the Harness, Control the Cost: Routing and Governing AI Coding Agents in the Enterprise](http://arxiv.org/abs/2609.28919v1) | Arian Abbasi, Alan Aqrawi, Ted Kwartler | 2026-09-24 |
 
 <a id="community-radar"></a>
 

@@ -396,9 +396,16 @@ class CommunityCollectionTests(unittest.TestCase):
             ET.SubElement(author, f"{{{atom}}}name").text = "Researcher"
         client = Mock()
         client.get.return_value = ET.tostring(root, encoding="unicode")
-        rows = update.collect_arxiv(client, {"arxiv_queries": ["all:Jev"], "community_limit": 8})
+        rows = update.collect_arxiv(client, {
+            "arxiv_queries": ["all:Jev", 'all:"System One" AND all:decision'],
+            "community_limit": 8,
+        })
         self.assertEqual([row["url"] for row in rows], ["https://arxiv.org/abs/2", "https://arxiv.org/abs/1"])
         self.assertEqual(rows[0]["authors"], ["Researcher"])
+        self.assertEqual(client.get.call_count, 1)
+        query = parse_qs(urlparse(client.get.call_args.args[0]).query)
+        self.assertIn('(all:Jev) OR (all:"System One" AND all:decision)', query["search_query"][0])
+        self.assertEqual(query["max_results"], ["50"])
 
 
 class RefreshAndCliTests(unittest.TestCase):
