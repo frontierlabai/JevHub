@@ -1,11 +1,11 @@
 {
   "date": "2026-10-03",
-  "generated_at": "2026-10-03T15:46:07Z",
+  "generated_at": "2026-10-03T15:52:58Z",
   "repositories": [
     {
       "id": 1375382253,
       "name": "NandhaKishorM/laya",
-      "stars": 30386
+      "stars": 30387
     },
     {
       "id": 1373655162,
@@ -115,7 +115,7 @@
     {
       "id": 1381152958,
       "name": "anishfn/shapeshift",
-      "stars": 790
+      "stars": 791
     },
     {
       "id": 1182306628,
@@ -125,7 +125,7 @@
     {
       "id": 1377318357,
       "name": "receptron/laya",
-      "stars": 743
+      "stars": 744
     },
     {
       "id": 1377399471,
@@ -150,7 +150,7 @@
     {
       "id": 1380950524,
       "name": "angel291592/Intent-Router",
-      "stars": 683
+      "stars": 684
     },
     {
       "id": 1204984760,
@@ -225,12 +225,12 @@
     {
       "id": 1375026016,
       "name": "realZachi/pg-jev",
-      "stars": 517
+      "stars": 520
     },
     {
       "id": 1379401527,
       "name": "TianyuCodings/JevHarness",
-      "stars": 512
+      "stars": 513
     },
     {
       "id": 1374858514,
@@ -395,7 +395,7 @@
     {
       "id": 1383354153,
       "name": "mohit67890/imajev",
-      "stars": 261
+      "stars": 262
     },
     {
       "id": 1374800096,
@@ -503,14 +503,14 @@
       "stars": 178
     },
     {
-      "id": 1376081650,
-      "name": "kraayenjon/awesome-jev",
+      "id": 1383983311,
+      "name": "anteloc/ldraw-nova",
       "stars": 167
     },
     {
-      "id": 1383983311,
-      "name": "anteloc/ldraw-nova",
-      "stars": 166
+      "id": 1376081650,
+      "name": "kraayenjon/awesome-jev",
+      "stars": 167
     },
     {
       "id": 1380291359,
@@ -1163,6 +1163,11 @@
       "stars": 26
     },
     {
+      "id": 1373637204,
+      "name": "GodsBoy/jev-agent-skill-router",
+      "stars": 25
+    },
+    {
       "id": 1376641124,
       "name": "mizzlelover/jev-hub",
       "stars": 25
@@ -1190,11 +1195,6 @@
     {
       "id": 1390879638,
       "name": "brianhong-dev/omo-jev-plugin",
-      "stars": 24
-    },
-    {
-      "id": 1373637204,
-      "name": "GodsBoy/jev-agent-skill-router",
       "stars": 24
     },
     {
@@ -1373,8 +1373,8 @@
       "stars": 3
     },
     {
-      "id": 1376657109,
-      "name": "sedum-dev/sedum",
+      "id": 1388592553,
+      "name": "xby123978/agent_research",
       "stars": 3
     },
     {
@@ -1483,11 +1483,6 @@
       "stars": 1
     },
     {
-      "id": 1375511856,
-      "name": "Tatuck/jev-boe-demo",
-      "stars": 1
-    },
-    {
       "id": 1377053924,
       "name": "thezem/jev-one",
       "stars": 1
@@ -1538,6 +1533,11 @@
       "stars": 0
     },
     {
+      "id": 1381085731,
+      "name": "Allan-Nava/hookgate",
+      "stars": 0
+    },
+    {
       "id": 1403342635,
       "name": "armindoguerra/jev-test",
       "stars": 0
@@ -1560,11 +1560,6 @@
     {
       "id": 1403278500,
       "name": "B-Deforce/jev-clef-calibration",
-      "stars": 0
-    },
-    {
-      "id": 1402443662,
-      "name": "becool3000/JevNexus",
       "stars": 0
     },
     {
@@ -1683,11 +1678,6 @@
       "stars": 0
     },
     {
-      "id": 1394736790,
-      "name": "f4r6d/Vienna-Housing-Finder",
-      "stars": 0
-    },
-    {
       "id": 1383752641,
       "name": "fontlaborg/ornotto",
       "stars": 0
@@ -1770,6 +1760,16 @@
     {
       "id": 1401125189,
       "name": "jwil007/roamjev",
+      "stars": 0
+    },
+    {
+      "id": 1401050301,
+      "name": "KalvinHarrisCS/Jev-Hospital-Bed-Prototype",
+      "stars": 0
+    },
+    {
+      "id": 1394969084,
+      "name": "karthik-bommineni/tool-routing-experiment-with-jev",
       "stars": 0
     },
     {
@@ -1870,11 +1870,6 @@
     {
       "id": 1397965132,
       "name": "odyseja2011/jev-filemanager",
-      "stars": 0
-    },
-    {
-      "id": 1389152983,
-      "name": "panaalexandrucristian/jev-mcp-private",
       "stars": 0
     },
     {
