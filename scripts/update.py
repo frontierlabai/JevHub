@@ -430,10 +430,16 @@ def dashboard(data, english=False):
         lines += [tr(f"本次新增收录 {len(new_paper_ids)} 篇，累计 {len(paper_rows)} 篇。新增指历史上从未记录过的论文，修订版本不重复计入。",
                      f"Newly recorded this refresh: {len(new_paper_ids)}; total: {len(paper_rows)}. Only previously unrecorded papers count as new; revisions do not."), ""]
     if paper_rows:
-        lines += [tr("| 论文 | 作者 | 提交时间 |", "| Paper | Authors | Submitted |"), "| :-- | :-- | :-- |"]
-        lines += [f"| {link(r['title'], r['url'])}" +
+        paper_header = [tr("| 论文 | 作者 | 提交时间 |", "| Paper | Authors | Submitted |"), "| :-- | :-- | :-- |"]
+        paper_lines = [f"| {link(r['title'], r['url'])}" +
                   (tr(" **新增**", " **NEW**") if arxiv_id(r['url']) in new_paper_ids else "") +
                   f" | {cell(', '.join(r.get('authors', [])) or '—', 70)} | {cell(r.get('published_at', '')[:10])} |" for r in paper_rows]
+        lines += paper_header + paper_lines[:4]
+        if len(paper_lines) > 4:
+            lines += ["", "<details>", "<summary>" +
+                      tr(f"展开其余 {len(paper_lines) - 4} 篇论文（共 {len(paper_lines)} 篇）",
+                         f"Show remaining {len(paper_lines) - 4} papers ({len(paper_lines)} total)") +
+                      "</summary>", ""] + paper_header + paper_lines[4:] + ["", "</details>"]
     else:
         lines.append(tr("当前快照没有可展示的论文。", "No recent papers are available in this snapshot."))
     lines += [

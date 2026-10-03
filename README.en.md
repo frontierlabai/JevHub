@@ -98,6 +98,12 @@ Newly recorded this refresh: 27; total: 68. Only previously unrecorded papers co
 | [HydroJEV: A one-second, training-free screen for cyber-attack and fault attribution in water distribution networks](https://arxiv.org/abs/2610.02048) | Tianwei Mu, Shengyan Jiang, Mingzhe Yuan, Qing Luo, Min Xiao, Wenhong… | 2026-10-01 |
 | [Code Owns the Simulation, Jev Owns the Evaluation](https://arxiv.org/abs/2610.01834) | Yaodong Yang, Hongyao Tang, Yi Ma, Xingyu Fan, Weixun Wang, Jinpeng L… | 2026-10-01 |
 | [Jev-IDS: System One Models for Network Intrusion Detection](https://arxiv.org/abs/2610.01079) | Paulo Severo, Silvio E. Quincozes, Amanda Dias | 2026-10-01 |
+
+<details>
+<summary>Show remaining 64 papers (68 total)</summary>
+
+| Paper | Authors | Submitted |
+| :-- | :-- | :-- |
 | [Beyond Answer Confidence: A Controlled Audit of Self-Knowledge in a Black-Box Decision Model](https://arxiv.org/abs/2610.01006) | Sharath M Shankaranarayana, Davor Runje, Jan Jannink | 2026-10-01 |
 | [Decision-Oriented Recommendation Reranking: An Empirical Study of Jev](https://arxiv.org/abs/2609.40241) | Hanjia Lyu, Yinglong Xia | 2026-09-30 |
 | [JevSpawn: Adaptive Agentic Inference through Compositional Action Spaces](https://arxiv.org/abs/2610.00437) | Haoyang Su, Weiran Huang | 2026-09-30 |
@@ -162,6 +168,8 @@ Newly recorded this refresh: 27; total: 68. Only previously unrecorded papers co
 | [this-that-model-1.0: A typed decision model that decides in 30 ms, for a millionth of a cent](https://arxiv.org/abs/2609.23886) **NEW** | Zehua Cheng, Wei Dai, Jiahao Sun | 2026-09-20 |
 | [Fast Intent-Driven Service Orchestration with Jev for 6G Edge Networks](https://arxiv.org/abs/2609.23136) **NEW** | Delong Li, Xu Wang, Haochen Gong, Rui Lang, Guangsheng Yu | 2026-09-19 |
 | [Replacing Large Language Models with Jev Decision Models for Low-Latency Edge Service Orchestration](https://arxiv.org/abs/2609.22753) **NEW** | Delong Li, Xu Wang, Haochen Gong, Rui Lang, Guangsheng Yu | 2026-09-19 |
+
+</details>
 
 <a id="community-radar"></a>
 

@@ -71,6 +71,8 @@ h2 { margin: 0; font-size: 25px; line-height: 1.25; font-weight: 650; letter-spa
 .papers-status { grid-column: 2; margin: 0 0 14px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .papers-section .section-heading { grid-row: 1 / span 2; }
 .papers-list { grid-column: 2; }
+.papers-more { grid-column: 2; justify-self: start; border: 0; background: transparent; color: var(--blue); padding: 10px 0 0; font-size: 12px; font-weight: 650; min-height: 44px; }
+.papers-more:hover { text-decoration: underline; }
 
 .papers-section h2 { color: var(--ink); }
 .papers-section .section-intro, .papers-section .empty { color: var(--muted); }
