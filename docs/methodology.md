@@ -11,7 +11,7 @@ JevHub 是 TypeSafe Jev 生态的公开资源目录。它按 GitHub 关注度帮
 | Reddit public JSON | 最近一个月检索结果前 100 条，再按 Jev 与 AI 上下文过滤 | score 降序 |
 | Hugging Face API | Jev 关键词模型检索，按 likes 获取前 30 条 | likes 降序，downloads 作为同分排序 |
 | Google News RSS | Jev + TypeSafe 的中英文公开新闻检索 | 各语言交替，保留来源内部顺序；无热度分数 |
-| arXiv API | Jev 爆火起始日之后的 Jev、System One 与 decision 论文和预印本；多个发现条件合并为一次查询 | 按 submitted date 倒序；去重后取配置上限 |
+| arXiv API | Jev 爆火起始日之后的 Jev、System One 与 decision 论文和预印本；多个发现条件合并查询，每页 100 条，分页至完成 | 按 submitted date 倒序；保留全部已收录论文，不受 community_limit 限制 |
 | 精选资源 | 人工核验的官方入口、作者文章、视频元数据与讨论链接 | 编辑顺序 |
 
 GitHub 搜索总数可能大于采集数；README 的“检索范围与数据状态”逐条列出实际数量。超过页数上限的结果不是抓取错误，但可能漏掉排名靠后的资源。近期检索通道按更新时间排序，专门补捉低 Star 但刚出现的仓库。API 返回 incomplete_results、搜索或种子请求失败时，整次 GitHub 更新失败，保留已提交数据。工作流保持失败状态，方便维护者发现问题。
@@ -21,6 +21,16 @@ GitHub 搜索总数可能大于采集数；README 的“检索范围与数据状
 项目类别首先采用人工覆盖值，再根据官方组织或关键词分类。独立复现不是 TypeSafe 官方模型权重；仓库描述是维护者的说明，不是 JevHub 对性能的背书。大型框架的 Star 属于整个框架，不应视为某个 Jev 集成的独立热度。
 
 2026-09-22 的首批 Top 30 审查补充了五项排除记录：[anything_about_game](https://github.com/killop/anything_about_game) 的 README 没有 Jev 模型内容，普通词语 `typesafe` 指的是消息库；[Reticle](https://github.com/reticlehq/reticle) 将 Jev 集成列为未来计划，并明确表示尚未交付；[agent-beacon](https://github.com/Asymptote-Labs/agent-beacon)、[phi](https://github.com/pulseaiclub/phi) 和 [Crane](https://github.com/lucasjinreal/Crane) 的当前主分支 README 未提供 Jev 用途说明，只有相关 topic。后三项属于本次核验范围内的证据不足，并非断言仓库代码没有集成。此次审查核对仓库元数据与 README，没有执行或全面审计第三方代码；后续提供直接用途说明后可重新评估收录。
+
+## 全部论文与新增记录
+
+网页与中英文 README 展示全部已收录论文，沿用 `arxiv_since` 与 Jev 相关性规则；不再截取最新 8 篇。每次抓取完整查询范围，合并历史记录；暂时未被搜索返回的论文仍保留。按不带版本号的 arXiv ID 去重，统一 HTTPS 链接，v2/v3 修订不作为新论文。
+
+“本次新增”指此次成功抓取中、历史上从未收录过的论文，保存在 `arxiv_update.ids`，网页与 README 据此标记。`first_seen_at` 是首次收录时间，不是论文提交日期。重复运行无新记录时新增为 0；抓取失败时保留旧论文，清除本次新增标记并显示抓取不可用，不把旧记录伪装成新增。分页中途失败、重复页面或 API 错误 feed 均按失败处理。
+
+迁移时从 Git 历史恢复了 41 篇曾收录的论文，再与完整抓取结果合并，避免把原来被 8 篇上限隐藏的论文重新算作新增。新补录的早期论文可以计入新增收录，与论文发表日期无关。
+
+项目简报同样对比历史记录：`recorded_repository_ids` 累计保存不可变的 GitHub 仓库 ID，并合并 `data/history`。改名、Star 变化、退出搜索后重新出现均不会再次计为新增。迁移时也恢复了日内 Git 提交中曾记录的仓库 ID。
 
 ## Star 与时间
 
@@ -68,5 +78,7 @@ This is bounded public discovery, not a web census or a performance ranking. Git
 The initial Top 30 review on 2026-09-22 excluded `anything_about_game` for unrelated README content and Reticle for a planned, unshipped Jev integration. `agent-beacon`, `phi`, and `Crane` were withheld because their current main-branch READMEs did not substantiate their Jev topics. This is a metadata and README evidence boundary, not a claim that their code contains no integration; listings can be reconsidered when direct usage documentation is available.
 
 Repository stars are used as a discovery and sorting signal only; JevHub does not publish a star-growth leaderboard.
+
+All recorded arXiv papers are retained and displayed on the website and in both READMEs. Pagination completes before publishing; failures preserve the archive. New additions use version-independent IDs against the entire archive, not publication dates. Repository briefs likewise compare immutable IDs against all recorded history.
 
 HN points, Reddit scores, HF likes / trailing 30-day downloads, and arXiv papers stay separate. Google News results are discovery links without a reach metric. Optional-source failures retain timestamped caches; GitHub collection failures stop publication. The saved JSON records queries, coverage, evidence and source status. Offline rendering is deterministic and never changes collection timestamps.

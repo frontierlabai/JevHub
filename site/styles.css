@@ -68,7 +68,9 @@ h2 { margin: 0; font-size: 25px; line-height: 1.25; font-weight: 650; letter-spa
 .papers-section > .shell { display: grid; grid-template-columns: 180px minmax(0, 1fr); column-gap: 30px; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding-block: 24px 12px; }
 .papers-section .section-heading { display: block; margin: 0; }
 .papers-section .section-intro { margin-top: 14px; max-width: 24ch; line-height: 1.8; }
-.papers-section .papers-more { grid-column: 2; justify-self: start; }
+.papers-status { grid-column: 2; margin: 0 0 14px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.papers-section .section-heading { grid-row: 1 / span 2; }
+.papers-list { grid-column: 2; }
 
 .papers-section h2 { color: var(--ink); }
 .papers-section .section-intro, .papers-section .empty { color: var(--muted); }
@@ -83,8 +85,6 @@ h2 { margin: 0; font-size: 25px; line-height: 1.25; font-weight: 650; letter-spa
 .paper p { margin: 6px 0 0; color: var(--muted); font-size: 11px; overflow-wrap: anywhere; }
 .paper details { margin-top: 7px; font-size: 12px; color: var(--blue); }
 .paper details p { font-size: 13px; line-height: 1.7; padding: 12px 14px; background: #f6f5fa; border-radius: 7px; }
-.papers-more { border: 0; background: transparent; color: var(--blue); padding: 10px 0 0; font-size: 12px; font-weight: 650; min-height: 44px; }
-.papers-more:hover { text-decoration: underline; }
 .toolbar { display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-bottom: 16px; }
 .search { display: flex; align-items: center; gap: 10px; flex: 1 1 260px; max-width: 350px; border: 1px solid #bacbd6; border-radius: 7px; padding: 10px 12px; background: var(--page); }
 .search:focus-within { border-color: var(--blue); outline: 2px solid #c8dcf5; }

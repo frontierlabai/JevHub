@@ -1,5 +1,5 @@
 const isEnglish = document.documentElement.lang === 'en';
-const state = { data: null, category: 'all', query: '', shown: 9, papersExpanded: false };
+const state = { data: null, category: 'all', query: '', shown: 9 };
 const labels = isEnglish ? { official: 'Official', research: 'Independent research', resources: 'Resources', tools: 'Tools', applications: 'Apps / integrations' } : { official: '官方项目', research: '独立研究', resources: '资源合集', tools: '开发工具', applications: '应用 / 集成' };
 const $ = (selector) => document.querySelector(selector);
 const visitCounter = $('#site-visit-counter');
@@ -71,16 +71,21 @@ function renderProjects(data) {
 
 function renderPapers(data) {
   const rows = data.arxiv || [];
-  $('#papers-list').innerHTML = rows.length ? rows.map((row, index) => {
+  const source = data.sources?.arxiv || {};
+  const fresh = source.state === 'ok';
+  const newIds = new Set(fresh ? (data.arxiv_update?.ids || []) : []);
+  const status = fresh
+    ? (isEnglish ? `${rows.length} papers · ${newIds.size} newly recorded this refresh` : `累计 ${rows.length} 篇 · 本次新增收录 ${newIds.size} 篇`)
+    : (isEnglish ? 'Collection unavailable · showing previously recorded papers' : '本次抓取未成功 · 展示已收录论文');
+  $('#papers-status').textContent = `${status} · ${isEnglish ? 'Last successful fetch' : '最近成功抓取'}: ${source.fetched_at ? new Date(source.fetched_at).toLocaleString(isEnglish ? 'en-US' : 'zh-CN') : '—'}`;
+  $('#papers-list').innerHTML = rows.length ? rows.map((row) => {
+    const id = new URL(row.url).pathname.replace(/^\/abs\//, '').replace(/v\d+$/, '');
+    const badge = newIds.has(id) ? `<strong>${isEnglish ? 'NEW' : '新增'}</strong> · ` : '';
     const authors = (row.authors || []).join(', ') || (isEnglish ? 'Unknown authors' : '作者未提供');
     const date = row.published_at ? new Date(row.published_at).toLocaleDateString(isEnglish ? 'en-US' : 'zh-CN', { year: 'numeric', month: 'short', day: 'numeric' }) : '—';
-    return `<article class="paper" ${index >= 4 && !state.papersExpanded ? 'hidden' : ''}><div class="paper-meta"><span class="paper-label">arXiv · ${isEnglish ? 'Preprint' : '预印本'}</span><time datetime="${escapeHTML(row.published_at || '')}">${escapeHTML(date)}</time></div><a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a><p>${escapeHTML(authors)}</p>${row.summary ? `<details><summary>${isEnglish ? 'Read abstract' : '查看摘要'}</summary><p>${escapeHTML(row.summary)}</p></details>` : ''}</article>`;
+    return `<article class="paper"><div class="paper-meta"><span class="paper-label">${badge}arXiv · ${isEnglish ? 'Preprint' : '预印本'}</span><time datetime="${escapeHTML(row.published_at || '')}">${escapeHTML(date)}</time></div><a href="${escapeHTML(row.url)}" target="_blank" rel="noreferrer">${escapeHTML(row.title)}</a><p>${escapeHTML(authors)}</p>${row.summary ? `<details><summary>${isEnglish ? 'Read abstract' : '查看摘要'}</summary><p>${escapeHTML(row.summary)}</p></details>` : ''}</article>`;
   }).join('') : `<p class="empty">${isEnglish ? 'No recent arXiv papers are available.' : '暂无符合时间范围的 arXiv 论文。'}</p>`;
-  const more = $('#papers-more');
-  more.hidden = rows.length <= 4;
-  more.setAttribute('aria-expanded', String(state.papersExpanded));
-  more.textContent = state.papersExpanded ? (isEnglish ? 'Show fewer papers' : '收起论文') : (isEnglish ? `Show all ${rows.length} papers` : `展开全部 ${rows.length} 篇论文`);
-  more.onclick = () => { state.papersExpanded = !state.papersExpanded; renderPapers(data); };
+
 }
 
 function renderRadar(data) {

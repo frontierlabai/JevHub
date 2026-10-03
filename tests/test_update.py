@@ -383,9 +383,9 @@ class CommunityCollectionTests(unittest.TestCase):
         atom = "http://www.w3.org/2005/Atom"
         root = ET.Element(f"{{{atom}}}feed")
         for ident, title, published in [
-            ("https://arxiv.org/abs/2", "Jev for typed AI decisions", "2026-09-22T00:00:00Z"),
-            ("https://arxiv.org/abs/1", "Jev for typed AI decisions", "2026-09-20T00:00:00Z"),
-            ("https://arxiv.org/abs/3", "Jevons paradox in economics", "2026-09-23T00:00:00Z"),
+            ("https://arxiv.org/abs/2609.00002", "Jev for typed AI decisions", "2026-09-22T00:00:00Z"),
+            ("https://arxiv.org/abs/2609.00001", "Jev for typed AI decisions", "2026-09-20T00:00:00Z"),
+            ("https://arxiv.org/abs/2609.00003", "Jevons paradox in economics", "2026-09-23T00:00:00Z"),
         ]:
             entry = ET.SubElement(root, f"{{{atom}}}entry")
             ET.SubElement(entry, f"{{{atom}}}id").text = ident
@@ -400,19 +400,64 @@ class CommunityCollectionTests(unittest.TestCase):
             "arxiv_queries": ["all:Jev", 'all:"System One" AND all:decision'],
             "community_limit": 8,
         })
-        self.assertEqual([row["url"] for row in rows], ["https://arxiv.org/abs/2", "https://arxiv.org/abs/1"])
+        self.assertEqual([row["url"] for row in rows], ["https://arxiv.org/abs/2609.00002", "https://arxiv.org/abs/2609.00001"])
         self.assertEqual(rows[0]["authors"], ["Researcher"])
         self.assertEqual(client.get.call_count, 1)
         query = parse_qs(urlparse(client.get.call_args.args[0]).query)
         self.assertIn('(all:Jev) OR (all:"System One" AND all:decision)', query["search_query"][0])
-        self.assertEqual(query["max_results"], ["50"])
+        self.assertEqual(query["max_results"], ["100"])
+
+
+class ArxivArchiveTests(unittest.TestCase):
+    def feed(self, numbers, *, total=102):
+        root = ET.Element("feed", xmlns="http://www.w3.org/2005/Atom")
+        ET.SubElement(root, "{http://a9.com/-/spec/opensearch/1.1/}totalResults").text = str(total)
+        for n in numbers:
+            entry = ET.SubElement(root, "entry")
+            ET.SubElement(entry, "id").text = f"http://arxiv.org/abs/2609.{n:05}v1"
+            ET.SubElement(entry, "title").text = f"Jev decision model {n}"
+            ET.SubElement(entry, "summary").text = "AI model"
+            ET.SubElement(entry, "published").text = "2026-09-22T00:00:00Z"
+        return ET.tostring(root, encoding="unicode")
+
+    def test_all_pages_are_kept_despite_community_limit(self):
+        client = Mock()
+        client.get.side_effect = [self.feed(range(100)), self.feed(range(100, 102))]
+        rows = update.collect_arxiv(client, {"arxiv_queries": ["all:Jev"], "community_limit": 8})
+        self.assertEqual(len(rows), 102)
+        self.assertEqual([parse_qs(urlparse(c.args[0]).query)["start"] for c in client.get.call_args_list], [["0"], ["100"]])
+        self.assertTrue(all(row["url"].startswith("https://arxiv.org/abs/") and not row["url"].endswith("v1") for row in rows))
+
+    def test_partial_repeated_and_error_feeds_fail(self):
+        for tail in (update.FetchError("HTTP 503"), self.feed([], total=102), self.feed(range(100)),
+                     '<html>service unavailable</html>',
+                     '<feed xmlns="http://www.w3.org/2005/Atom"><entry><id>http://arxiv.org/api/errors</id></entry></feed>'):
+            client = Mock()
+            client.get.side_effect = [self.feed(range(100)), tail]
+            with self.subTest(tail=str(tail)[:80]), self.assertRaises(update.FetchError):
+                update.collect_arxiv(client, {"arxiv_queries": ["all:Jev"]})
+
+    def test_archive_retains_missing_papers_and_revisions_are_not_new(self):
+        old = [{"title": "Old paper", "url": "http://arxiv.org/abs/2609.00001v1", "first_seen_at": "old"},
+               {"title": "Missing from search", "url": "https://arxiv.org/abs/2609.00002"}]
+        incoming = [{"title": "Revised paper", "url": "https://arxiv.org/abs/2609.00001v2"},
+                    {"title": "Previously unrecorded", "url": "http://arxiv.org/abs/2609.00003v1"}]
+        rows, brief = update.merge_arxiv(old, incoming, "now")
+        self.assertEqual(len(rows), 3)
+        self.assertEqual(brief["ids"], ["2609.00003"])
+        revised = next(r for r in rows if r["url"].endswith("00001"))
+        self.assertEqual(revised["first_seen_at"], "old")
+        self.assertEqual(revised["title"], "Revised paper")
+        again, brief = update.merge_arxiv(rows, incoming, "later")
+        self.assertEqual(brief["count"], 0)
+        self.assertEqual(rows, again)
 
 
 class RefreshAndCliTests(unittest.TestCase):
     """Use a real temporary workspace and fake transport; no live APIs or repository writes."""
 
-    OPTIONAL = ("hacker_news", "reddit", "huggingface", "news")
-    COLLECTORS = ("collect_hn", "collect_reddit", "collect_huggingface", "collect_news")
+    OPTIONAL = ("hacker_news", "reddit", "huggingface", "news", "arxiv")
+    COLLECTORS = ("collect_hn", "collect_reddit", "collect_huggingface", "collect_news", "collect_arxiv")
 
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
@@ -507,6 +552,47 @@ class RefreshAndCliTests(unittest.TestCase):
                 self.assertEqual(data[name], [])
                 self.assertEqual(data["sources"][name]["state"], "unavailable")
                 self.assertIsNone(data["sources"][name]["fetched_at"])
+
+    def test_reappearing_repository_is_not_new_even_after_absence(self):
+        self.write_json("data/history/2026-09-19.json", {"repositories": [self.row(42)]})
+        previous = self.snapshot()
+        previous["recorded_repository_ids"] = ["99"]
+        with ExitStack() as stack:
+            stack.enter_context(patch.object(update, "collect_github", return_value=(
+                [self.row(42), self.row(99), self.row(100)], {"queries": []})))
+            for collector in self.COLLECTORS:
+                stack.enter_context(patch.object(update, collector, return_value=[]))
+            stack.enter_context(redirect_stdout(io.StringIO()))
+            data = update.refresh(self.config, previous, FakeClient())
+        self.assertEqual([r["id"] for r in data["daily_brief"]["repositories"]], [100])
+        self.assertEqual(set(data["recorded_repository_ids"]), {"1", "42", "99", "100"})
+
+    def test_paper_archive_and_new_markers_match_both_readmes(self):
+        previous = self.snapshot()
+        previous["arxiv"] = [{"title": "Recorded paper", "url": "https://arxiv.org/abs/2609.00001v1"}]
+        papers = [{"title": "Recorded revision", "url": "http://arxiv.org/abs/2609.00001v2"},
+                  {"title": "New paper", "url": "http://arxiv.org/abs/2609.00002v1"}]
+        with ExitStack() as stack:
+            stack.enter_context(patch.object(update, "collect_github", return_value=([self.row()], {"queries": []})))
+            for collector in self.COLLECTORS:
+                stack.enter_context(patch.object(update, collector, return_value=papers if collector == "collect_arxiv" else []))
+            stack.enter_context(redirect_stdout(io.StringIO()))
+            data = update.refresh(self.config, previous, FakeClient())
+        self.assertEqual(data["arxiv_update"]["ids"], ["2609.00002"])
+        for english, marker in ((False, "**新增**"), (True, "**NEW**")):
+            rendered = update.dashboard(data, english)
+            self.assertEqual(rendered.count(marker), 1)
+            self.assertIn("Recorded revision", rendered)
+            self.assertIn("New paper", rendered)
+        with ExitStack() as stack:
+            stack.enter_context(patch.object(update, "collect_github", return_value=([self.row()], {"queries": []})))
+            for collector in self.COLLECTORS:
+                stack.enter_context(patch.object(update, collector, side_effect=update.FetchError("HTTP 503")))
+            stack.enter_context(redirect_stdout(io.StringIO()))
+            failed = update.refresh(self.config, data, FakeClient())
+        self.assertEqual(failed["arxiv"], data["arxiv"])
+        self.assertEqual(failed["arxiv_update"]["ids"], [])
+        self.assertNotIn("**NEW**", update.dashboard(failed, True))
 
     def test_render_check_is_offline_idempotent_and_detects_drift_without_writes(self):
         self.write_json("data/latest.json", self.snapshot())

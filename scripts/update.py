@@ -260,33 +260,93 @@ def collect_news(client, config):
     return list(combined.values())[:config["community_limit"]]
 
 
+def arxiv_id(url):
+    """Stable identity across HTTP/HTTPS and successive manuscript versions."""
+    parsed = urlparse(url)
+    if parsed.hostname not in {"arxiv.org", "export.arxiv.org"} or not parsed.path.startswith("/abs/"):
+        raise FetchError("Invalid arXiv paper URL")
+    ident = re.sub(r"v\d+$", "", parsed.path[5:])
+    if not re.fullmatch(r"(?:\d{4}\.\d{4,5}|[a-z-]+(?:\.[A-Z]{2})?/\d{7})", ident):
+        raise FetchError("Invalid arXiv paper ID")
+    return ident
+
+
 def collect_arxiv(client, config):
-    """Collect recent papers and preprints that mention Jev in an AI context."""
+    """Collect every matching page; partial results must never look successful."""
     atom = "{http://www.w3.org/2005/Atom}"
+    opensearch = "{http://a9.com/-/spec/opensearch/1.1/}"
     rows = {}
     since = datetime.fromisoformat(config.get("arxiv_since") or config.get("launched_at", stamp()[:10])).strftime("%Y%m%d0000")
     until = datetime.now(timezone.utc).strftime("%Y%m%d2359")
     queries = config.get("arxiv_queries", [])
     if not queries:
         return []
-    # One union query avoids back-to-back API calls and still reserves the
-    # original per-query result budget before relevance filtering.
     combined_query = " OR ".join(f"({query})" for query in queries)
     dated_query = f"({combined_query}) AND submittedDate:[{since} TO {until}]"
-    url = "https://export.arxiv.org/api/query?" + urlencode({
-        "search_query": dated_query, "start": 0, "max_results": min(100, 25 * len(queries)),
-        "sortBy": "submittedDate", "sortOrder": "descending"})
-    root = ET.fromstring(client.get(url, raw=True))
-    for entry in root.findall(f"{atom}entry"):
-        title = " ".join((entry.findtext(f"{atom}title", "") or "").split())
-        summary = " ".join((entry.findtext(f"{atom}summary", "") or "").split())
-        paper_url = entry.findtext(f"{atom}id", "")
-        if not title or not safe_url(paper_url) or not relevant(title + " " + summary):
-            continue
-        authors = [name.text.strip() for name in entry.findall(f"{atom}author/{atom}name") if name.text]
-        rows[paper_url] = {"title": title, "url": paper_url, "summary": summary,
+    start, page_size, seen = 0, 100, set()
+    while True:
+        url = "https://export.arxiv.org/api/query?" + urlencode({
+            "search_query": dated_query, "start": start, "max_results": page_size,
+            "sortBy": "submittedDate", "sortOrder": "descending"})
+        root = ET.fromstring(client.get(url, raw=True))
+        if root.tag != f"{atom}feed":
+            raise FetchError("Invalid arXiv feed")
+        entries = root.findall(f"{atom}entry")
+        total_text = root.findtext(f"{opensearch}totalResults")
+        total = int(total_text) if total_text is not None else None
+        page_ids = set()
+        for entry in entries:
+            paper_url = entry.findtext(f"{atom}id", "")
+            ident = arxiv_id(paper_url)  # Also rejects API error entries returned with HTTP 200.
+            page_ids.add(ident)
+            title = " ".join(entry.findtext(f"{atom}title", "").split())
+            summary = " ".join(entry.findtext(f"{atom}summary", "").split())
+            if not title or not relevant(title + " " + summary):
+                continue
+            authors = [name.text.strip() for name in entry.findall(f"{atom}author/{atom}name") if name.text]
+            rows[ident] = {"title": title, "url": "https://arxiv.org/abs/" + ident, "summary": summary,
                            "authors": authors, "published_at": entry.findtext(f"{atom}published", "")}
-    return sorted(rows.values(), key=lambda row: row.get("published_at", ""), reverse=True)[:config["community_limit"]]
+        if entries and not page_ids - seen:
+            raise FetchError("arXiv pagination repeated a page")
+        seen.update(page_ids)
+        start += len(entries)
+        if total is not None and start >= total:
+            break
+        if total is None and len(entries) < page_size:
+            break
+        if not entries:
+            raise FetchError("arXiv pagination ended before totalResults")
+        if start >= 10000:
+            raise FetchError("arXiv query exceeds 10000 results; narrow the configured query")
+    return sorted(rows.values(), key=lambda row: (row.get("published_at", ""), row["url"]), reverse=True)
+
+
+def merge_arxiv(previous, incoming, fetched_at):
+    """Retain the archive; a revision or a reappearing record is never new."""
+    rows = {arxiv_id(row["url"]): dict(row) for row in previous}
+    new_ids = []
+    for row in incoming:
+        ident = arxiv_id(row["url"])
+        first_seen = rows.get(ident, {}).get("first_seen_at")
+        if ident not in rows:
+            new_ids.append(ident)
+            first_seen = fetched_at
+        rows[ident] = dict(row, url="https://arxiv.org/abs/" + ident)
+        if first_seen:
+            rows[ident]["first_seen_at"] = first_seen
+    for ident, row in rows.items():
+        row["url"] = "https://arxiv.org/abs/" + ident
+    return (sorted(rows.values(), key=lambda row: (row.get("published_at", ""), row["url"]), reverse=True),
+            {"checked_at": fetched_at, "count": len(new_ids), "ids": new_ids})
+
+
+def recorded_repository_ids(previous, *, before=None):
+    ids = set(previous.get("recorded_repository_ids", []))
+    ids.update(str(row["id"]) for row in previous.get("repositories", []))
+    for path in (ROOT / "data/history").glob("*.json"):
+        if before is None or path.stem < before:
+            ids.update(str(row["id"]) for row in load_json(path, {}).get("repositories", []))
+    return ids
 
 
 def load_json(path, default=None):
@@ -308,7 +368,7 @@ def hydrate_daily_brief(data):
                 prior = candidate
     if not prior:
         return data
-    previous_ids = {str(row.get("id")) for row in prior.get("repositories", [])}
+    previous_ids = recorded_repository_ids(prior, before=current_day)
     new_repositories = [row for row in data.get("repositories", []) if str(row.get("id")) not in previous_ids]
     hydrated = dict(data)
     hydrated["daily_brief"] = {"count": len(new_repositories), "repositories": new_repositories}
@@ -355,13 +415,25 @@ def dashboard(data, english=False):
     lines += [
         "", tr("> 💡 排名按项目当前 Star 总数更新；Star 只作为发现信号，不代表项目质量或官方认可。",
                "> 💡 Rankings use current repository stars as a discovery signal, not as a proxy for quality or official endorsement."),
-        "", '<a id="papers"></a>', "", tr("## 📚 近期论文", "## 📚 Recent papers"), "",
+        "", '<a id="papers"></a>', "", tr("## 📚 全部论文", "## 📚 All papers"), "",
         tr("只收录 Jev 爆火起始日之后的相关 arXiv 论文与预印本；仅作为发现入口，不代表同行评审或官方关联。",
            "Recent Jev-related arXiv papers and preprints from the launch window; discovery links, not peer-review or official-affiliation claims."), ""]
     paper_rows = data.get("arxiv", [])
+    paper_status = sources.get("arxiv", {})
+    paper_update = data.get("arxiv_update", {})
+    new_paper_ids = set(paper_update.get("ids", [])) if paper_status.get("state") == "ok" else set()
+    lines += [tr("最近成功抓取：", "Last successful fetch: ") + (paper_status.get("fetched_at") or "—"), ""]
+    if paper_status.get("state") != "ok":
+        lines += [tr("本次抓取未成功，保留已收录论文；新增数量暂不可确认。",
+                     "Collection unavailable; previously recorded papers are retained. New additions are not confirmed."), ""]
+    elif paper_update:
+        lines += [tr(f"本次新增收录 {len(new_paper_ids)} 篇，累计 {len(paper_rows)} 篇。新增指历史上从未记录过的论文，修订版本不重复计入。",
+                     f"Newly recorded this refresh: {len(new_paper_ids)}; total: {len(paper_rows)}. Only previously unrecorded papers count as new; revisions do not."), ""]
     if paper_rows:
         lines += [tr("| 论文 | 作者 | 提交时间 |", "| Paper | Authors | Submitted |"), "| :-- | :-- | :-- |"]
-        lines += [f"| {link(r['title'], r['url'])} | {cell(', '.join(r.get('authors', [])) or '—', 70)} | {cell(r.get('published_at', '')[:10])} |" for r in paper_rows]
+        lines += [f"| {link(r['title'], r['url'])}" +
+                  (tr(" **新增**", " **NEW**") if arxiv_id(r['url']) in new_paper_ids else "") +
+                  f" | {cell(', '.join(r.get('authors', [])) or '—', 70)} | {cell(r.get('published_at', '')[:10])} |" for r in paper_rows]
     else:
         lines.append(tr("当前快照没有可展示的论文。", "No recent papers are available in this snapshot."))
     lines += [
@@ -457,9 +529,10 @@ def refresh(config, previous, client):
     print("Collecting GitHub repositories...", flush=True)
     repos, github_status = collect_github(client, config)
     repos.sort(key=lambda r: (-r["stars"], r["name"].lower()))
-    previous_ids = {str(row.get("id")) for row in previous.get("repositories", [])}
+    previous_ids = recorded_repository_ids(previous)
     new_repositories = [row for row in repos if str(row["id"]) not in previous_ids]
     data = {"schema_version": 1, "generated_at": stamp(), "repositories": repos,
+            "recorded_repository_ids": sorted(previous_ids | {str(row["id"]) for row in repos}),
             "sources": {"github": github_status}, "curated_resources": config["curated_resources"],
             "limits": {"repositories": config["readme_limit"]},
             "daily_brief": {"count": len(new_repositories),
@@ -470,6 +543,8 @@ def refresh(config, previous, client):
         print(f"Collecting {name}...", flush=True)
         try:
             data[name] = collector(client, config)
+            if name == "arxiv":
+                data[name], data["arxiv_update"] = merge_arxiv(previous.get(name, []), data[name], stamp())
             data["sources"][name] = {"state": "ok", "fetched_at": stamp(), "count": len(data[name])}
         except (FetchError, KeyError, TypeError, ValueError, ET.ParseError) as error:
             data[name] = previous.get(name, [])
@@ -477,6 +552,8 @@ def refresh(config, previous, client):
             data["sources"][name] = {"state": "stale" if data[name] else "unavailable",
                 "fetched_at": prior_status.get("fetched_at"), "attempted_at": stamp(), "count": len(data[name]),
                 "error": f"{type(error).__name__}: {error}"}
+            if name == "arxiv":
+                data["arxiv_update"] = {"checked_at": stamp(), "count": 0, "ids": []}
     return data
 
 
