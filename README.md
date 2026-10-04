@@ -31,7 +31,7 @@
 
 > **这是哪个 Jev？** 本站关注 [TypeSafe AI](https://typesafe.ai/) 的 **Jev / System One** 决策模型：面向软件提供结构化决策。JevHub 是独立社区目录，与 TypeSafe AI 无官方隶属关系。[了解 Jev →](https://docs.typesafe.ai/introduction)
 
-> 更新于 **2026-10-03T15:52:58Z** · **402** 个相关仓库 · **158,946** 个累计 Star
+> 更新于 **2026-10-04T06:50:24Z** · **405** 个相关仓库 · **160,014** 个累计 Star
 
 仓库 Star 包含其全部功能获得的关注，不等于 Jev 功能的热度；以下为检索范围内的结果。
 
@@ -39,7 +39,7 @@
 
 ## 🆕 今日新增
 
-本次发现 1 个新项目：[karthik-bommineni/tool-routing-experiment-with-jev](https://github.com/karthik-bommineni/tool-routing-experiment-with-jev)
+本次发现 79 个新项目：[kouhxp/gutsy](https://github.com/kouhxp/gutsy)；[madisonrickert/jev-permission-gate](https://github.com/madisonrickert/jev-permission-gate)；[jsk4581/jev-blindspot](https://github.com/jsk4581/jev-blindspot)；[QiqianFu/Qev](https://github.com/QiqianFu/Qev)；[reachjalil/jevlogs](https://github.com/reachjalil/jevlogs)；[AronAxe/Token-Terminator](https://github.com/AronAxe/Token-Terminator)；[ctaxnagomi/dgui-hypermem](https://github.com/ctaxnagomi/dgui-hypermem)；[imrishit98/jev.aitools.fyi](https://github.com/imrishit98/jev.aitools.fyi)；[1142311598/jev-chess](https://github.com/1142311598/jev-chess)；[keiffff/jev-kit](https://github.com/keiffff/jev-kit)；[MeharPro/GenClass](https://github.com/MeharPro/GenClass)；[vishivishvish/jev-typesafeai](https://github.com/vishivishvish/jev-typesafeai)；[1729arka/JevonTrial](https://github.com/1729arka/JevonTrial)；[1npo/jev-gmail-labeler](https://github.com/1npo/jev-gmail-labeler)；[aground5/jev-korean-csat-result](https://github.com/aground5/jev-korean-csat-result)；[anilvaranasi/jev-sn-app](https://github.com/anilvaranasi/jev-sn-app)；[anishthite/x-jev-labeler](https://github.com/anishthite/x-jev-labeler)；[appleaa123/skills\_wiki\_opensource](https://github.com/appleaa123/skills_wiki_opensource)；[arihan01/jev-vs-llm-benchmark](https://github.com/arihan01/jev-vs-llm-benchmark)；[arunponnaiah/dispute-adjudication-agent](https://github.com/arunponnaiah/dispute-adjudication-agent)；[az9713/jev-projects](https://github.com/az9713/jev-projects)；[Bajjuri/typesafe-jev](https://github.com/Bajjuri/typesafe-jev)；[BassP97/jev-sqlite-extension](https://github.com/BassP97/jev-sqlite-extension)；[bobhuff0/ramey-memo-opus55-jev](https://github.com/bobhuff0/ramey-memo-opus55-jev)；[brittianwarner/euchre](https://github.com/brittianwarner/euchre)；[cmzy/ajev-infer](https://github.com/cmzy/ajev-infer)；[DAXZEIT/Pi-JEV-VCC-memory-relevance](https://github.com/DAXZEIT/Pi-JEV-VCC-memory-relevance)；[DE-Dobby/jev-rag-cost-benchmark](https://github.com/DE-Dobby/jev-rag-cost-benchmark)；[deepnoodle-ai/decide](https://github.com/deepnoodle-ai/decide)；[dharunvincent/AI\_Assisted\_Recommendation\_Engine](https://github.com/dharunvincent/AI_Assisted_Recommendation_Engine)；[DimaIshchenko/jev-in-data-science](https://github.com/DimaIshchenko/jev-in-data-science)；[emoubarak/jev-check](https://github.com/emoubarak/jev-check)；[farawd1/ai-support-assistant](https://github.com/farawd1/ai-support-assistant)；[foklepoint/multi-modal-jev-browser](https://github.com/foklepoint/multi-modal-jev-browser)；[gca-americas/discriminative-models-workshop](https://github.com/gca-americas/discriminative-models-workshop)；[getmissionctrl/spacetme-jev](https://github.com/getmissionctrl/spacetme-jev)；[ghostmind-labo/agento](https://github.com/ghostmind-labo/agento)；[griffonn/jev-assistant](https://github.com/griffonn/jev-assistant)；[HikaruEgashira/pi-prompt-enhancer](https://github.com/HikaruEgashira/pi-prompt-enhancer)；[humayunkabir/jev-router-mcp](https://github.com/humayunkabir/jev-router-mcp)；[inatos/ereshkigal](https://github.com/inatos/ereshkigal)；[jessicasetyani/hermes-plugin-jev-suggest](https://github.com/jessicasetyani/hermes-plugin-jev-suggest)；[Jono717/jev-trader](https://github.com/Jono717/jev-trader)；[JosssphZhou/azir-dispatch](https://github.com/JosssphZhou/azir-dispatch)；[KabilanSubramaniam27/AgenticAI\_JEV\_Implementation](https://github.com/KabilanSubramaniam27/AgenticAI_JEV_Implementation)；[Kandarp-Joshi-007/did-they-answer](https://github.com/Kandarp-Joshi-007/did-they-answer)；[longdang22888/longdang22888-hermes](https://github.com/longdang22888/longdang22888-hermes)；[markus-tobler/jev-custom-connector](https://github.com/markus-tobler/jev-custom-connector)；[masa-san-jp/aiko-jev-camera-reaction](https://github.com/masa-san-jp/aiko-jev-camera-reaction)；[mattbaconz/jevto](https://github.com/mattbaconz/jevto)；[mc9max/jev-lite](https://github.com/mc9max/jev-lite)；[Mohit-pjcts/HackU](https://github.com/Mohit-pjcts/HackU)；[moritalous/my-jev-playground](https://github.com/moritalous/my-jev-playground)；[mumit/Jev-public-operations-experiments](https://github.com/mumit/Jev-public-operations-experiments)；[musman550/musfira-ai-jev-isnt-new-tech-its-marketing-targets-people-who-think-ai](https://github.com/musman550/musfira-ai-jev-isnt-new-tech-its-marketing-targets-people-who-think-ai)；[musman550/musfira-ai-made-the-horizontal-open-source-model-for-jev-with-rlcd-and](https://github.com/musman550/musfira-ai-made-the-horizontal-open-source-model-for-jev-with-rlcd-and)；[mutomasa/jev-decision-router-demo](https://github.com/mutomasa/jev-decision-router-demo)；[nicolas-found42/corral](https://github.com/nicolas-found42/corral)；[nvkudva/ollajev](https://github.com/nvkudva/ollajev)；[Payal-Dhumal/ai-ticket-router](https://github.com/Payal-Dhumal/ai-ticket-router)；[pozapas/kumo-jev-crash-records](https://github.com/pozapas/kumo-jev-crash-records)；[randlee/process-porn](https://github.com/randlee/process-porn)；[ratn7921/JEV-MODEL-PROJECT](https://github.com/ratn7921/JEV-MODEL-PROJECT)；[SeeYangZhi/clipsieve](https://github.com/SeeYangZhi/clipsieve)；[sepatel/rverdict](https://github.com/sepatel/rverdict)；[shihe98/Security\_Privacy\_Jev](https://github.com/shihe98/Security_Privacy_Jev)；[Shivay00001/vq-agent-core](https://github.com/Shivay00001/vq-agent-core)；[skiingfalcon/jev-email-cascade](https://github.com/skiingfalcon/jev-email-cascade)；[striges88-bit/jev-codex-experiment](https://github.com/striges88-bit/jev-codex-experiment)；[sub-surface/jev](https://github.com/sub-surface/jev)；[SuperInstance/quilt-matrix](https://github.com/SuperInstance/quilt-matrix)；[Tebogo11/jevchessbattles](https://github.com/Tebogo11/jevchessbattles)；[timhealey3/client-jev-safety-decision](https://github.com/timhealey3/client-jev-safety-decision)；[uemura5683/babylonjs-jev-weather-map](https://github.com/uemura5683/babylonjs-jev-weather-map)；[vikasums/rlcd-jev](https://github.com/vikasums/rlcd-jev)；[wuchengwei1996/jev-zh-tw-eval](https://github.com/wuchengwei1996/jev-zh-tw-eval)；[wuxianliang/pg\_typesafe](https://github.com/wuxianliang/pg_typesafe)；[zafrem/privyscope-hybrid-jev](https://github.com/zafrem/privyscope-hybrid-jev)；[zafrem/privyscope-local-LLM](https://github.com/zafrem/privyscope-local-LLM)
 
 <a id="github-ranking"></a>
 
@@ -49,36 +49,36 @@
 
 | 项目 | 类别 | ⭐ Stars | 一句话介绍 |
 | :-- | :-- | --: | :-- |
-| 🥇 [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) | 独立复现 / 研究 | **30,387** | 独立开放决策模型，提供训练与评测材料；非 TypeSafe 官方模型。 |
-| 🥈 [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) | 应用 / 集成 | **21,871** | 浏览器 Agent：由 Jev 选择页面操作，结合文本生成模型完成任务。 |
-| 🥉 [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | 应用 / 集成 | **12,405** | Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Resear… |
-| 4 [jaredpalmer/kev](https://github.com/jaredpalmer/kev) | 独立复现 / 研究 | **8,357** | 基于 Qwen3.5 的独立 Jev-like 决策模型，可自行训练；非官方模型。 |
-| 5 [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) | 开发工具 | **7,353** | Claude Code 上下文压缩插件：Jev 判断哪些工具记录仍需保留。 |
-| 6 [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | 应用 / 集成 | **7,292** | 中文手机聊天助手：Jev 判断意图和风险，辅助选择回复。 |
-| 7 [TheoLeeCJ/SemIf-OpenJev](https://github.com/TheoLeeCJ/SemIf-OpenJev) | 独立复现 / 研究 | **4,672** | Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe. |
-| 8 [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | 应用 / 集成 | **2,760** | One AI trade decision every Monad block. Jev on Kuru MON-USDC. |
-| 9 [typesafe-ai/skills](https://github.com/typesafe-ai/skills) | 官方项目 | **2,548** | 官方 Agent skills：设计和构建 System One 决策工作流。 |
-| 10 [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | 独立复现 / 研究 | **2,483** | 独立小型复现：并行决策、动态候选与训练流程；非官方模型。 |
-| 11 [dzhng/jevgrep](https://github.com/dzhng/jevgrep) | 开发工具 | **2,117** | Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files … |
-| 12 [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | 资源合集 | **2,105** | 社区维护的 Jev 项目、集成与讨论索引。 |
+| 🥇 [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) | 独立复现 / 研究 | **30,524** | 独立开放决策模型，提供训练与评测材料；非 TypeSafe 官方模型。 |
+| 🥈 [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) | 应用 / 集成 | **21,924** | 浏览器 Agent：由 Jev 选择页面操作，结合文本生成模型完成任务。 |
+| 🥉 [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | 应用 / 集成 | **12,419** | Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Resear… |
+| 4 [jaredpalmer/kev](https://github.com/jaredpalmer/kev) | 独立复现 / 研究 | **8,379** | 基于 Qwen3.5 的独立 Jev-like 决策模型，可自行训练；非官方模型。 |
+| 5 [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) | 开发工具 | **7,363** | Claude Code 上下文压缩插件：Jev 判断哪些工具记录仍需保留。 |
+| 6 [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | 应用 / 集成 | **7,304** | 中文手机聊天助手：Jev 判断意图和风险，辅助选择回复。 |
+| 7 [TheoLeeCJ/SemIf-OpenJev](https://github.com/TheoLeeCJ/SemIf-OpenJev) | 独立复现 / 研究 | **4,678** | Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe. |
+| 8 [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | 应用 / 集成 | **2,773** | One AI trade decision every Monad block. Jev on Kuru MON-USDC. |
+| 9 [typesafe-ai/skills](https://github.com/typesafe-ai/skills) | 官方项目 | **2,566** | 官方 Agent skills：设计和构建 System One 决策工作流。 |
+| 10 [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | 独立复现 / 研究 | **2,487** | 独立小型复现：并行决策、动态候选与训练流程；非官方模型。 |
+| 11 [dzhng/jevgrep](https://github.com/dzhng/jevgrep) | 开发工具 | **2,197** | Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files … |
+| 12 [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | 资源合集 | **2,116** | 社区维护的 Jev 项目、集成与讨论索引。 |
 | 13 [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | 独立复现 / 研究 | **1,341** | 独立 Jev-like 模型训练实验：对动态候选输出概率；非 TypeSafe 官方模型。 |
-| 14 [feder-cr/jev](https://github.com/feder-cr/jev) | 独立复现 / 研究 | **1,193** | jevos is an open-source alternative to Jev for yes/no decisions that runs on your laptop. |
-| 15 [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) | 应用 / 集成 | **1,152** | macOS 桌面自动化：OCR 识别屏幕，Jev 选择下一步操作。 |
-| 16 [nokia-applied-research/AnyJev](https://github.com/nokia-applied-research/AnyJev) | 应用 / 集成 | **1,019** | Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (co… |
-| 17 [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | 开发工具 | **1,005** | Jev-powered model routing, memory, compaction, skill selection, computer and browser use for Hermes… |
-| 18 [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev) | 资源合集 | **918** | A verified, community-maintained catalog of 962 open-source projects built with Jev. |
-| 19 [Anil-matcha/awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe) | 资源合集 | **895** | Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev — a System One mode… |
-| 20 [wy-coliney/jev-browser-use](https://github.com/wy-coliney/jev-browser-use) | 开发工具 | **826** | 5–10x faster browser operations: Jev clicks, Codex thinks and verifies. Built at EZCollegeApp. |
-| 21 [wfzyx/von](https://github.com/wfzyx/von) | 独立复现 / 研究 | **823** | 独立开放决策模型，提供 TypeSafe API 兼容接口；非官方模型。 |
-| 22 [Rizzo-AI-Academy/rizzo-flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) | 应用 / 集成 | **801** | The open, local take on Jev: typed decisions from an LLM, without generating a single token |
-| 23 [anishfn/shapeshift](https://github.com/anishfn/shapeshift) | 应用 / 集成 | **791** | An input that becomes what you mean: one text box that morphs into the right UI as you type. Powere… |
+| 14 [feder-cr/jev](https://github.com/feder-cr/jev) | 独立复现 / 研究 | **1,198** | jevos is an open-source alternative to Jev for yes/no decisions that runs on your laptop. |
+| 15 [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) | 应用 / 集成 | **1,158** | macOS 桌面自动化：OCR 识别屏幕，Jev 选择下一步操作。 |
+| 16 [nokia-applied-research/AnyJev](https://github.com/nokia-applied-research/AnyJev) | 应用 / 集成 | **1,028** | Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (co… |
+| 17 [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | 开发工具 | **1,009** | Jev-powered model routing, memory, compaction, skill selection, computer and browser use for Hermes… |
+| 18 [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev) | 资源合集 | **919** | A verified, community-maintained catalog of 962 open-source projects built with Jev. |
+| 19 [Anil-matcha/awesome-jev-by-typesafe](https://github.com/Anil-matcha/awesome-jev-by-typesafe) | 资源合集 | **898** | Evidence-backed use cases, patterns, prompts, and starter code for TypeSafe Jev — a System One mode… |
+| 20 [wy-coliney/jev-browser-use](https://github.com/wy-coliney/jev-browser-use) | 开发工具 | **854** | 5–10x faster browser operations: Jev clicks, Codex thinks and verifies. Built at EZCollegeApp. |
+| 21 [wfzyx/von](https://github.com/wfzyx/von) | 独立复现 / 研究 | **831** | 独立开放决策模型，提供 TypeSafe API 兼容接口；非官方模型。 |
+| 22 [Rizzo-AI-Academy/rizzo-flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) | 应用 / 集成 | **807** | The open, local take on Jev: typed decisions from an LLM, without generating a single token |
+| 23 [anishfn/shapeshift](https://github.com/anishfn/shapeshift) | 应用 / 集成 | **795** | An input that becomes what you mean: one text box that morphs into the right UI as you type. Powere… |
 | 24 [kitfunso/hippo-memory](https://github.com/kitfunso/hippo-memory) | 开发工具 | **770** | Memory for AI agents that learns what is wrong and stops repeating it. Mark a memory wrong and it s… |
-| 25 [receptron/laya](https://github.com/receptron/laya) | 应用 / 集成 | **744** | Run Laya, the open-source Jev-compatible System-1 decision model, from Node.js / TypeScript via ONN… |
-| 26 [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) | 资源合集 | **740** | A curated list of tools built for Jev — TypeSafe AI's System One model for typed decisions. |
-| 27 [jev-chat/jev-chat-windows](https://github.com/jev-chat/jev-chat-windows) | 应用 / 集成 | **729** | JevChat-Windows：聊天窗口旁挂的回复辅助。窗口截图 + 本地离线 OCR 读对方消息 → Jev 判断意图 → 3 条候选一键填入，发送永远手动 |
-| 28 [Alex314618-create/JevRev](https://github.com/Alex314618-create/JevRev) | 应用 / 集成 | **703** | An LLM + Jev workflow that changes EVERYTHING. Boost your vertebrate brain with a spine inside. |
-| 29 [samuelfaj/distill](https://github.com/samuelfaj/distill) | 开发工具 | **691** | 编程 Agent harness 与终端界面，提供 Jev 任务路由。 |
-| 30 [angel291592/Intent-Router](https://github.com/angel291592/Intent-Router) | 开发工具 | **684** | Intent compiler for AI agents — converges vague requests into typed IntentSpec contracts (probe, as… |
+| 25 [receptron/laya](https://github.com/receptron/laya) | 应用 / 集成 | **759** | Run Laya, the open-source Jev-compatible System-1 decision model, from Node.js / TypeScript via ONN… |
+| 26 [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) | 资源合集 | **741** | A curated list of tools built for Jev — TypeSafe AI's System One model for typed decisions. |
+| 27 [angel291592/Intent-Router](https://github.com/angel291592/Intent-Router) | 开发工具 | **740** | Intent compiler for AI agents — converges vague requests into typed IntentSpec contracts (probe, as… |
+| 28 [jev-chat/jev-chat-windows](https://github.com/jev-chat/jev-chat-windows) | 应用 / 集成 | **731** | JevChat-Windows：聊天窗口旁挂的回复辅助。窗口截图 + 本地离线 OCR 读对方消息 → Jev 判断意图 → 3 条候选一键填入，发送永远手动 |
+| 29 [Alex314618-create/JevRev](https://github.com/Alex314618-create/JevRev) | 应用 / 集成 | **703** | An LLM + Jev workflow that changes EVERYTHING. Boost your vertebrate brain with a spine inside. |
+| 30 [realZachi/pg-jev](https://github.com/realZachi/pg-jev) | 应用 / 集成 | **701** | Ask your Postgres tables questions in plain language. A PostgreSQL extension powered by TypeSafe's … |
 
 > 💡 排名按项目当前 Star 总数更新；Star 只作为发现信号，不代表项目质量或官方认可。
 
@@ -88,7 +88,7 @@
 
 只收录 Jev 爆火起始日之后的相关 arXiv 论文与预印本；仅作为发现入口，不代表同行评审或官方关联。
 
-最近成功抓取：2026-10-03T15:53:02Z
+最近成功抓取：2026-10-04T06:50:29Z
 
 本次新增收录 0 篇，累计 68 篇。新增指历史上从未记录过的论文，修订版本不重复计入。
 
@@ -179,13 +179,13 @@
 
 ### Hacker News
 
-已更新 · 最近成功抓取: 2026-10-03T15:52:58Z
+已更新 · 最近成功抓取: 2026-10-04T06:50:24Z
 
 | 讨论 | Points | 评论 |
 | :-- | --: | --: |
 | [Introducing System One Models and Jev](https://news.ycombinator.com/item?id=49717558) | 1,989 | 520 |
 | [Jev in 25 Lines of Python](https://news.ycombinator.com/item?id=49812769) | 691 | 212 |
-| [Ollaya – Ollama for open-source, Jev-style decision models](https://news.ycombinator.com/item?id=49848269) | 617 | 145 |
+| [Ollaya – Ollama for open-source, Jev-style decision models](https://news.ycombinator.com/item?id=49848269) | 618 | 145 |
 | [Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms](https://news.ycombinator.com/item?id=49883844) | 574 | 225 |
 | [Kev: Tiny Jev-like family of decision models built on top of Qwen3.5](https://news.ycombinator.com/item?id=49783999) | 462 | 211 |
 | [Show HN: Jev Plays Pokémon Red](https://news.ycombinator.com/item?id=49845172) | 282 | 124 |
@@ -202,33 +202,33 @@
 
 ### Hugging Face
 
-已更新 · 最近成功抓取: 2026-10-03T15:53:01Z
+已更新 · 最近成功抓取: 2026-10-04T06:50:28Z
 
 社区上传 / 独立实现；不代表 TypeSafe 官方模型权重。
 
 | Model | ♥ Likes | ↓ Downloads (30d) |
 | :-- | --: | --: |
-| [akhilaaa3/Jev-Omni](https://huggingface.co/akhilaaa3/Jev-Omni) | 357 | 1,719 |
+| [akhilaaa3/Jev-Omni](https://huggingface.co/akhilaaa3/Jev-Omni) | 362 | 1,719 |
 | [com-kotobalabs/open-jev-deberta-v3-large](https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large) | 71 | 3,021 |
-| [autotrust/JEV-27B-VL](https://huggingface.co/autotrust/JEV-27B-VL) | 57 | 308,531 |
-| [Meanblock/JEV-CPU](https://huggingface.co/Meanblock/JEV-CPU) | 48 | 0 |
+| [autotrust/JEV-27B-VL](https://huggingface.co/autotrust/JEV-27B-VL) | 60 | 308,531 |
+| [Meanblock/JEV-CPU](https://huggingface.co/Meanblock/JEV-CPU) | 49 | 0 |
 | [ZefanCai/Open-Jev-9B](https://huggingface.co/ZefanCai/Open-Jev-9B) | 48 | 0 |
 | [aimeigaoshou/agent-jev](https://huggingface.co/aimeigaoshou/agent-jev) | 38 | 1,002 |
 | [TokenRhythm/NeoHorse-Jev-4B](https://huggingface.co/TokenRhythm/NeoHorse-Jev-4B) | 25 | 2,340 |
-| [autotrust/JEV-27B](https://huggingface.co/autotrust/JEV-27B) | 23 | 2,667 |
+| [chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF](https://huggingface.co/chaoliangUNSW/Jev-Style-Qwen3.5-2B-Decision-GGUF) | 23 | 9,418 |
 
 ### 新闻 / 文章
 
-已更新 · 最近成功抓取: 2026-10-03T15:53:02Z
+已更新 · 最近成功抓取: 2026-10-04T06:50:28Z
 
 - [Startup TypeSafe AI’s Jev Model Sparks Copycats, Talk of LLM Alternatives - WSJ](https://news.google.com/rss/articles/CBMirAFBVV95cUxONHo4Zjh1Y29GaURuOFM0bXJ1OVVzUkFEQi1ZaDA3ems1R0s2YnFXdnhhLWdhNU5aeDYwYzluNmpveVBXbFFQWmVBajQ0UUtXRzhJVUNJYXBiU0lkSVlxWUVBQ01oUHpvMk9wVzB6dldqWkRZeTR3N1dqWjc1Wjc0YlItWm9UZDVOVnh6MjNrQ2NJSF81M3NrTGQzbWxPZnBiVVZjSFJvXzZlbkIt?oc=5)
-- [TypeSafe CEO称Jev已被约25%的《财富》500强公司采用，日处理代币量达万亿 - 虎嗅网](https://news.google.com/rss/articles/CBMiU0FVX3lxTE5YX0FrZUcxZXUzQUZiNFZrVjhWa2xzN3lPSjRrOEM1TE52SHFmY1pITUVpMU1heG1XN3pEemRIdkZqX242UTFZcmdRMEFSVlZDUG1n?oc=5)
-- [TypeSafe AI Releases Jev: A Decision-Only Model That Returns Typed Probabilities Instead of Text - infoq.com](https://news.google.com/rss/articles/CBMibEFVX3lxTE5zOGZGUGNqZ2lkSnBDQ3djRjgyTkFRcmxxS0hjeHFuRWNuZDZ0c1NMZUNVckFfajFadGhDQ1RWR0tINlJoRmFuTGlFUzJVNmE0UFowOFBWME1pNHdHMmNWUXJTaDM3MTQyX01fNA?oc=5)
+- [TypeSafe AI与 OpenRouter 推出 Jev 智能路由器提升 LLM 调用效率 - TradingView](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5maTR0aEdfMS1SdU1fS0tMUXVWT3VEbXFuQTc3TjZEcEUzM24tNHNNeERBTUNpZVpzdHdCZmJsenBxNmpPTEFWOTJkbDM0OXdZXzJrOHJlSzQzQmNQQlNuV05BVm9CZw?oc=5)
+- [AWS launches a local answer to TypeSafe’s Jev decision model - The New Stack](https://news.google.com/rss/articles/CBMiXkFVX3lxTE1pS3lrcks4aGdjQnpnWjVCZTdoeVhhblRiaThsRHh4eVl5bDBlbG9ZY2syODRFdThFRkFWTXRQSVFVMk9reU1iSXgyQzlwMm9GaUo5bk81bngyWUhnYXc?oc=5)
 - [Cloudflare推出Clef，向Jev发起AI决策模型的挑战 - Pasquale Pillitteri](https://news.google.com/rss/articles/CBMifEFVX3lxTE5oOXF2cXAyM1U5WWkxRXZjUTM5SDk4ZDhyRFNKN1NlQk90QmN4UUloZW01djQtLU1JdUNxNk84RUc3VFJkRURKU09GSkZ6NWRXVThSeU1iamp6MTlmenV1cmdnekZFYzh3Rm5ha2RkbURjczV2eWZOWlFaSlY?oc=5)
-- [AWS launches a local answer to TypeSafe’s Jev decision model - thenewstack.io](https://news.google.com/rss/articles/CBMiXkFVX3lxTE1pS3lrcks4aGdjQnpnWjVCZTdoeVhhblRiaThsRHh4eVl5bDBlbG9ZY2syODRFdThFRkFWTXRQSVFVMk9reU1iSXgyQzlwMm9GaUo5bk81bngyWUhnYXc?oc=5)
-- [TypeSafe AI与 OpenRouter 推出 Jev 智能路由器提升 LLM 调用效率 - es.tradingview.com](https://news.google.com/rss/articles/CBMiZkFVX3lxTE5maTR0aEdfMS1SdU1fS0tMUXVWT3VEbXFuQTc3TjZEcEUzM24tNHNNeERBTUNpZVpzdHdCZmJsenBxNmpPTEFWOTJkbDM0OXdZXzJrOHJlSzQzQmNQQlNuV05BVm9CZw?oc=5)
-- [Decision AI Models Explained: TypeSafe Jev vs Fastino GLiDE, GLiNER2.5-Decide and Open-Source Competitors - MarkTechPost](https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUnVKVnBDN2kzaERMSFdNTktrdkNxZl9HMjNxcGtTMndWVVBBLTFCNzMwS3NNamRQcjBmZElzQVJjczM5MGgtUDFVLWZnLU9MYmdrWVFkRlp4ejJtay1UMGxoZFVHbTVLOXo2XzU0UnI4am9ZaUFhYXRIdC1aTVNzZUVXQmg1TUotY1lTUklpMUwxX3BuRldXZm9pVGlZNEF2V05tRTVBNDhsUlRNQ2RQVWxlRUpyaTFrSnNVZDFPVlNYdWpULU5UMDdlMWltNWs3UE43S3pLV2NrM0M4?oc=5)
-- [初创公司TypeSafe AI推出低幻觉“Jev”模型 - 新浪财经](https://news.google.com/rss/articles/CBMiwAJBVV95cUxPckVBNURpSGp4Nmtsa2RwSjdQdGJIT0N0OVVoX3V0cVBUOHctdF9OdUNCYmhDeExZbndPbkxpM3hlcmNROFFEY1hua2lGZlVXQmM2d0M2b0I4SFlYS2FGSkNmNncycTBzalVPaEpTSWRKQXFjYXJOT0h3d0gxZGdIb1A1UjRtcUhRc3lXekZyaHZJSVBtaFd2UHRuNlVKb3lzSkdESTZ3Y1dCQk9WYW5fNWZSQVB6TDlWQTlHMld1dy1FOGJCU0RGOW1WcmZuT0daZUVkNFBMQTVIZ3hYZHBKNS14MG4tQWVwYXVJbm93WnBkeXJya1B1aG5PcEktanVacm1lT2Jqa3B4T2RaV0RsWFdob2l5S2Y5WVF5dktKRDc3WlZwQ1k4eXBLVTdBdUFCaUhLMjlHQnZJT2xfejN0Qg?oc=5)
+- [TypeSafe AI Releases Jev: A Decision-Only Model That Returns Typed Probabilities Instead of Text - infoq.com](https://news.google.com/rss/articles/CBMibEFVX3lxTE5zOGZGUGNqZ2lkSnBDQ3djRjgyTkFRcmxxS0hjeHFuRWNuZDZ0c1NMZUNVckFfajFadGhDQ1RWR0tINlJoRmFuTGlFUzJVNmE0UFowOFBWME1pNHdHMmNWUXJTaDM3MTQyX01fNA?oc=5)
+- [初创公司TypeSafe AI推出低幻觉“Jev”模型 - 新浪财经](https://news.google.com/rss/articles/CBMihwFBVV95cUxPQzRDY3d4cUV1ZjRpRW1oMXE3WVNLSHRfTFVwN1U0OWxOeGlvYjlMTVZDU1FRZTdkVU4xRl96YXh5MXp2MnVqaG5hSXNvNG1xMGNrSVd4RlExXzZpYXhXS0E1RU5NTFZUSGF6WUNqTjF3OXlucDQ1YkNaUmczR0xRYnZudGV4UE0?oc=5)
+- [What is Jev? TypeSafe AI's decision model for software - Dealroom](https://news.google.com/rss/articles/CBMikAFBVV95cUxQWFRVRk93QUZuUWd3UXRETllkNG5BUEpiYkI1MzlCTlJUS3B4b0dQRUsxTWdNTUFCQjFBSVR0V1E2dWFTdTdiTzBBRU9sTVF4YmpjVHRob0NKRE9MNExPSXdBOC1sVlZQNmxzZG9uZjBnVXE2R2lZZExWdU1hdjZvRUdiZDc0OFU0ZTJRTDlSd3I?oc=5)
+- [AWS发布Strands Decider 2B，一周内第三个免费Jev克隆模型 - Pasquale Pillitteri](https://news.google.com/rss/articles/CBMiekFVX3lxTFBxbWxWdHFMV3pXOXJCMEhqTGlSMjhQTXo4MjE0SzhxaGQxOFB0b3JmN2I4Y3gzOS1OTGZ5OE1rOFJfQVRTdkNYTmxUSEZiZ21FeXdjQWZ5YUszSjloaUdKZGlDbEdxdmlpY0VqUnI1RjdtYWtySmE4TE1n?oc=5)
 
 <a id="curated-resources"></a>
 
@@ -257,12 +257,12 @@
 
 GitHub 每条 query 按 Star 降序取配置页数；这是有界检索，不是全站普查。fork、归档、明确无关项被排除，相关性采用元数据 / README 规则和核验种子。
 
-- jev in:name,description fork:false archived:false stars:&gt;=2 — 200 / 2155（达到页数上限）
-- topic:jev fork:false archived:false — 200 / 2332（达到页数上限）
-- jev typesafe in:readme fork:false archived:false stars:&gt;=5 — 200 / 1807（达到页数上限）
+- jev in:name,description fork:false archived:false stars:&gt;=2 — 200 / 2171（达到页数上限）
+- topic:jev fork:false archived:false — 200 / 2345（达到页数上限）
+- jev typesafe in:readme fork:false archived:false stars:&gt;=5 — 200 / 1824（达到页数上限）
 - org:typesafe-ai fork:false archived:false — 8 / 8
-- jev in:name,description fork:false archived:false pushed:&gt;=2026-09-03 — 200 / 12055（达到页数上限）
-- jev typesafe in:readme fork:false archived:false pushed:&gt;=2026-09-03 — 200 / 17031（达到页数上限）
+- jev in:name,description fork:false archived:false pushed:&gt;=2026-09-04 — 200 / 12139（达到页数上限）
+- jev typesafe in:readme fork:false archived:false pushed:&gt;=2026-09-04 — 200 / 17321（达到页数上限）
 
 完整结果与时间戳：[JSON 数据](data/latest.json) · [历史快照](data/history) · [方法说明](docs/methodology.md)
 
