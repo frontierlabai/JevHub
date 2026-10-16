@@ -31,7 +31,7 @@
 
 > **Which Jev?** This directory covers **Jev / System One**, the model from [TypeSafe AI](https://typesafe.ai/) that provides structured decisions for software. JevHub is an independent community directory and is not affiliated with TypeSafe AI. [Meet Jev →](https://docs.typesafe.ai/introduction)
 
-> Updated **2026-10-15T05:55:52Z** · **396** related repositories · **170,632** total repository stars
+> Updated **2026-10-16T05:50:52Z** · **392** related repositories · **171,403** total repository stars
 
 Repository stars cover all features, not just Jev. Rankings cover the configured search scope.
 
@@ -39,7 +39,7 @@ Repository stars cover all features, not just Jev. Rankings cover the configured
 
 ## 🆕 New today
 
-This refresh found 66 new project(s): [dorkitude/skimmer](https://github.com/dorkitude/skimmer)；[dongxinsuperman/jev-phone](https://github.com/dongxinsuperman/jev-phone)；[Yaxin9Luo/spending-effort-with-jev](https://github.com/Yaxin9Luo/spending-effort-with-jev)；[etsabary/jev-deterministic-benchmark](https://github.com/etsabary/jev-deterministic-benchmark)；[mertkayacs/jevoss](https://github.com/mertkayacs/jevoss)；[7starsseeker/dsh-jev-guard](https://github.com/7starsseeker/dsh-jev-guard)；[arlequine/jev-pdp-flow](https://github.com/arlequine/jev-pdp-flow)；[bhcbhc/Jev-Uno-Decision](https://github.com/bhcbhc/Jev-Uno-Decision)；[darup67/jev-client](https://github.com/darup67/jev-client)；[gopaljigaur/decide](https://github.com/gopaljigaur/decide)；[guigetelina/claude-jev-codex](https://github.com/guigetelina/claude-jev-codex)；[jasonduncan/semantic-operators](https://github.com/jasonduncan/semantic-operators)；[metrox-eth/moss-jev](https://github.com/metrox-eth/moss-jev)；[mrz1836/go-discern](https://github.com/mrz1836/go-discern)；[nolindnaidoo/decisionlint](https://github.com/nolindnaidoo/decisionlint)；[pekth/draftpulse](https://github.com/pekth/draftpulse)；[samuelyossef/jev-openfast](https://github.com/samuelyossef/jev-openfast)；[acbcore-labs/s1-core](https://github.com/acbcore-labs/s1-core)；[Ajasra/jev-hooks](https://github.com/Ajasra/jev-hooks)；[alejandrofrank/jev-inbox](https://github.com/alejandrofrank/jev-inbox)；[audichuang/jev-skill-suggestion](https://github.com/audichuang/jev-skill-suggestion)；[BeatAPI/BeatBrowser](https://github.com/BeatAPI/BeatBrowser)；[bedasrv/jev-router](https://github.com/bedasrv/jev-router)；[botheaj/video-image-tagger](https://github.com/botheaj/video-image-tagger)；[brunogpj/jarvis-ai-os](https://github.com/brunogpj/jarvis-ai-os)；[bugkiwi/content-orbit-skill](https://github.com/bugkiwi/content-orbit-skill)；[comchatx/cx-jev-tidy](https://github.com/comchatx/cx-jev-tidy)；[Covre81/JEV-APP-PC](https://github.com/Covre81/JEV-APP-PC)；[cs-w0r1d/jev-qualification-guide](https://github.com/cs-w0r1d/jev-qualification-guide)；[cwdx/1-million-emojis](https://github.com/cwdx/1-million-emojis)；[DakePeng/Bonsai-JEV](https://github.com/DakePeng/Bonsai-JEV)；[davidmclaughlinemail/jev-router](https://github.com/davidmclaughlinemail/jev-router)；[dundysm/sea-of-fog](https://github.com/dundysm/sea-of-fog)；[etsabary/jev-1.14-comparison-benchmark](https://github.com/etsabary/jev-1.14-comparison-benchmark)；[etsabary/luna-decisions-benchmark](https://github.com/etsabary/luna-decisions-benchmark)；[felixglush/jev-dynamic-ui](https://github.com/felixglush/jev-dynamic-ui)；[guow7394/ecom-cs-agent](https://github.com/guow7394/ecom-cs-agent)；[hieo0007/jev-omni-rf-detr](https://github.com/hieo0007/jev-omni-rf-detr)；[irenetong904/spotify-review-pipeline](https://github.com/irenetong904/spotify-review-pipeline)；[j-token/desktop-computer-use](https://github.com/j-token/desktop-computer-use)；[j1s4nn/jev-adaptive-granularity-WM](https://github.com/j1s4nn/jev-adaptive-granularity-WM)；[jasonduncan/libsemop](https://github.com/jasonduncan/libsemop)；[jintao-afk/project-of-jev](https://github.com/jintao-afk/project-of-jev)；[jmurray10/jev\_naics](https://github.com/jmurray10/jev_naics)；[kevin-brillar/Jev\_research](https://github.com/kevin-brillar/Jev_research)；[kinfey/decision-ghc-router](https://github.com/kinfey/decision-ghc-router)；[kkwelfare/jev-route-screening-public](https://github.com/kkwelfare/jev-route-screening-public)；[Kwanyeob/Jev\_job\_hunter](https://github.com/Kwanyeob/Jev_job_hunter)；[m0sshyy/moss-Personal-Chatbot-using-Jev-](https://github.com/m0sshyy/moss-Personal-Chatbot-using-Jev-)；[moduscorepub/agent-eval](https://github.com/moduscorepub/agent-eval)；[netcode001/jev](https://github.com/netcode001/jev)；[PabloB07/JevMC](https://github.com/PabloB07/JevMC)；[qianyuxiang-369/pi-jev-governor-swebench](https://github.com/qianyuxiang-369/pi-jev-governor-swebench)；[rasatpetabit/pi-ras-compact](https://github.com/rasatpetabit/pi-ras-compact)；[RINNECODER/jev-box-study](https://github.com/RINNECODER/jev-box-study)；[robertanton81/claude-subagent-router](https://github.com/robertanton81/claude-subagent-router)；[ronibandini/JevPoet](https://github.com/ronibandini/JevPoet)；[stern9/jev-bench](https://github.com/stern9/jev-bench)；[sureshnageswaran/jevtrial](https://github.com/sureshnageswaran/jevtrial)；[tallakane/jev-and-ai-sdk](https://github.com/tallakane/jev-and-ai-sdk)；[thiago-lage/jev-claude](https://github.com/thiago-lage/jev-claude)；[Vaskoor/fake-news-jev](https://github.com/Vaskoor/fake-news-jev)；[VectorSophie/rlcd-tool-selection](https://github.com/VectorSophie/rlcd-tool-selection)；[vheins/opencode-jev](https://github.com/vheins/opencode-jev)；[Xm-Coding/jev-pr-classifier](https://github.com/Xm-Coding/jev-pr-classifier)；[zachlandes/trolley-bench](https://github.com/zachlandes/trolley-bench)
+This refresh found 68 new project(s): [bcharleson/jev-gtm-cookbook](https://github.com/bcharleson/jev-gtm-cookbook)；[integrate-your-mind/jev-codex-plugin](https://github.com/integrate-your-mind/jev-codex-plugin)；[bydeng01/scientific-decision-eval](https://github.com/bydeng01/scientific-decision-eval)；[suraj-phanindra/wellposed](https://github.com/suraj-phanindra/wellposed)；[wide3751/sommelier](https://github.com/wide3751/sommelier)；[lesnolie/magpie-free-gateways](https://github.com/lesnolie/magpie-free-gateways)；[MohibShaikh/jev-skillbench](https://github.com/MohibShaikh/jev-skillbench)；[reeschan/pbi-orchestration-jev](https://github.com/reeschan/pbi-orchestration-jev)；[aatifahmad123/jev-llm-routing](https://github.com/aatifahmad123/jev-llm-routing)；[AbbasRana001/PolicyJEV](https://github.com/AbbasRana001/PolicyJEV)；[actions-marketplace-validations/lymagics\_jev-gate](https://github.com/actions-marketplace-validations/lymagics_jev-gate)；[adymitruk/openrouter-spend-jev](https://github.com/adymitruk/openrouter-spend-jev)；[Aiden-Kwak/policymap](https://github.com/Aiden-Kwak/policymap)；[anzchy/mdpro](https://github.com/anzchy/mdpro)；[austpryb/jev-hooks](https://github.com/austpryb/jev-hooks)；[AwesomeJev/AwesomeJev.github.io](https://github.com/AwesomeJev/AwesomeJev.github.io)；[badriawan/codex-agent-kit](https://github.com/badriawan/codex-agent-kit)；[baka3k/jev-browser-ultrafast-mcp](https://github.com/baka3k/jev-browser-ultrafast-mcp)；[Bobbywasabi31/jev-paper-test](https://github.com/Bobbywasabi31/jev-paper-test)；[ChenstarMr/jev-chat-windows](https://github.com/ChenstarMr/jev-chat-windows)；[crzyc0d3r/multimodal-decision-router](https://github.com/crzyc0d3r/multimodal-decision-router)；[dbehelitate/kubectl.guardrails--promptfoo--jev](https://github.com/dbehelitate/kubectl.guardrails--promptfoo--jev)；[ekazakos/jev-field-guide](https://github.com/ekazakos/jev-field-guide)；[eligrip/computer-guidance-with-jev](https://github.com/eligrip/computer-guidance-with-jev)；[Faycall1l/bouncer](https://github.com/Faycall1l/bouncer)；[feliperyan/deepeval-clefeval](https://github.com/feliperyan/deepeval-clefeval)；[fuleinist/arcade-decision-agent](https://github.com/fuleinist/arcade-decision-agent)；[ggonzalezaleman/inbox-jev-site](https://github.com/ggonzalezaleman/inbox-jev-site)；[giovaniohira/paper-trade-opus-jev](https://github.com/giovaniohira/paper-trade-opus-jev)；[greenharborlabs/spring-jev-lab](https://github.com/greenharborlabs/spring-jev-lab)；[gsaini/system-one-models-getting-started](https://github.com/gsaini/system-one-models-getting-started)；[harry18456/cc-jev-routing](https://github.com/harry18456/cc-jev-routing)；[igrady2/cant-bleep-this](https://github.com/igrady2/cant-bleep-this)；[IoTone/jevracket](https://github.com/IoTone/jevracket)；[IRONICBo/IRONICBo](https://github.com/IRONICBo/IRONICBo)；[ismailbanouigu/trolley-mirror](https://github.com/ismailbanouigu/trolley-mirror)；[j62268781-alt/dsh-judgment](https://github.com/j62268781-alt/dsh-judgment)；[jhochenbaum/rlm-jev](https://github.com/jhochenbaum/rlm-jev)；[jimbou/datalog\_jev](https://github.com/jimbou/datalog_jev)；[jonny5isalive5/jev-choice-probability-consistency](https://github.com/jonny5isalive5/jev-choice-probability-consistency)；[Karnaf0katom/jev-auto-effort](https://github.com/Karnaf0katom/jev-auto-effort)；[kreggscode/jev-trolley-lab](https://github.com/kreggscode/jev-trolley-lab)；[kuma0408/jev-jam](https://github.com/kuma0408/jev-jam)；[maneeshmenongit/model-selector](https://github.com/maneeshmenongit/model-selector)；[Marcus-Mok-GH/jev-at-the-switch](https://github.com/Marcus-Mok-GH/jev-at-the-switch)；[mcontre4/jev-trader](https://github.com/mcontre4/jev-trader)；[mwatkins03-netizen/Jev-Sandbox-2.0](https://github.com/mwatkins03-netizen/Jev-Sandbox-2.0)；[nanomangotrkmnia/NanoJev](https://github.com/nanomangotrkmnia/NanoJev)；[neelampawar2026-ai/Jev-as\_Churn\_-Forcasting](https://github.com/neelampawar2026-ai/Jev-as_Churn_-Forcasting)；[OutThisLife/jev-tutorial](https://github.com/OutThisLife/jev-tutorial)；[psygreg/agent-orchestrator](https://github.com/psygreg/agent-orchestrator)；[raj8525/universal-jev](https://github.com/raj8525/universal-jev)；[reacher-z/Awesome-Jev](https://github.com/reacher-z/Awesome-Jev)；[receptron/kenteiscript](https://github.com/receptron/kenteiscript)；[ricky94511/jev](https://github.com/ricky94511/jev)；[RobGruhl/jev-learnings](https://github.com/RobGruhl/jev-learnings)；[sdogantekin/jev-orchestrator](https://github.com/sdogantekin/jev-orchestrator)；[seominpapa/sitesee](https://github.com/seominpapa/sitesee)；[Sepideh-Ahmadian/amazon\_recsys](https://github.com/Sepideh-Ahmadian/amazon_recsys)；[social-jev/social-jev.github.io](https://github.com/social-jev/social-jev.github.io)；[sqhc/Jevstudynote](https://github.com/sqhc/Jevstudynote)；[Sugamdeol/moral-switch](https://github.com/Sugamdeol/moral-switch)；[SuperInstance/gitpp-gate](https://github.com/SuperInstance/gitpp-gate)；[Teddy9710/jev-playground](https://github.com/Teddy9710/jev-playground)；[toobigbear/chronic\_tumor\_dss](https://github.com/toobigbear/chronic_tumor_dss)；[UnbelievableT/topxai-docs](https://github.com/UnbelievableT/topxai-docs)；[xiaotian1171/jev-trolley-switch](https://github.com/xiaotian1171/jev-trolley-switch)；[ZhiweiWei-NAMI/AeroRescue](https://github.com/ZhiweiWei-NAMI/AeroRescue)
 
 <a id="github-ranking"></a>
 
@@ -49,36 +49,36 @@ Sorted by total stars, with repository name as the tie-breaker. Start with the p
 
 | Project | Category | ⭐ Stars | About |
 | :-- | :-- | --: | :-- |
-| 🥇 [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) | Independent research | **32,940** | Independent open decision model with training and evaluation materials; not TypeSafe Jev. |
-| 🥈 [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) | Apps / integrations | **22,939** | Browser agent using Jev to choose page actions alongside a text-generation model. |
-| 🥉 [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | Apps / integrations | **12,797** | Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Resear… |
-| 4 [jaredpalmer/kev](https://github.com/jaredpalmer/kev) | Independent research | **9,146** | Independent Jev-like decision models built on Qwen3.5; not the official Jev model. |
-| 5 [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | Apps / integrations | **7,753** | Mobile chat assistant using Jev for intent and risk judgments; Chinese documentation. |
-| 6 [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) | Tools | **7,632** | Claude Code compaction plugin using Jev to select tool records worth retaining. |
-| 7 [TheoLeeCJ/SemIf-OpenJev](https://github.com/TheoLeeCJ/SemIf-OpenJev) | Independent research | **4,824** | Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe. |
-| 8 [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | Apps / integrations | **2,994** | One AI trade decision every Monad block. Jev on Kuru MON-USDC. |
-| 9 [typesafe-ai/skills](https://github.com/typesafe-ai/skills) | Official | **2,700** | Official agent skills for building System One decision workflows. |
-| 10 [dzhng/jevgrep](https://github.com/dzhng/jevgrep) | Tools | **2,678** | Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files … |
-| 11 [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | Independent research | **2,549** | Independent small-scale reproduction with parallel decisions and a training pipeline. |
-| 12 [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | Resources | **2,345** | Community directory of Jev projects, integrations and discussions. |
-| 13 [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | Independent research | **1,354** | Independent Jev-like model training experiment for probabilities over dynamic choices; not official… |
-| 14 [feder-cr/jev](https://github.com/feder-cr/jev) | Independent research | **1,323** | jevos: an open-source alternative to Jev and Microsoft-Decision-1. Yes/no decisions, choices and sc… |
-| 15 [nokia-applied-research/AnyJev](https://github.com/nokia-applied-research/AnyJev) | Apps / integrations | **1,271** | Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (co… |
-| 16 [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) | Apps / integrations | **1,233** | macOS automation combining screen OCR with Jev action selection. |
-| 17 [realZachi/pg-jev](https://github.com/realZachi/pg-jev) | Apps / integrations | **1,167** | Ask your Postgres tables questions in plain language. A PostgreSQL extension powered by TypeSafe's … |
-| 18 [wy-coliney/jev-browser-use](https://github.com/wy-coliney/jev-browser-use) | Tools | **1,145** | 5–10x faster browser operations: Jev clicks, Codex thinks and verifies. Built at EZCollegeApp. |
-| 19 [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | Tools | **1,118** | Jev-powered model routing, memory, compaction, skill selection, computer and browser use for Hermes… |
-| 20 [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev) | Resources | **961** | A verified, community-maintained catalog of 981 open-source projects built with Jev. |
-| 21 [anishfn/shapeshift](https://github.com/anishfn/shapeshift) | Apps / integrations | **939** | An input that becomes what you mean: one text box that morphs into the right UI as you type. Powere… |
-| 22 [receptron/laya](https://github.com/receptron/laya) | Apps / integrations | **926** | Run Laya, the open-source Jev-compatible System-1 decision model, from Node.js / TypeScript via ONN… |
-| 23 [wfzyx/von](https://github.com/wfzyx/von) | Independent research | **900** | Independent open decision model with a TypeSafe-compatible API; not official Jev. |
-| 24 [Rizzo-AI-Academy/rizzo-flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) | Apps / integrations | **894** | The open, local take on Jev: typed decisions from an LLM, without generating a single token |
-| 25 [Liuziyu77/Valen](https://github.com/Liuziyu77/Valen) | Independent research | **813** | Train a Jev-like multimodal model by yourself. System One Model, now with vision. |
-| 26 [jev-chat/jev-chat-windows](https://github.com/jev-chat/jev-chat-windows) | Apps / integrations | **807** | JevChat-Windows：聊天窗口旁挂的回复辅助。窗口截图 + 本地离线 OCR 读对方消息 → Jev 判断意图 → 3 条候选一键填入，发送永远手动 |
-| 27 [thruwire/foreman](https://github.com/thruwire/foreman) | Apps / integrations | **756** | An agent supervisor and software factory foreman powered by TypeSafe’s Jev model |
-| 28 [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) | Resources | **755** | A curated list of tools built for Jev — TypeSafe AI's System One model for typed decisions. |
-| 29 [razorback16/openjev](https://github.com/razorback16/openjev) | Apps / integrations | **707** | Open, Jev-compatible System One decision server on DiffusionGemma |
-| 30 [samuelfaj/distill](https://github.com/samuelfaj/distill) | Tools | **696** | Coding agent harness and terminal interface with Jev task routing. |
+| 🥇 [NandhaKishorM/laya](https://github.com/NandhaKishorM/laya) | Independent research | **33,076** | Independent open decision model with training and evaluation materials; not TypeSafe Jev. |
+| 🥈 [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) | Apps / integrations | **23,041** | Browser agent using Jev to choose page actions alongside a text-generation model. |
+| 🥉 [OpenByteInc/QuantDinger](https://github.com/OpenByteInc/QuantDinger) | Apps / integrations | **12,820** | Open-source AI Trading OS, agent trading, and vibe trading, with Jev System One integration. Resear… |
+| 4 [jaredpalmer/kev](https://github.com/jaredpalmer/kev) | Independent research | **9,198** | Independent Jev-like decision models built on Qwen3.5; not the official Jev model. |
+| 5 [jev-chat/jev-chat-jarvis](https://github.com/jev-chat/jev-chat-jarvis) | Apps / integrations | **7,797** | Mobile chat assistant using Jev for intent and risk judgments; Chinese documentation. |
+| 6 [tamaratran/fast-jev-compaction](https://github.com/tamaratran/fast-jev-compaction) | Tools | **7,653** | Claude Code compaction plugin using Jev to select tool records worth retaining. |
+| 7 [TheoLeeCJ/SemIf-OpenJev](https://github.com/TheoLeeCJ/SemIf-OpenJev) | Independent research | **4,835** | Semantic ifs from open models, on a 3090 at home. Independent; not affiliated with Jev or TypeSafe. |
+| 8 [jarrodwatts/jev-trader](https://github.com/jarrodwatts/jev-trader) | Apps / integrations | **3,007** | One AI trade decision every Monad block. Jev on Kuru MON-USDC. |
+| 9 [dzhng/jevgrep](https://github.com/dzhng/jevgrep) | Tools | **2,727** | Find code by asking what it does. A CLI for coding agents that uses Jev to discover relevant files … |
+| 10 [typesafe-ai/skills](https://github.com/typesafe-ai/skills) | Official | **2,712** | Official agent skills for building System One decision workflows. |
+| 11 [TianyuCodings/NanoJev](https://github.com/TianyuCodings/NanoJev) | Independent research | **2,554** | Independent small-scale reproduction with parallel decisions and a training pipeline. |
+| 12 [yibie/awesome-jev](https://github.com/yibie/awesome-jev) | Resources | **2,365** | Community directory of Jev projects, integrations and discussions. |
+| 13 [vinnylarouge/jevlike](https://github.com/vinnylarouge/jevlike) | Independent research | **1,353** | Independent Jev-like model training experiment for probabilities over dynamic choices; not official… |
+| 14 [feder-cr/jev](https://github.com/feder-cr/jev) | Independent research | **1,331** | jevos: an open-source alternative to Jev and Microsoft-Decision-1. Yes/no decisions, choices and sc… |
+| 15 [nokia-applied-research/AnyJev](https://github.com/nokia-applied-research/AnyJev) | Apps / integrations | **1,286** | Turn any LLM into a Jev-style decision model: typed decisions, real probabilities, no training. (co… |
+| 16 [awlevin/typesafe-computer-use](https://github.com/awlevin/typesafe-computer-use) | Apps / integrations | **1,235** | macOS automation combining screen OCR with Jev action selection. |
+| 17 [realZachi/pg-jev](https://github.com/realZachi/pg-jev) | Apps / integrations | **1,178** | Ask your Postgres tables questions in plain language. A PostgreSQL extension powered by TypeSafe's … |
+| 18 [wy-coliney/jev-browser-use](https://github.com/wy-coliney/jev-browser-use) | Tools | **1,173** | 5–10x faster browser operations: Jev clicks, Codex thinks and verifies. Built at EZCollegeApp. |
+| 19 [kerpopule/hermes-jev-skills](https://github.com/kerpopule/hermes-jev-skills) | Tools | **1,132** | Jev-powered model routing, memory, compaction, skill selection, computer and browser use for Hermes… |
+| 20 [heyjunpenn/awesome-jev](https://github.com/heyjunpenn/awesome-jev) | Resources | **965** | A verified, community-maintained catalog of 981 open-source projects built with Jev. |
+| 21 [anishfn/shapeshift](https://github.com/anishfn/shapeshift) | Apps / integrations | **955** | An input that becomes what you mean: one text box that morphs into the right UI as you type. Powere… |
+| 22 [receptron/laya](https://github.com/receptron/laya) | Apps / integrations | **939** | Run Laya, the open-source Jev-compatible System-1 decision model, from Node.js / TypeScript via ONN… |
+| 23 [wfzyx/von](https://github.com/wfzyx/von) | Independent research | **910** | Independent open decision model with a TypeSafe-compatible API; not official Jev. |
+| 24 [Rizzo-AI-Academy/rizzo-flow](https://github.com/Rizzo-AI-Academy/rizzo-flow) | Apps / integrations | **899** | The open, local take on Jev: typed decisions from an LLM, without generating a single token |
+| 25 [Liuziyu77/Valen](https://github.com/Liuziyu77/Valen) | Independent research | **827** | Train a Jev-like multimodal model by yourself. System One Model, now with vision. |
+| 26 [jev-chat/jev-chat-windows](https://github.com/jev-chat/jev-chat-windows) | Apps / integrations | **812** | JevChat-Windows：聊天窗口旁挂的回复辅助。窗口截图 + 本地离线 OCR 读对方消息 → Jev 判断意图 → 3 条候选一键填入，发送永远手动 |
+| 27 [angel291592/Intent-Router](https://github.com/angel291592/Intent-Router) | Tools | **762** | Intent compiler for AI agents — converges vague requests into typed IntentSpec contracts (probe, as… |
+| 28 [v-modal/awesome-jev-tools](https://github.com/v-modal/awesome-jev-tools) | Resources | **742** | A curated list of tools built for Jev — TypeSafe AI's System One model for typed decisions. |
+| 29 [razorback16/openjev](https://github.com/razorback16/openjev) | Apps / integrations | **713** | Open, Jev-compatible System One decision server on DiffusionGemma |
+| 30 [samuelfaj/distill](https://github.com/samuelfaj/distill) | Tools | **697** | Coding agent harness and terminal interface with Jev task routing. |
 
 > 💡 Rankings use current repository stars as a discovery signal, not as a proxy for quality or official endorsement.
 
@@ -88,23 +88,32 @@ Sorted by total stars, with repository name as the tie-breaker. Start with the p
 
 Recent Jev-related arXiv papers and preprints from the launch window; discovery links, not peer-review or official-affiliation claims.
 
-Last successful fetch: 2026-10-15T05:56:01Z
+Last successful fetch: 2026-10-16T05:51:02Z
 
-Newly recorded this refresh: 5; total: 127. Only previously unrecorded papers count as new; revisions do not.
+Newly recorded this refresh: 10; total: 137. Only previously unrecorded papers count as new; revisions do not.
 
 | Paper | Authors | Submitted |
 | :-- | :-- | :-- |
-| [Diagnose Before You Refine: Multi-Dimensional Judge Feedback for Query-Efficient Jailbreak Attacks](https://arxiv.org/abs/2610.19971) **NEW** | Yixin Tan, Chia-Yi Hsu, Jiayang Liu, Chia-Mu Yu, Rui Wen | 2026-10-14 |
-| [Are AI Decision Models Biased? A Case Study of Jev](https://arxiv.org/abs/2610.19619) **NEW** | Ilaria Imperatrice, Taisia Kameneva, Adam Eric Greenberg, Alessandro … | 2026-10-14 |
-| [JevCoder: When Does Decision Delegation Pay Off in Code Repair?](https://arxiv.org/abs/2610.19596) **NEW** | Jiahao Zhang, Yifan Zhang, Yu Huang | 2026-10-14 |
-| [AgriJev: Efficient Agricultural Candidate Scoring with Multi-Scale Adapted Models](https://arxiv.org/abs/2610.19478) **NEW** | Xuechen Li | 2026-10-14 |
+| [Intern-Decision: Efficient Multimodal Decision Making with Autoregressive Masked Language Modeling](https://arxiv.org/abs/2610.22131) **NEW** | Tong Zhu, Zhe Xu, Zefeng He, Yunkai Chai, Xuyang Hu, Dehong Zheng, Yu… | 2026-10-15 |
+| [Qwen-Audio-Jev: A Unified Interface for Audio Decisions](https://arxiv.org/abs/2610.21614) **NEW** | Ying Fang, Zhifu Gao, Qing Gu, Jiajun He, Kangqi Jing, Xiangang Li, Y… | 2026-10-15 |
+| [JevAgentHarness: Benchmarking, Deploying and Training Decision Models That Share Control with LLMs](https://arxiv.org/abs/2610.21412) **NEW** | Kunlun Zhu, Tao Feng, Xu Han, Heng Wang, Ling Yang, Xiangru Tang, Jia… | 2026-10-15 |
+| [Jev-LiteMAS: Separating Decisions from Generation in Multi-Agent Workflows](https://arxiv.org/abs/2610.21411) **NEW** | Kaixiang Wang, Zhaijiacheng Zhou, Jiong Lou, Jie Li | 2026-10-15 |
 
 <details>
-<summary>Show remaining 123 papers (127 total)</summary>
+<summary>Show remaining 133 papers (137 total)</summary>
 
 | Paper | Authors | Submitted |
 | :-- | :-- | :-- |
-| [DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision](https://arxiv.org/abs/2610.19118) **NEW** | Yifan Lan, Zhongye Liu, Yurui Chang, Hanyu Wang, Yongkang Du, Lu Lin,… | 2026-10-13 |
+| [System1-Arena: Which Decisions Can Be Left to System 1?](https://arxiv.org/abs/2610.21244) **NEW** | Tianyu Chen, Xinyang Liu, Ruyi An, Zhendong Wang, Mingyuan Zhou | 2026-10-15 |
+| [Prune the Summary, Not the History: Source-Judged Compaction for Long-Horizon Agents](https://arxiv.org/abs/2610.20927) **NEW** | Guanghui Min, Chen Chen | 2026-10-14 |
+| [From Detection to Decision: Calibration and Deferral for Prompt-Injection Detection](https://arxiv.org/abs/2610.20907) **NEW** | Qianlong Lan, Anuj Kaul, Vinothini Pandurangan, Indranil Sanyal | 2026-10-14 |
+| [Verdict: Encode Once, Decide Many](https://arxiv.org/abs/2610.20778) **NEW** | Avdhesh Singh Chouhan, Jack Perry | 2026-10-14 |
+| [Diagnose Before You Refine: Multi-Dimensional Judge Feedback for Query-Efficient Jailbreak Attacks](https://arxiv.org/abs/2610.19971) | Yixin Tan, Chia-Yi Hsu, Jiayang Liu, Chia-Mu Yu, Rui Wen | 2026-10-14 |
+| [The World Won't Wait: Evaluating and Teaching Agents Under a Live Clock](https://arxiv.org/abs/2610.20665) **NEW** | Ningxin Pan, Hanyu Li, Yeqing Shen, Ning Ding, Yehui Tang, Wentao Zha… | 2026-10-14 |
+| [Are AI Decision Models Biased? A Case Study of Jev](https://arxiv.org/abs/2610.19619) | Ilaria Imperatrice, Taisia Kameneva, Adam Eric Greenberg, Alessandro … | 2026-10-14 |
+| [JevCoder: When Does Decision Delegation Pay Off in Code Repair?](https://arxiv.org/abs/2610.19596) | Jiahao Zhang, Yifan Zhang, Yu Huang | 2026-10-14 |
+| [AgriJev: Efficient Agricultural Candidate Scoring with Multi-Scale Adapted Models](https://arxiv.org/abs/2610.19478) | Xuechen Li | 2026-10-14 |
+| [DecisionRobust: Benchmarking Robustness for JEV Style Decision Models Across Text and Vision](https://arxiv.org/abs/2610.19118) | Yifan Lan, Zhongye Liu, Yurui Chang, Hanyu Wang, Yongkang Du, Lu Lin,… | 2026-10-13 |
 | [BLADE: Auditing Information Use for Failure Attribution in LLM Multi-Agent Systems](https://arxiv.org/abs/2610.18780) | Xiaoguang Guo, Yaohao Long, Chuxu Zhang | 2026-10-13 |
 | [Nudge the Judge: Uncovering Program Decision Hijacking in Real-World Jev Applications](https://arxiv.org/abs/2610.18612) | Yang Luo, Tiantian Ji, Zifeng Kang, Yucheng Wang, Yong Liu, Zhiyi Yin… | 2026-10-13 |
 | [Jev-ToM: Evaluating Theory of Mind in Typed Decision Models](https://arxiv.org/abs/2610.18610) | Kawai Chung, Chunkit Chan, Yuxuan Liu, Yauwai Yim, Xi Yang, Wenbin Hu… | 2026-10-13 |
@@ -165,6 +174,7 @@ Newly recorded this refresh: 5; total: 127. Only previously unrecorded papers co
 | [Beyond Answer Confidence: A Controlled Audit of Self-Knowledge in a Black-Box Decision Model](https://arxiv.org/abs/2610.01006) | Sharath M Shankaranarayana, Davor Runje, Jan Jannink | 2026-10-01 |
 | [Decision-Oriented Recommendation Reranking: An Empirical Study of Its Promise and Limitations](https://arxiv.org/abs/2609.40241) | Hanjia Lyu, Yinglong Xia | 2026-09-30 |
 | [JevSpawn: Adaptive Agentic Inference through Compositional Action Spaces](https://arxiv.org/abs/2610.00437) | Haoyang Su, Weiran Huang | 2026-09-30 |
+| [Jev-as-a-Judge for RAG Claim Verification: Confidence-Gated Cascading Between a Non-Generative Verifier and a Frontier LLM](https://arxiv.org/abs/2610.20634) **NEW** | Alden Do Rosario, Kirollos Atef | 2026-09-30 |
 | [When the Right Answer Is Missing: An Arithmetic-Dependent Rejection Bottleneck in Jev](https://arxiv.org/abs/2609.39496) | Jike Zhong, Ming Li, Yuxiang Lai | 2026-09-30 |
 | [OmniMed-Jev: Calibrating LVLM Confidence for Trustworthy Medical Multimodal Decisions via System One](https://arxiv.org/abs/2610.00381) | Luyao Tang, Cheng Chen | 2026-09-30 |
 | [A First Glance at Jev for Network Traffic Classification: Accuracy, Processing Time, and Cost](https://arxiv.org/abs/2610.00376) | Shenghe Xu, Lifan Mei | 2026-09-30 |
@@ -238,7 +248,7 @@ Platform signals stay separate: HN points, Reddit scores, and Hugging Face likes
 
 ### Hacker News
 
-updated · Last successful fetch: 2026-10-15T05:55:53Z
+updated · Last successful fetch: 2026-10-16T05:50:53Z
 
 | Discussion | Points | Comments |
 | :-- | --: | --: |
@@ -247,8 +257,8 @@ updated · Last successful fetch: 2026-10-15T05:55:53Z
 | [Ollaya – Ollama for open-source, Jev-style decision models](https://news.ycombinator.com/item?id=49848269) | 618 | 145 |
 | [Jeff – Jev-compatible 0.8B decision models, trained at home, ~30 ms](https://news.ycombinator.com/item?id=49883844) | 576 | 231 |
 | [Kev: Tiny Jev-like family of decision models built on top of Qwen3.5](https://news.ycombinator.com/item?id=49783999) | 463 | 210 |
+| [We’re releasing Jev 1.14.0 along with experimental features for dreamers](https://news.ycombinator.com/item?id=50095353) | 329 | 117 |
 | [Show HN: Jev Plays Pokémon Red](https://news.ycombinator.com/item?id=49845172) | 282 | 124 |
-| [We’re releasing Jev 1.14.0 along with experimental features for dreamers](https://news.ycombinator.com/item?id=50095353) | 251 | 84 |
 | [Jeeves. Reasoning improves Jev-like decision models](https://news.ycombinator.com/item?id=49891290) | 242 | 95 |
 
 ### Reddit
@@ -261,33 +271,33 @@ No relevant results available for this snapshot.
 
 ### Hugging Face
 
-updated · Last successful fetch: 2026-10-15T05:55:56Z
+updated · Last successful fetch: 2026-10-16T05:50:56Z
 
 Community uploads / independent implementations; not official TypeSafe model weights.
 
 | Model | ♥ Likes | ↓ Downloads (30d) |
 | :-- | --: | --: |
-| [autotrust/JEV-27B-VL](https://huggingface.co/autotrust/JEV-27B-VL) | 5,004 | 1,570,992 |
-| [autotrust/JEV-35B](https://huggingface.co/autotrust/JEV-35B) | 776 | 27,970 |
-| [akhilaaa3/Jev-Omni](https://huggingface.co/akhilaaa3/Jev-Omni) | 412 | 4,884 |
-| [autotrust/JEV-35B-NVFP4](https://huggingface.co/autotrust/JEV-35B-NVFP4) | 307 | 33,343 |
-| [autotrust/JEV-9B](https://huggingface.co/autotrust/JEV-9B) | 169 | 368,997 |
-| [autotrust/JEV-27B](https://huggingface.co/autotrust/JEV-27B) | 86 | 193,001 |
-| [com-kotobalabs/open-jev-deberta-v3-large](https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large) | 73 | 3,647 |
+| [autotrust/JEV-27B-VL](https://huggingface.co/autotrust/JEV-27B-VL) | 5,650 | 1,600,363 |
+| [autotrust/JEV-35B](https://huggingface.co/autotrust/JEV-35B) | 1,051 | 41,837 |
+| [akhilaaa3/Jev-Omni](https://huggingface.co/akhilaaa3/Jev-Omni) | 413 | 5,052 |
+| [autotrust/JEV-35B-NVFP4](https://huggingface.co/autotrust/JEV-35B-NVFP4) | 320 | 46,826 |
+| [autotrust/JEV-9B](https://huggingface.co/autotrust/JEV-9B) | 169 | 376,210 |
+| [autotrust/JEV-27B](https://huggingface.co/autotrust/JEV-27B) | 88 | 196,300 |
+| [com-kotobalabs/open-jev-deberta-v3-large](https://huggingface.co/com-kotobalabs/open-jev-deberta-v3-large) | 73 | 3,711 |
 | [Meanblock/JEV-CPU](https://huggingface.co/Meanblock/JEV-CPU) | 60 | 0 |
 
 ### News / articles
 
-updated · Last successful fetch: 2026-10-15T05:55:57Z
+updated · Last successful fetch: 2026-10-16T05:50:59Z
 
+- [TypeSafe’s Jev ‘even more susceptible to attack’ than LLMs, says security vendor - InfoWorld](https://news.google.com/rss/articles/CBMiwAFBVV95cUxQc3czSUM1d0stcmljWklyd3RrY0xkNFhKbE0zUlVvQWhZLUFCS0QwSGlKREk4bkplT2VhVWRsNVJGWVZoOUxmeDVkM0pseTRRRnF2TEVRWEM3cFNCN3hmMzE1amZsU2w0R2NVaHlQR0dwRXptcXlrYUF2MzhFcDBOY294V1h4dHhIam1wM2xlWU4yNkN5c21nb2IzMUUxd1VJMUtTUW1DY044dXZQdXFJZVI1eHJkQy1YUTFreHpPUUI?oc=5)
+- [TypeSafe AI发布Jev 1.14决策模型仅一天，Liquid AI便以d1-ultra全面超车 - finance.sina.com.cn](https://news.google.com/rss/articles/CBMipwFBVV95cUxPNDdtWGoyM3BQdjJ6STZKQUNlR2F3Y1JZUVpvc2VGMGNMdVB1R2dnNU01cDVJbDhZOEVSYV95bEhQbEhuNTFab3dzVkF6T3hpVFFUSHhpYzFHeGtkNW5rdy1lYXYzcU1vRnhYQTQ1cGZpVVVsVHNROWFIRmFKQ3BWU3AzQnU2LTZ6ZVl2OGw4UGFDaDhsUmJYOU55anF0MEtZaG1rRV9QQQ?oc=5)
 - [Jev-like decision models are flooding the AI market, after researcher claims TypeSafe copied their research - Tom's Hardware](https://news.google.com/rss/articles/CBMi6AJBVV95cUxQUkdGM180aEIxVE1UejVVVTNMRGRKRzRpdVlta1l3LTI4cVBaTTlmWkFMQV9iVDJBQ3lfZEJSZS1NQkJlbDZIOXdhNnN4WlJwX2IyM2IyWEhMVlZ6eGpiaVhvODhaSnF3dHV1aEJfZkVEeWRwX2FxN251Q0NLQS1rQ2FhbGwtX3JEVGZyNHdpX1kyNXNFRmpxWmZLSmFYdmdReVR0Sy01NF9LMGxxSEhsM0R3eEk5R0JHaG9zTS1QQVFyd2M1SDlZb0hSb2FqdHViY3Y2UTBEdE5kSmZQa3A1WEEzZTBwRjlSNmd6T2Y4anJLbGpuMDJidGtwZ1FSTG9nY1B6UTd4LXVselhjM003bWoyalZxYVhfdTd0NG1LcUxUeE03UEduNjh3eTUxV1BENEtOWUpGZUtfVDllSk44OEVub0hKMzZlRWQ0VTlTQ05ydlp5bEpSUUhvb3RBQktFdkRSNjhPQ1k?oc=5)
-- [TypeSafe AI发布Jev 1.14，新增图像及边界框功能、上下文扩至4倍 - TradingView](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1zaDFyNXJpUl9VVTY0dTBsNWc5Q3FkOWZjeV9IZk44ZWFadnQ5MUthYUdsdEZscF9WWjZUNHkxclJIX2JzVnR2VUhaek53d2Y4TDBMem5Xa25YVFhldGFxZXNKdkR3Zw?oc=5)
+- [TypeSafe AI发布Jev 1.14决策模型仅一天，Liquid AI便以d1-ultra全面超车 - 凤凰网科技](https://news.google.com/rss/articles/CBMiTEFVX3lxTE02MzZfbXlzYnc1TFh2Z21uTTdLT3hwcW15UmpzdHN0NVlTQ2t5aHVsdEJYVU9BdHlXRUluVmpoQmF1dzNaN3cxTWpMZzA?oc=5)
 - [Workday is using TypeSafe’s Jev to build user interfaces on the fly - The New Stack](https://news.google.com/rss/articles/CBMilAFBVV95cUxOLVRRdWl0ZlJJdktMT255Z0xLWk1jd1lNdlMzY3RzU1Zaa3lNWm1RSFdKYXFBR1Znc2JDMHhrRERGOUtPREhZTENBanlSWHZBNVJfTllULWFZc2RhS184QUZTWkR4aS1BQThfbjE2eHVxZ3U1RzZwRUVaTmhNSDJ4bzB3QnhnNjJBWTlXenBzd0hHMFJ2?oc=5)
-- [a16z领投，AI决策模型Jev爆火数周即完成8.7亿融资，估值75亿美元 - 华尔街见闻](https://news.google.com/rss/articles/CBMiU0FVX3lxTE5YbFI5eVNRQlZWSnFQOFNyWkRkVWkwenFMcVV2NE5ZZGZIbW9PTnpqamxOS2FEcnF2cGRDTURGajVmQUxHUm5RQWd0YkVNbWZrWXAw?oc=5)
-- [The maker of non-text AI model Jev valued at $7.5B just weeks after launch - TechCrunch](https://news.google.com/rss/articles/CBMirAFBVV95cUxNRURYaldlbHRLWDFQbG5fXzAxaE1EczNmTGJIX1VtTmZfeEdTQzNXQlN6Q2VSRmdkTS1PUEhSSlFzblpibUstUWVTV3NFSWg3OUdXMm1jUWliTTRheC13R0FxTWlCTDMwRS00UzBac05BaERpYmp1U0JGSXVUSVFkVXpUaDlpYUdHQ3VaQVlzSWVWbVhHUk9yZXFzQUcxa3hDbFNPYlRSVUg2Ukdk?oc=5)
-- [初创公司TypeSafe AI推出低幻觉“Jev”模型\|ChatGPT\|Anthropic\|软件开发\|大模型\|Hugging Face - finance.sina.com.cn](https://news.google.com/rss/articles/CBMiiwVBVV95cUxNVVo0TXg1NmtKQjMtQ0xjYUs5ZVQwT29oYWZ2R2dFS0xabGF4UUNRNmV4X092UThaRVVWNzFXZ3p5QWdDX2hrYzRUMVpsZ1hrRDVnYk5aRDZubVdDTkxvekl3clJZRGRTU1piaVFERmkxVUZISTRyd2F1OFV6MjU0eGVFYnhwaTJMUXBRUHo0aUhqREtJNm91Ty1NUWt4UE1yWTVrNTNFc3d1a2RFakxhZE9DMl9qSVZMSEVjT0ZrXzBGUThhX1dvUDVjYjNzaUpCZkhwVVV1c2RzdjlZcTduT3I2eFFNcTh5eWNIRlRCVDE0RkdUbnBZNGU3SEkyWlRnU1k4dzVGaF9UTjlkZTNWYkVUOGVyUXhNeGo3Mk42b2Y4MjdiZnZYRlRXUXRiWDZKd0xZdzBUdHFHMzRJU2ExdW82SFl1XzlyRjVUc0VHcm8tTmhER2YxeXJxRUl5XzF1Z0RzRWtZNTBJdGdLTXQ2VjBPOTBIdDJUZHBlaHdFdDI1TUFMNHM2d3VxTGtZNjJoTXZEcWZhc2FGRjdtdS01Ul9PZ2dJTGpIX2tFd0F0M3BhaUZmM3lwNkR4OEZfd0JPbHBSTGNCNV9VLUZZX2pBbnEzWWF3ZU9vSWxCU1J3T2R4MS1pVWFHVHNpREdiS2NHa0VqZF9UQThjVFN5Sndhazl3TER0VS1FSW01Rmo1cWgyOGliQ2VGQTM1VWdVREFMUUVKQmdQQkFRQjJGVU02dms5Szdwbi1WSEsyTW9ublJJVHVBMDdxa2Z2Z3pQTGJWLWw5Z09PYnBmUHc4MGlMQVMtZDI5dzlwSXBVZW96N0dnc0JFZnJDcWt2Wl9oUlc0ajZEaG4yaHQ5elU?oc=5)
-- [Decisions, Decisions: A Guide To The New Wave Of AI Decision Models Besides Jev - Forbes](https://news.google.com/rss/articles/CBMiywFBVV95cUxPXzlILXIzQzhWbDlKei1yVDlBc3M4QVhOckdyNjhBTXVpN2YtS29Wc2o3U3R4WEdrVzZZbTBOMXNaVFFvcC1nSm5uQW1Vb1pPRHRIWTJrSjZTMExqcF9uWWtiQXpKdHdnbUhxQXZzQVNRVGExQlg4RDhoMGJzbTQ0aUlrczY4cWs3Z19pa09DOVI3bndkTERybGh1QzBQXzZWZ0o5MklaMWtqeGtzVGdJM25kYjNZR3dEclBidjhFa09tWGdCTjBPUDdGdw?oc=5)
-- [Jev开发商TypeSafe AI完成8.7亿美元融资 估值75亿美元 红杉参投 - 搜狐网](https://news.google.com/rss/articles/CBMiiAFBVV95cUxOc1R2d010OFFUZnZTZXBnWFpTZV85aEVTR3F5WExmT1VLMGp0OVhadnB4ZmxkcDBsQ2k5eHVVcVhSdTkwcEVVcUxURVFSWFpVVzlibC16S18xQTNOS0pSUTdubFhCelpaSno0Q0k2Y0k2WTNmaGhGXzJKQXdlSHVVT2x2dE5jQmlz?oc=5)
+- [TypeSafe 发布 Jev 1.14，支持看图做决策、以及更长上下文- OSCHINA - 开源 × AI · 开发者生态社区 - OSCHINA](https://news.google.com/rss/articles/CBMiS0FVX3lxTE9FVFEzWm40eUNNcmtySFZJek5pZDVsSEk3LTI5R2tLLWpETDdMTWFuLWJ1dXFFeEtCWGF1aU9iRHZGZWNpS1Q2VE1pWQ?oc=5)
+- [TypeSafe AI Releases Jev 1.14 With Images, Box Type and 262k Context - MarkTechPost](https://news.google.com/rss/articles/CBMijgFBVV95cUxOelYzOVRwTzZrS0loT3BQMFNmakJ5UEtUN01jZWxTZ285NlV1dFdnOVBSV3RJZzFyY2hfMVg5WEc1d0owZ19xeVlrdUhMLWs3Z2Nvc3RVTXcwcXQ5MlNOcEdSS1lMbjRrZmJlcndpUVpNN1NuQVoxajRjUVA4WnVieXlZZEJIczA5RlpMWmxB0gGOAUFVX3lxTE56VjM5VHBPNmtLSWhPcFAwU2ZqQnlQS1Q3TWNlbFNnbzk2VXV0V2c5UFJXdElnMXJjaF8xWDlYRzV3SjBnX3F5WWt1SEwtazdnY29zdFVNdzBxdDkyU05wR1JLWUxuNGtmYmVyd2lRWk03U25BWjFqNGNRUDhadWJ5eVlkQkhzMDlGWkxabEE?oc=5)
+- [TypeSafe AI发布Jev 1.14，新增图像及边界框功能、上下文扩至4倍 - TradingView](https://news.google.com/rss/articles/CBMiZkFVX3lxTE1NaFJtMGtjR1JPQWNlV2Q1bTkzUENaclBjQ3pnLXUtX3MzQnhGT0NFSGxseFM5Wm5rZWZwVW9XTy0zQVFJblNGcElCRFcxbnJPbTZPWExva2Y3ZW9YbHlnMFprYU5JZw?oc=5)
 
 <a id="curated-resources"></a>
 
@@ -316,12 +326,12 @@ Manually reviewed sources, rendered automatically. No invented popularity scores
 
 Each GitHub query fetches a configured number of pages sorted by stars. This is bounded search, not a census. Forks, archived and unrelated repositories are excluded using metadata / README rules and reviewed seeds.
 
-- jev in:name,description fork:false archived:false stars:&gt;=2 — 200 / 2476 (page cap reached)
-- topic:jev fork:false archived:false — 200 / 2723 (page cap reached)
-- jev typesafe in:readme fork:false archived:false stars:&gt;=5 — 200 / 2138 (page cap reached)
+- jev in:name,description fork:false archived:false stars:&gt;=2 — 200 / 2503 (page cap reached)
+- topic:jev fork:false archived:false — 200 / 2765 (page cap reached)
+- jev typesafe in:readme fork:false archived:false stars:&gt;=5 — 200 / 2166 (page cap reached)
 - org:typesafe-ai fork:false archived:false — 9 / 9
-- jev in:name,description fork:false archived:false pushed:&gt;=2026-09-15 — 200 / 14098 (page cap reached)
-- jev typesafe in:readme fork:false archived:false pushed:&gt;=2026-09-15 — 200 / 21269 (page cap reached)
+- jev in:name,description fork:false archived:false pushed:&gt;=2026-09-16 — 200 / 14283 (page cap reached)
+- jev typesafe in:readme fork:false archived:false pushed:&gt;=2026-09-16 — 200 / 21608 (page cap reached)
 
 Full results and timestamps: [JSON data](data/latest.json) · [History](data/history) · [Methodology](docs/methodology.md)
 
