@@ -1,0 +1,1901 @@
+{
+  "date": "2026-10-26",
+  "generated_at": "2026-10-26T06:11:05Z",
+  "repositories": [
+    {
+      "id": 1375382253,
+      "name": "NandhaKishorM/laya",
+      "stars": 34329
+    },
+    {
+      "id": 1373655162,
+      "name": "browser-use/jev-ultrafast",
+      "stars": 23655
+    },
+    {
+      "id": 1124295269,
+      "name": "OpenByteInc/QuantDinger",
+      "stars": 13130
+    },
+    {
+      "id": 1375069862,
+      "name": "jaredpalmer/kev",
+      "stars": 9533
+    },
+    {
+      "id": 1379574728,
+      "name": "jev-chat/jev-chat-jarvis",
+      "stars": 8107
+    },
+    {
+      "id": 1374005005,
+      "name": "tamaratran/fast-jev-compaction",
+      "stars": 7766
+    },
+    {
+      "id": 1372482979,
+      "name": "TheoLeeCJ/SemIf-OpenJev",
+      "stars": 4885
+    },
+    {
+      "id": 1373659194,
+      "name": "jarrodwatts/jev-trader",
+      "stars": 3085
+    },
+    {
+      "id": 1388482474,
+      "name": "dzhng/jevgrep",
+      "stars": 2904
+    },
+    {
+      "id": 1345508845,
+      "name": "typesafe-ai/skills",
+      "stars": 2817
+    },
+    {
+      "id": 1374702542,
+      "name": "TianyuCodings/NanoJev",
+      "stars": 2562
+    },
+    {
+      "id": 1374561793,
+      "name": "yibie/awesome-jev",
+      "stars": 2467
+    },
+    {
+      "id": 1379166549,
+      "name": "nokia-applied-research/AnyJev",
+      "stars": 1485
+    },
+    {
+      "id": 1384260430,
+      "name": "ollaya-dev/ollaya",
+      "stars": 1397
+    },
+    {
+      "id": 1372867305,
+      "name": "vinnylarouge/jevlike",
+      "stars": 1358
+    },
+    {
+      "id": 1373440611,
+      "name": "awlevin/typesafe-computer-use",
+      "stars": 1266
+    },
+    {
+      "id": 1375026016,
+      "name": "realZachi/pg-jev",
+      "stars": 1221
+    },
+    {
+      "id": 1375500090,
+      "name": "wy-coliney/jev-browser-use",
+      "stars": 1201
+    },
+    {
+      "id": 1376380583,
+      "name": "kerpopule/hermes-jev-skills",
+      "stars": 1181
+    },
+    {
+      "id": 1271314891,
+      "name": "momozi1996/momo-code",
+      "stars": 1108
+    },
+    {
+      "id": 1381152958,
+      "name": "anishfn/shapeshift",
+      "stars": 1034
+    },
+    {
+      "id": 1377318357,
+      "name": "receptron/laya",
+      "stars": 999
+    },
+    {
+      "id": 1376757283,
+      "name": "heyjunpenn/awesome-jev",
+      "stars": 978
+    },
+    {
+      "id": 1378880709,
+      "name": "Rizzo-AI-Academy/rizzo-flow",
+      "stars": 933
+    },
+    {
+      "id": 842982339,
+      "name": "feder-cr/jev",
+      "stars": 915
+    },
+    {
+      "id": 1382625851,
+      "name": "Valen-Team/Valen",
+      "stars": 881
+    },
+    {
+      "id": 1379929433,
+      "name": "jev-chat/jev-chat-windows",
+      "stars": 854
+    },
+    {
+      "id": 1174519898,
+      "name": "samuelfaj/distill",
+      "stars": 766
+    },
+    {
+      "id": 1385884737,
+      "name": "mode-io/vllm-jev",
+      "stars": 754
+    },
+    {
+      "id": 1377399471,
+      "name": "v-modal/awesome-jev-tools",
+      "stars": 749
+    },
+    {
+      "id": 1375639479,
+      "name": "razorback16/openjev",
+      "stars": 748
+    },
+    {
+      "id": 1380683591,
+      "name": "AgriciDaniel/jev-seo",
+      "stars": 714
+    },
+    {
+      "id": 1375482713,
+      "name": "logicrw/awesome-jev-projects",
+      "stars": 697
+    },
+    {
+      "id": 1373665161,
+      "name": "devagrawal09/jev-review",
+      "stars": 692
+    },
+    {
+      "id": 1204984760,
+      "name": "milind-soni/tiptour-macos",
+      "stars": 684
+    },
+    {
+      "id": 1179222510,
+      "name": "AgentiLoop/Agent",
+      "stars": 649
+    },
+    {
+      "id": 1377820977,
+      "name": "wuyoscar/jev-skill",
+      "stars": 649
+    },
+    {
+      "id": 1376169754,
+      "name": "Sac-Y/Jev-cu",
+      "stars": 627
+    },
+    {
+      "id": 1373617155,
+      "name": "gargpratyush/jev-router",
+      "stars": 626
+    },
+    {
+      "id": 1375675343,
+      "name": "featherless-ai/simple-jev",
+      "stars": 616
+    },
+    {
+      "id": 1374058281,
+      "name": "AbdelStark/awesome-typesafe-jev",
+      "stars": 606
+    },
+    {
+      "id": 1377938409,
+      "name": "rmalde/minecraft-agent",
+      "stars": 600
+    },
+    {
+      "id": 1380762959,
+      "name": "kydlikebtc/awesome-jev",
+      "stars": 593
+    },
+    {
+      "id": 1375694187,
+      "name": "cobanov/awesome-jev",
+      "stars": 580
+    },
+    {
+      "id": 1373837418,
+      "name": "jkudish/jev-mcp",
+      "stars": 548
+    },
+    {
+      "id": 1374858514,
+      "name": "superagents-lab/jev-search",
+      "stars": 545
+    },
+    {
+      "id": 1379401527,
+      "name": "TianyuCodings/JevHarness",
+      "stars": 540
+    },
+    {
+      "id": 1377427328,
+      "name": "jerryjliu/docjev",
+      "stars": 539
+    },
+    {
+      "id": 1378018272,
+      "name": "datawhalechina/jev-cookbook",
+      "stars": 517
+    },
+    {
+      "id": 1379617146,
+      "name": "jev-chat/jev-chat-jarvis-mac",
+      "stars": 514
+    },
+    {
+      "id": 1376004275,
+      "name": "kyotofin/tax-doc-classifier",
+      "stars": 514
+    },
+    {
+      "id": 1383161277,
+      "name": "shengjidaguai-china/goutoujunshi-jev-chat",
+      "stars": 512
+    },
+    {
+      "id": 1383983311,
+      "name": "anteloc/ldraw-nova",
+      "stars": 480
+    },
+    {
+      "id": 1375039364,
+      "name": "OmniJev/awesome-jev-gallery",
+      "stars": 475
+    },
+    {
+      "id": 1375641268,
+      "name": "BillionsBobby/JevRouter",
+      "stars": 467
+    },
+    {
+      "id": 1377047791,
+      "name": "Yinsongxu/LLM2Jev",
+      "stars": 462
+    },
+    {
+      "id": 1377468874,
+      "name": "walidboulanouar/awesome-jev-use-cases",
+      "stars": 458
+    },
+    {
+      "id": 1372537050,
+      "name": "fhshaik/typesafe-mario",
+      "stars": 455
+    },
+    {
+      "id": 1374280231,
+      "name": "droidrun/mobile-jev",
+      "stars": 453
+    },
+    {
+      "id": 1184844109,
+      "name": "notque/vexjoy-agent",
+      "stars": 443
+    },
+    {
+      "id": 1378738225,
+      "name": "Zefan-Cai/Open-Jev",
+      "stars": 433
+    },
+    {
+      "id": 1394871993,
+      "name": "PostHog/jeeves",
+      "stars": 431
+    },
+    {
+      "id": 1375142045,
+      "name": "moritzkremb/jev-voice-browser",
+      "stars": 420
+    },
+    {
+      "id": 1375172727,
+      "name": "dabit3/jev-experiments",
+      "stars": 409
+    },
+    {
+      "id": 1383354153,
+      "name": "mohit67890/imajev",
+      "stars": 409
+    },
+    {
+      "id": 1328238153,
+      "name": "typesafe-ai/system-one-adapter-python",
+      "stars": 403
+    },
+    {
+      "id": 1380116460,
+      "name": "malevrigns/agent-jev",
+      "stars": 396
+    },
+    {
+      "id": 1375922101,
+      "name": "wh000wh000/awesome-jev-live",
+      "stars": 376
+    },
+    {
+      "id": 1373977947,
+      "name": "itsmostafa/system-one-connector",
+      "stars": 354
+    },
+    {
+      "id": 1374967555,
+      "name": "jkudish/jev-browser",
+      "stars": 343
+    },
+    {
+      "id": 1382409238,
+      "name": "codejunkie99/keel",
+      "stars": 337
+    },
+    {
+      "id": 1387780207,
+      "name": "imikerussell/beebots",
+      "stars": 327
+    },
+    {
+      "id": 1377868587,
+      "name": "FBddcz/embodied-jev",
+      "stars": 323
+    },
+    {
+      "id": 1374829176,
+      "name": "hr98w/jev-visual",
+      "stars": 322
+    },
+    {
+      "id": 1376284519,
+      "name": "vinilana/jev-gateway",
+      "stars": 322
+    },
+    {
+      "id": 1376627816,
+      "name": "sutro-sh/jev-align",
+      "stars": 311
+    },
+    {
+      "id": 1376631227,
+      "name": "logan-markewich/jeff",
+      "stars": 309
+    },
+    {
+      "id": 1377115777,
+      "name": "Heman10x-NGU/openJev-verdict-2.0",
+      "stars": 304
+    },
+    {
+      "id": 1357590729,
+      "name": "typesafe-ai/typesafe-sdk-python",
+      "stars": 302
+    },
+    {
+      "id": 1373629346,
+      "name": "RomanSlack/jev-drone",
+      "stars": 285
+    },
+    {
+      "id": 1357635350,
+      "name": "typesafe-ai/typesafe-sdk-js",
+      "stars": 284
+    },
+    {
+      "id": 1349410105,
+      "name": "rokbenko/quackd",
+      "stars": 277
+    },
+    {
+      "id": 1374800096,
+      "name": "kitze/skillbox",
+      "stars": 273
+    },
+    {
+      "id": 1377916761,
+      "name": "Devin-AXIS/jev-dsh-decision",
+      "stars": 264
+    },
+    {
+      "id": 1383309982,
+      "name": "Sheltercosmo/jev4pg",
+      "stars": 258
+    },
+    {
+      "id": 1391197420,
+      "name": "disler/ten-levels-of-jev",
+      "stars": 254
+    },
+    {
+      "id": 1383937741,
+      "name": "togethercomputer/tev1",
+      "stars": 250
+    },
+    {
+      "id": 1373978991,
+      "name": "NiazMorshed2007/jev-review",
+      "stars": 245
+    },
+    {
+      "id": 1375815381,
+      "name": "Amal-David/awesome-jev",
+      "stars": 242
+    },
+    {
+      "id": 1377956199,
+      "name": "libingzheren/Jev-Mem",
+      "stars": 240
+    },
+    {
+      "id": 1375286981,
+      "name": "fatwang2/awesome-jev",
+      "stars": 231
+    },
+    {
+      "id": 1374676481,
+      "name": "standardagents/jevpilot",
+      "stars": 229
+    },
+    {
+      "id": 1405407365,
+      "name": "jiwidi/jiwo",
+      "stars": 226
+    },
+    {
+      "id": 1038153811,
+      "name": "jmagly/aiwg",
+      "stars": 225
+    },
+    {
+      "id": 1374733369,
+      "name": "aowang-ai/jev-trade",
+      "stars": 222
+    },
+    {
+      "id": 1377680623,
+      "name": "brainstormity/Jev-X-Sentiment-Analysis",
+      "stars": 222
+    },
+    {
+      "id": 1374652607,
+      "name": "hellogumbo/awesome-jev",
+      "stars": 221
+    },
+    {
+      "id": 1138809556,
+      "name": "kevinbadi/hyperedit",
+      "stars": 218
+    },
+    {
+      "id": 1377644325,
+      "name": "HarnessRouter/SystemOneHarness",
+      "stars": 203
+    },
+    {
+      "id": 65865666,
+      "name": "JamesANZ/JevPromptShield",
+      "stars": 202
+    },
+    {
+      "id": 1376081650,
+      "name": "kraayenjon/awesome-jev",
+      "stars": 202
+    },
+    {
+      "id": 1376670432,
+      "name": "ryana/jevify",
+      "stars": 199
+    },
+    {
+      "id": 1391049410,
+      "name": "luobosibing2/dsh-jev-plugin",
+      "stars": 197
+    },
+    {
+      "id": 1376201850,
+      "name": "valentynkit/awesome-jev-typesafe",
+      "stars": 187
+    },
+    {
+      "id": 1378054924,
+      "name": "SiliconLabAI/OpenJev",
+      "stars": 181
+    },
+    {
+      "id": 1372296290,
+      "name": "jexp/neo4jev",
+      "stars": 180
+    },
+    {
+      "id": 1376303804,
+      "name": "socai-io/jev-social",
+      "stars": 179
+    },
+    {
+      "id": 1381956661,
+      "name": "ThinkFlowLab/system1-agents",
+      "stars": 177
+    },
+    {
+      "id": 1375155214,
+      "name": "kshetrajna12/reflex",
+      "stars": 173
+    },
+    {
+      "id": 1380873040,
+      "name": "yibie/jev-engineering-zh",
+      "stars": 173
+    },
+    {
+      "id": 1380291359,
+      "name": "Liyucheng1997/332_lab-jev-chat",
+      "stars": 170
+    },
+    {
+      "id": 1375299700,
+      "name": "tamaratran/jev-pruner",
+      "stars": 165
+    },
+    {
+      "id": 1376779168,
+      "name": "zwliJay/jev-forge",
+      "stars": 164
+    },
+    {
+      "id": 1372587647,
+      "name": "y0usaf/pi-jev",
+      "stars": 163
+    },
+    {
+      "id": 1378060456,
+      "name": "dorkitude/webctl",
+      "stars": 162
+    },
+    {
+      "id": 1375083492,
+      "name": "dbreunig/building-with-jev-skill",
+      "stars": 158
+    },
+    {
+      "id": 1381765937,
+      "name": "allebee/jevk5",
+      "stars": 157
+    },
+    {
+      "id": 993805781,
+      "name": "juspay/neurolink",
+      "stars": 157
+    },
+    {
+      "id": 1398194468,
+      "name": "VectifyAI/jev-doc-search",
+      "stars": 156
+    },
+    {
+      "id": 1379917275,
+      "name": "CTNicholas/jev-workflow-builder",
+      "stars": 151
+    },
+    {
+      "id": 1376671563,
+      "name": "uehaj/sys1grep",
+      "stars": 150
+    },
+    {
+      "id": 1378287407,
+      "name": "Promethe-us/awesome-jev",
+      "stars": 149
+    },
+    {
+      "id": 1388304414,
+      "name": "aaddrick/building-with-typesafe-jev",
+      "stars": 148
+    },
+    {
+      "id": 1376570509,
+      "name": "egma-ai/jev-code-reviewer",
+      "stars": 148
+    },
+    {
+      "id": 1377029403,
+      "name": "cobusgreyling/Jev",
+      "stars": 140
+    },
+    {
+      "id": 1375750028,
+      "name": "keltokhy/jgrep",
+      "stars": 139
+    },
+    {
+      "id": 1374059973,
+      "name": "Dicklesworthstone/skillranker",
+      "stars": 137
+    },
+    {
+      "id": 1377857628,
+      "name": "MiaoWuNYA/rikkahub-sillytavern-android",
+      "stars": 137
+    },
+    {
+      "id": 1257744257,
+      "name": "cookiespiggy/agentic-rl",
+      "stars": 136
+    },
+    {
+      "id": 1374026169,
+      "name": "daseinlabs/open-jev",
+      "stars": 134
+    },
+    {
+      "id": 1379783258,
+      "name": "Futureppo/typesafe_register",
+      "stars": 133
+    },
+    {
+      "id": 1377674687,
+      "name": "sdras/jev-webmcp-extension",
+      "stars": 132
+    },
+    {
+      "id": 1387544315,
+      "name": "YUTA-fywoo/jev-gui-delegate",
+      "stars": 131
+    },
+    {
+      "id": 1386544905,
+      "name": "christianmat/jev-pokemon",
+      "stars": 130
+    },
+    {
+      "id": 1378888384,
+      "name": "kyegomez/open-jev",
+      "stars": 130
+    },
+    {
+      "id": 1387763129,
+      "name": "UditAkhourii/quicksilver",
+      "stars": 129
+    },
+    {
+      "id": 1374583864,
+      "name": "leepokai/jev-guard",
+      "stars": 127
+    },
+    {
+      "id": 1376451543,
+      "name": "kevinbadi/jev-voice",
+      "stars": 126
+    },
+    {
+      "id": 1366680224,
+      "name": "qkal/Canny",
+      "stars": 126
+    },
+    {
+      "id": 1377227263,
+      "name": "savka777/jev-use",
+      "stars": 126
+    },
+    {
+      "id": 1373227372,
+      "name": "Ying-Kai-Liao/jev-browser",
+      "stars": 126
+    },
+    {
+      "id": 1424658181,
+      "name": "disler/pi-durable-news-agent",
+      "stars": 125
+    },
+    {
+      "id": 1376978038,
+      "name": "mizchi/jev-lint",
+      "stars": 124
+    },
+    {
+      "id": 1377049125,
+      "name": "NanmiCoder/jev-arena",
+      "stars": 124
+    },
+    {
+      "id": 1381271129,
+      "name": "Shanghua-Gao/RSI-Jev",
+      "stars": 124
+    },
+    {
+      "id": 1023118829,
+      "name": "BingoWon/apple-rag-mcp",
+      "stars": 121
+    },
+    {
+      "id": 1380219642,
+      "name": "peterfriese/system-one-foundation-models",
+      "stars": 121
+    },
+    {
+      "id": 1375573671,
+      "name": "mrnugget/jev-shell-history",
+      "stars": 120
+    },
+    {
+      "id": 1374627765,
+      "name": "agent-labs-dev/fastbrowse",
+      "stars": 119
+    },
+    {
+      "id": 1374632146,
+      "name": "devagrawal09/stanley-code",
+      "stars": 119
+    },
+    {
+      "id": 1376436152,
+      "name": "w3cj/jev-chat",
+      "stars": 119
+    },
+    {
+      "id": 1374235614,
+      "name": "nidhi-singh02/agent-router",
+      "stars": 118
+    },
+    {
+      "id": 1380877128,
+      "name": "henryklunaris/hey-jev",
+      "stars": 117
+    },
+    {
+      "id": 1377426282,
+      "name": "Bodila51/grok-bot-jev",
+      "stars": 115
+    },
+    {
+      "id": 1380653730,
+      "name": "mmastrac/djev",
+      "stars": 115
+    },
+    {
+      "id": 1379915055,
+      "name": "virajbhartiya/laya-vs-jev",
+      "stars": 114
+    },
+    {
+      "id": 1374853179,
+      "name": "Heman10x-NGU/Verdict-open-jev",
+      "stars": 113
+    },
+    {
+      "id": 1411653843,
+      "name": "YongLD/Multi-UAV-JEV",
+      "stars": 111
+    },
+    {
+      "id": 1374575487,
+      "name": "danielgshea/jev-as-a-judge",
+      "stars": 110
+    },
+    {
+      "id": 1389866156,
+      "name": "marcreichel/laya-php",
+      "stars": 110
+    },
+    {
+      "id": 1376243548,
+      "name": "AppitStudio/awesome-jev",
+      "stars": 109
+    },
+    {
+      "id": 1382790500,
+      "name": "1Panel-dev/laya-server",
+      "stars": 108
+    },
+    {
+      "id": 1374340897,
+      "name": "ChetasLua/jevmeter",
+      "stars": 108
+    },
+    {
+      "id": 1375098261,
+      "name": "deepanwadhwa/OpenDecision",
+      "stars": 108
+    },
+    {
+      "id": 1373968205,
+      "name": "vinilana/jev-eval-agent",
+      "stars": 108
+    },
+    {
+      "id": 1398101736,
+      "name": "BudEcosystem/Bud-Decision-Studio",
+      "stars": 106
+    },
+    {
+      "id": 1378726612,
+      "name": "openlayer-ai/jevals",
+      "stars": 106
+    },
+    {
+      "id": 1377737136,
+      "name": "nassim-arifette/jevgrep",
+      "stars": 105
+    },
+    {
+      "id": 1377417831,
+      "name": "fazlerocks/jevmail",
+      "stars": 103
+    },
+    {
+      "id": 1377893932,
+      "name": "PerryLink/jevcore",
+      "stars": 102
+    },
+    {
+      "id": 672323348,
+      "name": "timrogers/formanator",
+      "stars": 102
+    },
+    {
+      "id": 1382156557,
+      "name": "arimanyus/warrenduffer",
+      "stars": 101
+    },
+    {
+      "id": 1373162520,
+      "name": "ellipsis-dev/blink",
+      "stars": 100
+    },
+    {
+      "id": 1373650485,
+      "name": "pithings/advocaat",
+      "stars": 100
+    },
+    {
+      "id": 1379004430,
+      "name": "RJMSWD/QwenJev",
+      "stars": 98
+    },
+    {
+      "id": 996777566,
+      "name": "initial-d/ml-quant-trading",
+      "stars": 97
+    },
+    {
+      "id": 1375694442,
+      "name": "Hiwoniu/Jev-Case",
+      "stars": 95
+    },
+    {
+      "id": 1382097323,
+      "name": "ruyianry/JevGym",
+      "stars": 95
+    },
+    {
+      "id": 1375473949,
+      "name": "yzfly/awesome-jev-zh",
+      "stars": 85
+    },
+    {
+      "id": 1377507017,
+      "name": "Dimweaker/jev-libero",
+      "stars": 83
+    },
+    {
+      "id": 1400272965,
+      "name": "kouhxp/gutsy",
+      "stars": 81
+    },
+    {
+      "id": 1373411598,
+      "name": "sharziki/semdecide",
+      "stars": 81
+    },
+    {
+      "id": 1374300570,
+      "name": "AboveColin/HA-Jev",
+      "stars": 79
+    },
+    {
+      "id": 1375761817,
+      "name": "hyperspaceai/jevcache",
+      "stars": 78
+    },
+    {
+      "id": 1373184607,
+      "name": "kikoncuo/jevfire",
+      "stars": 76
+    },
+    {
+      "id": 1376720831,
+      "name": "yikangy873-gif/jev-desktop",
+      "stars": 76
+    },
+    {
+      "id": 1374259561,
+      "name": "bnsd55/jevmlx",
+      "stars": 75
+    },
+    {
+      "id": 1382518952,
+      "name": "bladedevoff/stuntd",
+      "stars": 73
+    },
+    {
+      "id": 1375410950,
+      "name": "ikermoel/open-alternative-jev",
+      "stars": 73
+    },
+    {
+      "id": 1379608059,
+      "name": "tomerglick57/Jevstiller",
+      "stars": 71
+    },
+    {
+      "id": 1382347514,
+      "name": "chuloontop4-code/jev-instance-review",
+      "stars": 70
+    },
+    {
+      "id": 1377927974,
+      "name": "BeatAPI/awesome-jev",
+      "stars": 69
+    },
+    {
+      "id": 1373904888,
+      "name": "TheoOliveira/pi-jev",
+      "stars": 69
+    },
+    {
+      "id": 1382217118,
+      "name": "alanhuangyoo/OpenJev",
+      "stars": 66
+    },
+    {
+      "id": 1379859926,
+      "name": "andududu/jeview",
+      "stars": 65
+    },
+    {
+      "id": 1377012125,
+      "name": "shitianfang/jev-use",
+      "stars": 65
+    },
+    {
+      "id": 1380800457,
+      "name": "buer2233/jev-ui-test",
+      "stars": 61
+    },
+    {
+      "id": 1375059982,
+      "name": "OmniJev/PlayJev",
+      "stars": 58
+    },
+    {
+      "id": 1377328381,
+      "name": "FrancoisChastel/jev-code",
+      "stars": 54
+    },
+    {
+      "id": 1383351011,
+      "name": "bodepudimuneendra-netizen/laya-jev-GraphRAG",
+      "stars": 51
+    },
+    {
+      "id": 1262078510,
+      "name": "777genius/social-monitor",
+      "stars": 50
+    },
+    {
+      "id": 1409930978,
+      "name": "Oqura-ai/optim-jev",
+      "stars": 49
+    },
+    {
+      "id": 1384291789,
+      "name": "PyModel/jev-judge-mcp",
+      "stars": 49
+    },
+    {
+      "id": 1375279784,
+      "name": "tacticocc/Jevbridge",
+      "stars": 48
+    },
+    {
+      "id": 1378149911,
+      "name": "chenmingtang830/jevgraph",
+      "stars": 46
+    },
+    {
+      "id": 1420650444,
+      "name": "DeepAleph/jevreel",
+      "stars": 46
+    },
+    {
+      "id": 1377249589,
+      "name": "intikhab49/open-jev-typed-decision-engine",
+      "stars": 46
+    },
+    {
+      "id": 1383527767,
+      "name": "mattn/go-jev",
+      "stars": 46
+    },
+    {
+      "id": 1375012405,
+      "name": "altryne/jevify",
+      "stars": 45
+    },
+    {
+      "id": 1373742699,
+      "name": "shiftynick/jev-axi",
+      "stars": 44
+    },
+    {
+      "id": 1376447184,
+      "name": "chy4pro/jev-for-chrome",
+      "stars": 42
+    },
+    {
+      "id": 1386322697,
+      "name": "grandamenium/jev-anything",
+      "stars": 41
+    },
+    {
+      "id": 1378822793,
+      "name": "ronadin2002/jev-cua",
+      "stars": 40
+    },
+    {
+      "id": 1420335009,
+      "name": "caiweihan/jev-account-filter",
+      "stars": 39
+    },
+    {
+      "id": 1129883651,
+      "name": "Ordo-Engine/Ordo",
+      "stars": 39
+    },
+    {
+      "id": 1377009676,
+      "name": "nexibeo/jev-cookbook",
+      "stars": 38
+    },
+    {
+      "id": 1376891056,
+      "name": "shaharia-lab/jev-cli",
+      "stars": 38
+    },
+    {
+      "id": 1379340735,
+      "name": "mizchi/jev-test-filter",
+      "stars": 37
+    },
+    {
+      "id": 1375719666,
+      "name": "AlbionaHoti/refgarden",
+      "stars": 36
+    },
+    {
+      "id": 1378047861,
+      "name": "lukstei/slop-grader",
+      "stars": 36
+    },
+    {
+      "id": 1382646102,
+      "name": "Eliot5566/JEV-Paper-Radar",
+      "stars": 35
+    },
+    {
+      "id": 1376809003,
+      "name": "everyinfra/jev-radar",
+      "stars": 35
+    },
+    {
+      "id": 1381544687,
+      "name": "alexei-led/claude-router",
+      "stars": 34
+    },
+    {
+      "id": 1213316537,
+      "name": "typesafe-ai/daggerverse",
+      "stars": 34
+    },
+    {
+      "id": 1381127385,
+      "name": "TypeSafeAI/jev-harness",
+      "stars": 34
+    },
+    {
+      "id": 1373871278,
+      "name": "jomatsu/pi-jev-auto-mode",
+      "stars": 33
+    },
+    {
+      "id": 1409828070,
+      "name": "MorDavid/NucleiSniper",
+      "stars": 33
+    },
+    {
+      "id": 1379612416,
+      "name": "smkrv/jev-calibrate",
+      "stars": 33
+    },
+    {
+      "id": 1381222319,
+      "name": "TypeLLM/pijev",
+      "stars": 33
+    },
+    {
+      "id": 1378103767,
+      "name": "yzfly/edgejev",
+      "stars": 33
+    },
+    {
+      "id": 1382292535,
+      "name": "AskTheWay/dsh-jev-interceptor",
+      "stars": 32
+    },
+    {
+      "id": 1382412277,
+      "name": "bcharleson/jev-gtm-cookbook",
+      "stars": 32
+    },
+    {
+      "id": 1382359766,
+      "name": "deepdave98/jev-playground",
+      "stars": 32
+    },
+    {
+      "id": 1402484762,
+      "name": "madisonrickert/jev-permission-gate",
+      "stars": 32
+    },
+    {
+      "id": 1382507937,
+      "name": "tostechbr/partway",
+      "stars": 32
+    },
+    {
+      "id": 1361152392,
+      "name": "tshmieldev/sharp",
+      "stars": 32
+    },
+    {
+      "id": 1375186168,
+      "name": "compozy/yoshi",
+      "stars": 31
+    },
+    {
+      "id": 1373637204,
+      "name": "GodsBoy/jev-agent-skill-router",
+      "stars": 31
+    },
+    {
+      "id": 1376641124,
+      "name": "mizzlelover/jev-hub",
+      "stars": 31
+    },
+    {
+      "id": 1407870562,
+      "name": "Jev-Engineering/cookbook",
+      "stars": 29
+    },
+    {
+      "id": 1376818592,
+      "name": "jiangkoumo/ego-decision-layer",
+      "stars": 28
+    },
+    {
+      "id": 1379936298,
+      "name": "Li-Evan/awesome-jev",
+      "stars": 28
+    },
+    {
+      "id": 1376451596,
+      "name": "Zaious/jev-capability-atlas",
+      "stars": 28
+    },
+    {
+      "id": 1373411556,
+      "name": "blakestone-x/jev-mcp",
+      "stars": 25
+    },
+    {
+      "id": 1393951114,
+      "name": "typesafe-ai/WorkflowEvals",
+      "stars": 20
+    },
+    {
+      "id": 1375643526,
+      "name": "daftAI2026/awesome-jev",
+      "stars": 14
+    },
+    {
+      "id": 1382496639,
+      "name": "typesafe-ai/n8n-nodes-typesafe-ai",
+      "stars": 12
+    },
+    {
+      "id": 1376686625,
+      "name": "da-vinci-noob/pi-jev-model-router",
+      "stars": 11
+    },
+    {
+      "id": 1376454096,
+      "name": "BrendanH18/jev_fsd",
+      "stars": 8
+    },
+    {
+      "id": 1374786946,
+      "name": "docxology/daf-jev",
+      "stars": 7
+    },
+    {
+      "id": 1374699858,
+      "name": "kitze/pagegrade",
+      "stars": 7
+    },
+    {
+      "id": 1413337306,
+      "name": "monotykamary/reflex",
+      "stars": 7
+    },
+    {
+      "id": 1382822833,
+      "name": "Yifan-Lan/awesome-jev-robustness",
+      "stars": 7
+    },
+    {
+      "id": 1430577039,
+      "name": "diegoag64/jev-devtools",
+      "stars": 6
+    },
+    {
+      "id": 1406297412,
+      "name": "typesafe-ai/typesafe-public-examples",
+      "stars": 6
+    },
+    {
+      "id": 1416434555,
+      "name": "john-walks-slow/dsh-session-prefix",
+      "stars": 5
+    },
+    {
+      "id": 1328271331,
+      "name": "elanthus/news-briefing",
+      "stars": 4
+    },
+    {
+      "id": 1375856142,
+      "name": "pCwOrM/werr",
+      "stars": 4
+    },
+    {
+      "id": 1373896673,
+      "name": "waddle-zoo/signal-weave",
+      "stars": 4
+    },
+    {
+      "id": 1377219925,
+      "name": "coo-quack/jev-pii-checker",
+      "stars": 3
+    },
+    {
+      "id": 1378829992,
+      "name": "frodi-karlsson/onesie",
+      "stars": 3
+    },
+    {
+      "id": 1376344327,
+      "name": "gholtzap/jev-codex-model-and-effort-router",
+      "stars": 3
+    },
+    {
+      "id": 1374637641,
+      "name": "john-walks-slow/dsh-set-model",
+      "stars": 3
+    },
+    {
+      "id": 1390327496,
+      "name": "MojoAI-King/jev-paper-trader",
+      "stars": 3
+    },
+    {
+      "id": 1377692599,
+      "name": "robokrunch/awesome-jev",
+      "stars": 3
+    },
+    {
+      "id": 1381391530,
+      "name": "supermanc417-alt/awesome-jev-hub",
+      "stars": 3
+    },
+    {
+      "id": 1414860907,
+      "name": "Faycall1l/bouncer",
+      "stars": 2
+    },
+    {
+      "id": 1433014470,
+      "name": "I-You-Dream/jev-from-scratch",
+      "stars": 2
+    },
+    {
+      "id": 1424512515,
+      "name": "Incluwin/BotStory",
+      "stars": 2
+    },
+    {
+      "id": 1375675983,
+      "name": "majiayu000/awesome-jev",
+      "stars": 2
+    },
+    {
+      "id": 1431891743,
+      "name": "Monkeypox966/arxiv-jev-digest",
+      "stars": 2
+    },
+    {
+      "id": 807302606,
+      "name": "typesafe-ai/typesafe-ai.github.io",
+      "stars": 2
+    },
+    {
+      "id": 1376935945,
+      "name": "VennIntelligence/jev-drive",
+      "stars": 2
+    },
+    {
+      "id": 1376714411,
+      "name": "wizicer/jev_info_site",
+      "stars": 2
+    },
+    {
+      "id": 1382940970,
+      "name": "XYenon/ajevt-browser",
+      "stars": 2
+    },
+    {
+      "id": 1399998314,
+      "name": "bitranox/btx-skill-jev-judge",
+      "stars": 1
+    },
+    {
+      "id": 1377688236,
+      "name": "jqueryscript/awesome-jev",
+      "stars": 1
+    },
+    {
+      "id": 1416337143,
+      "name": "KHAEntertainment/greenlight",
+      "stars": 1
+    },
+    {
+      "id": 1428787491,
+      "name": "lrendina/screenshot-organizer",
+      "stars": 1
+    },
+    {
+      "id": 1428483383,
+      "name": "lswdneil/spec.ai.pi.jev",
+      "stars": 1
+    },
+    {
+      "id": 1390289994,
+      "name": "MarcelRoozekrans/Minos.NET",
+      "stars": 1
+    },
+    {
+      "id": 1375727789,
+      "name": "miounet11/jevcode",
+      "stars": 1
+    },
+    {
+      "id": 1379668824,
+      "name": "Omrigotlieb/awesome-jev",
+      "stars": 1
+    },
+    {
+      "id": 1402021298,
+      "name": "rafaelleaomed/smartvitae",
+      "stars": 1
+    },
+    {
+      "id": 1433724649,
+      "name": "scalefreegan/jev-ants",
+      "stars": 1
+    },
+    {
+      "id": 1378717659,
+      "name": "sirkirby/routr",
+      "stars": 1
+    },
+    {
+      "id": 1423039804,
+      "name": "sixdjango/jev-compare",
+      "stars": 1
+    },
+    {
+      "id": 1378890779,
+      "name": "SuperInstance/jev-quilt",
+      "stars": 1
+    },
+    {
+      "id": 1378525657,
+      "name": "Tatendaz/model-picker",
+      "stars": 1
+    },
+    {
+      "id": 1376068429,
+      "name": "tugrulguner/lifepot",
+      "stars": 1
+    },
+    {
+      "id": 1396594047,
+      "name": "tyrchen/decision-rs",
+      "stars": 1
+    },
+    {
+      "id": 1423562572,
+      "name": "victorgomezadapty/radar-30x",
+      "stars": 1
+    },
+    {
+      "id": 1379241260,
+      "name": "xienda/dsh-jev-verify",
+      "stars": 1
+    },
+    {
+      "id": 1384516137,
+      "name": "zerone-agents/jev-model-router",
+      "stars": 1
+    },
+    {
+      "id": 1416065532,
+      "name": "abelbirosh/arize_takehome",
+      "stars": 0
+    },
+    {
+      "id": 1433886943,
+      "name": "abhimanyuHatesToCode/jev-fn",
+      "stars": 0
+    },
+    {
+      "id": 1413871427,
+      "name": "aikeluargalee-tech/jev-v8",
+      "stars": 0
+    },
+    {
+      "id": 1381153462,
+      "name": "Analytics206/JEV-Arcade",
+      "stars": 0
+    },
+    {
+      "id": 1422809968,
+      "name": "andy1245-rgb/toolInterfacer",
+      "stars": 0
+    },
+    {
+      "id": 1136242838,
+      "name": "anzchy/mdpro",
+      "stars": 0
+    },
+    {
+      "id": 1424191364,
+      "name": "api-evangelist/jev-agent",
+      "stars": 0
+    },
+    {
+      "id": 1377297191,
+      "name": "api-evangelist/typesafe-ai",
+      "stars": 0
+    },
+    {
+      "id": 1410982810,
+      "name": "Arbues/tesis1-jev-confidence",
+      "stars": 0
+    },
+    {
+      "id": 1433715948,
+      "name": "arndth/tetrisarena",
+      "stars": 0
+    },
+    {
+      "id": 1404940455,
+      "name": "arstrel/homelab-jev",
+      "stars": 0
+    },
+    {
+      "id": 1402736906,
+      "name": "arterialist/jev-robot",
+      "stars": 0
+    },
+    {
+      "id": 1431121897,
+      "name": "Bafise-nh/jev-cua-android",
+      "stars": 0
+    },
+    {
+      "id": 1432068851,
+      "name": "Bais1031/dsh-jev",
+      "stars": 0
+    },
+    {
+      "id": 1428936928,
+      "name": "bakirgdev/agent-chess",
+      "stars": 0
+    },
+    {
+      "id": 1376788278,
+      "name": "blck-snwmn/playground-jev",
+      "stars": 0
+    },
+    {
+      "id": 1433933553,
+      "name": "boxxxie/jev_dsl",
+      "stars": 0
+    },
+    {
+      "id": 1383017067,
+      "name": "bradsec/mynameisjev",
+      "stars": 0
+    },
+    {
+      "id": 1383137538,
+      "name": "byx-darwin/dsh-agent-kit",
+      "stars": 0
+    },
+    {
+      "id": 1415359835,
+      "name": "cadence-trading/crypto-trading-lab",
+      "stars": 0
+    },
+    {
+      "id": 1404633037,
+      "name": "castorhrio/jev-pi-agent",
+      "stars": 0
+    },
+    {
+      "id": 1386443291,
+      "name": "cesaregarza/moon-council",
+      "stars": 0
+    },
+    {
+      "id": 1426530384,
+      "name": "chinmayakelkar/jev-plan-review",
+      "stars": 0
+    },
+    {
+      "id": 1407417314,
+      "name": "CR0ZER/NHL-Predictor",
+      "stars": 0
+    },
+    {
+      "id": 1433863250,
+      "name": "CrytekR/jev-practical",
+      "stars": 0
+    },
+    {
+      "id": 1433745713,
+      "name": "Daewooki/decision-agent-lab",
+      "stars": 0
+    },
+    {
+      "id": 1376547126,
+      "name": "duketopceo/wisp",
+      "stars": 0
+    },
+    {
+      "id": 1388332856,
+      "name": "early-effect/hall-monitor",
+      "stars": 0
+    },
+    {
+      "id": 1378955524,
+      "name": "early-effect/hexis",
+      "stars": 0
+    },
+    {
+      "id": 1433775425,
+      "name": "EffieWang01/Jev",
+      "stars": 0
+    },
+    {
+      "id": 1431231606,
+      "name": "ehtb/erp-classifier",
+      "stars": 0
+    },
+    {
+      "id": 1427397554,
+      "name": "fmegahed/decision-models-for-industrial-image-qc",
+      "stars": 0
+    },
+    {
+      "id": 1433319681,
+      "name": "fmegahed/decisions-space",
+      "stars": 0
+    },
+    {
+      "id": 1416298448,
+      "name": "Gane2506/baton",
+      "stars": 0
+    },
+    {
+      "id": 1428691971,
+      "name": "gardianofthedarkness/novel-ontology-pi",
+      "stars": 0
+    },
+    {
+      "id": 1433752740,
+      "name": "gfddfhdg/--JEV-AI-",
+      "stars": 0
+    },
+    {
+      "id": 1384280134,
+      "name": "gmassello/jev",
+      "stars": 0
+    },
+    {
+      "id": 1399087035,
+      "name": "hdjekuue/awesome-jev",
+      "stars": 0
+    },
+    {
+      "id": 1417154727,
+      "name": "hhchuan89/claude-model-router",
+      "stars": 0
+    },
+    {
+      "id": 1430155877,
+      "name": "ibrahimjohar/rubiks-reasoning-latency-bench",
+      "stars": 0
+    },
+    {
+      "id": 1433702398,
+      "name": "Itachi-of-the-Leaf/JevBlog",
+      "stars": 0
+    },
+    {
+      "id": 1395484809,
+      "name": "itsamejoshab/jevlab",
+      "stars": 0
+    },
+    {
+      "id": 1387209242,
+      "name": "izam-mohammed/decisionsmith",
+      "stars": 0
+    },
+    {
+      "id": 1432739496,
+      "name": "j1s4nn/JevGAG",
+      "stars": 0
+    },
+    {
+      "id": 1380631425,
+      "name": "JamesANZ/ChatJev",
+      "stars": 0
+    },
+    {
+      "id": 1374015606,
+      "name": "jesyspa/jev-lean",
+      "stars": 0
+    },
+    {
+      "id": 1396442385,
+      "name": "kassaiattila/58_JEV_AI",
+      "stars": 0
+    },
+    {
+      "id": 1378370492,
+      "name": "keepwonder/jev-hub",
+      "stars": 0
+    },
+    {
+      "id": 1425004551,
+      "name": "khaalidrafi/agent-team.el",
+      "stars": 0
+    },
+    {
+      "id": 1433656977,
+      "name": "kkoppenhaver/jev-walker",
+      "stars": 0
+    },
+    {
+      "id": 1433858019,
+      "name": "Kogler7/JEV-BGR-Comparison",
+      "stars": 0
+    },
+    {
+      "id": 1380686738,
+      "name": "LBDavid98/jevidence",
+      "stars": 0
+    },
+    {
+      "id": 1428230019,
+      "name": "lian-wsy/wsy-jev-uav-track",
+      "stars": 0
+    },
+    {
+      "id": 1432544305,
+      "name": "louiscalata/agiw-mcp",
+      "stars": 0
+    },
+    {
+      "id": 1393299355,
+      "name": "louiscalata/agiw-suite",
+      "stars": 0
+    },
+    {
+      "id": 1433954976,
+      "name": "mayukhg/jev-ai-chatbot",
+      "stars": 0
+    },
+    {
+      "id": 1429110831,
+      "name": "Mrmimee/codex-jev",
+      "stars": 0
+    },
+    {
+      "id": 1390290629,
+      "name": "neostryder/augur",
+      "stars": 0
+    },
+    {
+      "id": 1419252614,
+      "name": "niajiege/jev_notes",
+      "stars": 0
+    },
+    {
+      "id": 1210854493,
+      "name": "odaiameera/zajel-mail",
+      "stars": 0
+    },
+    {
+      "id": 1426465582,
+      "name": "overstarry/codex-thread-title-organizer",
+      "stars": 0
+    },
+    {
+      "id": 1433714316,
+      "name": "pablokbs/jev-kubectl-voice",
+      "stars": 0
+    },
+    {
+      "id": 1391358148,
+      "name": "PineappleBingo/jev-radar",
+      "stars": 0
+    },
+    {
+      "id": 1383241494,
+      "name": "PoisonXploIT/ai-netwatch",
+      "stars": 0
+    },
+    {
+      "id": 1431651500,
+      "name": "pournasserian/decision-models-vs-small-llms",
+      "stars": 0
+    },
+    {
+      "id": 1384985441,
+      "name": "rockomatthews/jev-dashboard",
+      "stars": 0
+    },
+    {
+      "id": 1433896878,
+      "name": "rojzzzzz/SchemaDiagnoser",
+      "stars": 0
+    },
+    {
+      "id": 1414580034,
+      "name": "royalskynet/jev-gate-mcp",
+      "stars": 0
+    },
+    {
+      "id": 1423658236,
+      "name": "Sandeep-BA/agent-decision-lab",
+      "stars": 0
+    },
+    {
+      "id": 1431163939,
+      "name": "sanketmuchhala/ClaimSignal",
+      "stars": 0
+    },
+    {
+      "id": 1431162685,
+      "name": "sanketmuchhala/jevgate",
+      "stars": 0
+    },
+    {
+      "id": 1414164473,
+      "name": "satvik-jain-iitd/GoServe",
+      "stars": 0
+    },
+    {
+      "id": 1427763544,
+      "name": "sebmendo1/gtm-one-agentic-ui-demo",
+      "stars": 0
+    },
+    {
+      "id": 1433507016,
+      "name": "senthilsweb/jev-pii",
+      "stars": 0
+    },
+    {
+      "id": 1380638083,
+      "name": "Solomon-mithra/evailbox",
+      "stars": 0
+    },
+    {
+      "id": 1378792560,
+      "name": "SoundBlaster/SwiftDecision",
+      "stars": 0
+    },
+    {
+      "id": 1380255267,
+      "name": "SoundBlaster/SwiftDecision-Examples",
+      "stars": 0
+    },
+    {
+      "id": 1433671246,
+      "name": "Sujith1910/clickhouse-jev-router",
+      "stars": 0
+    },
+    {
+      "id": 1380903685,
+      "name": "Sweet-Butters/korea-ai-contest-tracker",
+      "stars": 0
+    },
+    {
+      "id": 1433924718,
+      "name": "SZBro/traceroot",
+      "stars": 0
+    },
+    {
+      "id": 1421023249,
+      "name": "titchanonkm-alt/btc-bot-lab",
+      "stars": 0
+    },
+    {
+      "id": 1418557127,
+      "name": "VectorSophie/rlcd-tool-selection",
+      "stars": 0
+    },
+    {
+      "id": 1433909067,
+      "name": "wangxiao5791509/Jev_Decision_Model",
+      "stars": 0
+    },
+    {
+      "id": 1378163558,
+      "name": "ZeroX-01/jev-atlas",
+      "stars": 0
+    },
+    {
+      "id": 1429341179,
+      "name": "zhongyu-ou/prompt-bench",
+      "stars": 0
+    }
+  ]
+}
